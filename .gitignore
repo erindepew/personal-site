@@ -1,4 +1,8 @@
 node_modules
+build/main.css
 build/main.js
-build/specs.js
-build/vendors.js
+build/main.css.map
+.idea/
+.sass-cache/
+dist/main.css
+dist/main.js
