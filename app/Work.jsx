@@ -1,14 +1,14 @@
 var React = require('react');
-var About = require('./About.jsx');
+var Thumbnail = require('./Thumbnail.jsx');
 
-var Home = React.createClass({
+var Work = React.createClass({
     render: function() {
         return (
             <div className="layout--MAIN">
-                this is the portfolio
+                <Thumbnail text="label text"/>
             </div>
         );
     }
 });
 
-module.exports = Home;
+module.exports = Work;

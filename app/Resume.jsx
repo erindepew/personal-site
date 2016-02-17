@@ -1,14 +1,31 @@
 var React = require('react');
-var About = require('./About.jsx');
+var Section = require('./Section.jsx');
+var Button = require ('./Button.jsx');
 
-var Home = React.createClass({
+
+var experience = [
+    {header: 'Bitly',
+    subheader: '2015 - present',
+    content: 'brief description'},
+    {header: 'Bitly',
+        subheader: '2015 - present',
+        content: 'brief description'}
+
+];
+
+var Resume = React.createClass({
     render: function() {
         return (
-            <div className="layout--MAIN">
-                this is the resume
+            <div className="layout--ALTERNATE">
+                <div className="layout--primary-section">
+                <Section header="header text" subheader="subheader text" content="content text"/>
+                </div>
+                <div className="layout--seconday-section">
+                    <Button label="download PDF"/>
+                </div>
             </div>
         );
     }
 });
 
-module.exports = Home;
+module.exports = Resume;
