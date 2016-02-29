@@ -1,0 +1,17 @@
+.header--MAIN {
+  @include h1;
+  color: $secondary-color;
+  padding: 0 2.5%;
+  width: 100%;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 8rem;
+  text-shadow: rgba($white,0.4) 0 3px 3px;
+  //emboss for webkit browsers,
+  //fallback to solid color for browsers that don't support background-clip-text
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), $secondary-color;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: rgba(255,255,255,0.01) 0.1px; // smoothing out the font in Safari
+}

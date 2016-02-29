@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Ubuntu-light';
+  src: url('../../fonts/Ubuntu-Light.ttf');
+};
+
+@font-face {
+  font-family: 'Ubuntu-regular';
+  src: url('../../fonts/Ubuntu-Regular.ttf');
+};
+
+@font-face {
+  font-family: 'Ubuntu-bold';
+  src: url('../../fonts/Ubuntu-Bold.ttf');
+};
+
+$font-light: 'Ubuntu-light', Helvetica, Arial, sans-serif;
+$font-regular: 'Ubuntu-regular', Helvetica, Arial, sans-serif;
+$font-bold: 'Ubuntu-bold', Helvetica, Arial, sans-serif;
+
+@mixin h1 {
+  font-family: $font-bold;
+  font-size: 2.4rem;
+}
+
+@mixin p {
+  font-family: $font-light;
+  font-size: 1.8rem;
+}
+

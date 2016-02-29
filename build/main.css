@@ -1,3 +1,49 @@
-body {
-	background-color: #EAEAEA;
+/* line 1, ../styles/global/_reset.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/* line 9, ../styles/global/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'Ubuntu-light';
+  src: url("../../fonts/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: 'Ubuntu-regular';
+  src: url("../../fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: 'Ubuntu-bold';
+  src: url("../../fonts/Ubuntu-Bold.ttf");
+}
+/* line 1, ../styles/components/_about.scss */
+.about--text {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  color: #3a3a3a;
+}
+
+/* line 1, ../styles/components/_header.scss */
+.header--MAIN {
+  font-family: "Ubuntu-bold", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  color: #ED9487;
+  padding: 0 2.5%;
+  width: 100%;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 8rem;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 3px 3px;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), #ED9487;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
 }

@@ -6,3 +6,4 @@ build/main.css.map
 .sass-cache/
 dist/main.css
 dist/main.js
+.DS_Store
