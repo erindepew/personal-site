@@ -20,10 +20,27 @@ $font-bold: 'Ubuntu-bold', Helvetica, Arial, sans-serif;
 @mixin h1 {
   font-family: $font-bold;
   font-size: 2.4rem;
+  letter-spacing: 0.75px;
+}
+
+@mixin h2 {
+  font-family: $font-regular;
+  font-size: 2.1rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+}
+
+@mixin h3 {
+  font-family: $font-regular;
+  font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  line-height: 2.7rem;
 }
 
 @mixin p {
   font-family: $font-light;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
 }
 

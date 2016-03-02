@@ -23,17 +23,61 @@ html {
   font-family: 'Ubuntu-bold';
   src: url("../../fonts/Ubuntu-Bold.ttf");
 }
+/* line 1, ../styles/components/_navigation.scss */
+.nav--MAIN {
+  width: 100%;
+  border-top: 2px solid #0C2370;
+  border-bottom: 2px solid #0C2370;
+  padding: 1rem 0;
+}
+
+/* line 1, ../styles/components/_button.scss */
+.button--MAIN {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+  background-color: #ED9487;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 1.5rem 1rem 1.25rem;
+  width: 100%;
+  border: none;
+}
+
 /* line 1, ../styles/components/_about.scss */
 .about--text {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
   color: #3a3a3a;
+}
+
+/* line 6, ../styles/components/_about.scss */
+.about--text-wrapper {
+  width: 70%;
+  float: right;
+  padding-left: 5%;
+}
+
+/* line 13, ../styles/components/_about.scss */
+.about--profile-image {
+  width: 30%;
+  float: left;
+}
+
+/* line 18, ../styles/components/_about.scss */
+.about--MAIN {
+  overflow: auto;
+  margin: 0 20%;
 }
 
 /* line 1, ../styles/components/_header.scss */
 .header--MAIN {
   font-family: "Ubuntu-bold", Helvetica, Arial, sans-serif;
   font-size: 2.4rem;
+  letter-spacing: 0.75px;
   color: #ED9487;
   padding: 0 2.5%;
   width: 100%;

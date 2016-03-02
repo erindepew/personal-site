@@ -2,3 +2,20 @@
   @include p;
   color: $dark-grey;
 }
+
+.about--text-wrapper {
+  width: 70%;
+  float: right;
+  padding-left: 5%;
+}
+
+
+.about--profile-image {
+  width: 30%;
+  float: left;
+}
+
+.about--MAIN {
+  overflow: auto;
+  margin: 0 20%;
+}

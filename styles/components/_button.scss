@@ -1,0 +1,9 @@
+.button--MAIN {
+  @include h2;
+  background-color: $secondary-color;
+  color: $white;
+  text-transform: uppercase;
+  padding: 1.5rem 1rem 1.25rem;
+  width: 100%;
+  border: none;
+}
