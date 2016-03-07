@@ -7,16 +7,16 @@ var Navigation = React.createClass({
             <nav className='nav--MAIN'>
                 <ul className="nav--nav-list">
                     <li className="nav--nav-link">
-                        <Link to="/">About</Link>
+                        <Link to="/">ABOUT</Link>
                     </li>
                     <li className="nav--nav-link">
-                        <Link to="/work">Work</Link>
+                        <Link to="/work">WORK</Link>
                     </li>
                     <li className="nav--nav-link">
-                        <Link to="/resume">Resume</Link>
+                        <Link to="/resume">RESUME</Link>
                     </li>
                     <li className="nav--nav-link">
-                        <a href="http://www.erindepew.com/blog">Blog</a>
+                        <a href="http://www.erindepew.com/blog">BLOG</a>
                     </li>
                 </ul>
             </nav>

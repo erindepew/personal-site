@@ -23,14 +23,111 @@ html {
   font-family: 'Ubuntu-bold';
   src: url("../../fonts/Ubuntu-Bold.ttf");
 }
-/* line 1, ../styles/components/_navigation.scss */
+/* line 11, ../styles/components/_navigation.scss */
 .nav--MAIN {
   width: 100%;
+  float: left;
+  position: relative;
   border-top: 2px solid #0C2370;
   border-bottom: 2px solid #0C2370;
   padding: 1rem 0;
 }
 
+/* line 20, ../styles/components/_navigation.scss */
+.nav--nav-list {
+  list-style: none;
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 30, ../styles/components/_navigation.scss */
+.nav--nav-link {
+  position: relative;
+  max-width: 30rem;
+}
+/* line 33, ../styles/components/_navigation.scss */
+.nav--nav-link a {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.1rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+  text-decoration: none;
+  opacity: 1.0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+/* line 58, ../styles/components/_navigation.scss */
+.nav--MOBILE {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 20;
+}
+
+@media (min-width: 10px) {
+  /* line 67, ../styles/components/_navigation.scss */
+  .nav--MAIN {
+    height: 100vh;
+    width: 8rem;
+    background-color: #efefef;
+  }
+
+  /* line 72, ../styles/components/_navigation.scss */
+  .nav--MOBILE {
+    display: block;
+  }
+
+  /* line 75, ../styles/components/_navigation.scss */
+  .nav--nav-link {
+    display: block;
+    text-align: left;
+    padding: 0 1rem;
+    width: auto;
+  }
+  /* line 80, ../styles/components/_navigation.scss */
+  .nav--nav-link a {
+    font-size: 1.75rem;
+    color: transparent;
+  }
+}
+@media (min-width: 750px) {
+  /* line 97, ../styles/components/_navigation.scss */
+  .nav--MAIN {
+    width: 100%;
+    height: auto;
+    left: 0;
+    background-color: #FFF;
+  }
+
+  /* line 103, ../styles/components/_navigation.scss */
+  .nav--MOBILE {
+    display: none;
+  }
+
+  /* line 106, ../styles/components/_navigation.scss */
+  .nav--nav-link {
+    display: inline-block;
+    text-align: center;
+    border-bottom: none;
+    width: 24.5%;
+    line-height: 0.6rem;
+    padding-left: 0;
+  }
+  /* line 113, ../styles/components/_navigation.scss */
+  .nav--nav-link:hover {
+    background-color: transparent;
+  }
+  /* line 116, ../styles/components/_navigation.scss */
+  .nav--nav-link a {
+    color: #0C2370;
+    font-size: 2rem;
+  }
+}
 /* line 1, ../styles/components/_button.scss */
 .button--MAIN {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
