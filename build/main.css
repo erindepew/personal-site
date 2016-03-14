@@ -23,17 +23,16 @@ html {
   font-family: 'Ubuntu-bold';
   src: url("../../fonts/Ubuntu-Bold.ttf");
 }
-/* line 11, ../styles/components/_navigation.scss */
+/* line 1, ../styles/components/_navigation.scss */
 .nav--MAIN {
-  width: 100%;
-  float: left;
-  position: relative;
+  position: absolute;
   border-top: 2px solid #0C2370;
   border-bottom: 2px solid #0C2370;
   padding: 1rem 0;
+  bottom: 0;
 }
 
-/* line 20, ../styles/components/_navigation.scss */
+/* line 9, ../styles/components/_navigation.scss */
 .nav--nav-list {
   list-style: none;
   position: relative;
@@ -44,12 +43,12 @@ html {
   margin: 0;
 }
 
-/* line 30, ../styles/components/_navigation.scss */
+/* line 19, ../styles/components/_navigation.scss */
 .nav--nav-link {
   position: relative;
   max-width: 30rem;
 }
-/* line 33, ../styles/components/_navigation.scss */
+/* line 22, ../styles/components/_navigation.scss */
 .nav--nav-link a {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   font-size: 2.1rem;
@@ -61,7 +60,7 @@ html {
   transition: opacity 0.5s ease;
 }
 
-/* line 58, ../styles/components/_navigation.scss */
+/* line 31, ../styles/components/_navigation.scss */
 .nav--MOBILE {
   width: 100%;
   top: 0;
@@ -70,33 +69,33 @@ html {
 }
 
 @media (min-width: 10px) {
-  /* line 67, ../styles/components/_navigation.scss */
+  /* line 40, ../styles/components/_navigation.scss */
   .nav--MAIN {
     height: 100vh;
     width: 8rem;
     background-color: #efefef;
   }
 
-  /* line 72, ../styles/components/_navigation.scss */
+  /* line 45, ../styles/components/_navigation.scss */
   .nav--MOBILE {
     display: block;
   }
 
-  /* line 75, ../styles/components/_navigation.scss */
+  /* line 48, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: block;
     text-align: left;
     padding: 0 1rem;
     width: auto;
   }
-  /* line 80, ../styles/components/_navigation.scss */
+  /* line 53, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     font-size: 1.75rem;
     color: transparent;
   }
 }
 @media (min-width: 750px) {
-  /* line 97, ../styles/components/_navigation.scss */
+  /* line 61, ../styles/components/_navigation.scss */
   .nav--MAIN {
     width: 100%;
     height: auto;
@@ -104,12 +103,12 @@ html {
     background-color: #FFF;
   }
 
-  /* line 103, ../styles/components/_navigation.scss */
+  /* line 67, ../styles/components/_navigation.scss */
   .nav--MOBILE {
     display: none;
   }
 
-  /* line 106, ../styles/components/_navigation.scss */
+  /* line 70, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: inline-block;
     text-align: center;
@@ -118,11 +117,11 @@ html {
     line-height: 0.6rem;
     padding-left: 0;
   }
-  /* line 113, ../styles/components/_navigation.scss */
+  /* line 77, ../styles/components/_navigation.scss */
   .nav--nav-link:hover {
     background-color: transparent;
   }
-  /* line 116, ../styles/components/_navigation.scss */
+  /* line 80, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     color: #0C2370;
     font-size: 2rem;
@@ -167,7 +166,7 @@ html {
 /* line 18, ../styles/components/_about.scss */
 .about--MAIN {
   overflow: auto;
-  margin: 0 20%;
+  margin: 0 20% 8rem;
 }
 
 /* line 1, ../styles/components/_header.scss */
@@ -187,4 +186,59 @@ html {
   background: -o-linear-gradient(transparent, transparent);
   -webkit-background-clip: text;
   -webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
+}
+
+/* line 1, ../styles/layout/_layout.scss */
+.layout--MAIN {
+  -webkit-transition: margin-left 0.2s ease-out;
+  -moz-transition: margin-left 0.2s ease-out;
+  -o-transition: margin-left 0.2s ease-out;
+  transition: margin-left 0.2s ease-out;
+  position: relative;
+  max-height: 100%;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  margin: 0;
+  overflow: auto;
+}
+/* line 10, ../styles/layout/_layout.scss */
+.layout--MAIN.open {
+  margin-left: 8rem;
+  width: 100vw;
+  overflow: visible;
+}
+/* line 15, ../styles/layout/_layout.scss */
+.layout--MAIN.close {
+  margin-left: 0;
+  width: 100vw;
+  overflow: visible;
+}
+
+/* line 22, ../styles/layout/_layout.scss */
+.layout--wrapper {
+  overflow: auto;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 35, ../styles/layout/_layout.scss */
+body {
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
 }

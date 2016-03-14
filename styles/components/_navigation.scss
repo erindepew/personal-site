@@ -1,20 +1,9 @@
-//.nav--wrapper {
-//  @include transition(left, 0.2s);
-//  position: absolute;
-//  width: 0;
-//  left: -$nav-mobile-width;
-//  top: 0;
-//  height: 100vh;
-//}
-
-
 .nav--MAIN {
-  width: 100%;
-  float: left;
-  position: relative;
+  position: absolute;
   border-top: 2px solid $primary-color;
   border-bottom: 2px solid $primary-color;
   padding: 1rem 0;
+  bottom: 0;
 }
 
 .nav--nav-list{
@@ -37,23 +26,7 @@
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
   }
-  //@include breakpoint(max-width $medium-breakpoint - 1) {
-  //  @include nav-icon($work, 1, $primary-color);
-  //  @include nav-icon($resume, 2, rgba($primary-color, 0.5));
-  //  @include nav-icon($blog, 3, $secondary-color);
-  //  @include nav-icon($home, 4, rgba($secondary-color, 0.5));
-  //}
 }
-
-//.nav--mobile-icon {
-//  @include icon(lighten($medium-grey, 15%), 3.5rem, $menu);
-//  float: left;
-//  height: 3.5rem;
-//  padding: 1.5rem 1rem;
-//  &:hover{
-//    cursor: pointer;
-//  }
-//}
 
 .nav--MOBILE {
   width: 100%;
@@ -85,15 +58,6 @@
 }
 
 @media (min-width: $medium-breakpoint) {
-  //.nav--wrapper {
-  //  width: 100%;
-  //  left: 0;
-  //  background-color: $white; //to help show the rgba as solid
-  //  bottom: 0;
-  //  top:auto;
-  //  height: auto;
-  //  position: fixed;
-  //}
   .nav--MAIN {
     width: 100%;
     height: auto;

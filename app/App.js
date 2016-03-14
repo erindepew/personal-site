@@ -13,7 +13,7 @@ var hashHistory = require('react-router').hashHistory;
 var App = React.createClass({
     render: function() {
         return (
-            <div>
+            <div className='layout--wrapper'>
                 {this.props.children}
                 <Navigation/>
             </div>
