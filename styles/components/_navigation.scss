@@ -1,7 +1,5 @@
 .nav--MAIN {
   position: absolute;
-  border-top: 2px solid $primary-color;
-  border-bottom: 2px solid $primary-color;
   padding: 1rem 0;
   bottom: 0;
   z-index: 5;
@@ -39,9 +37,12 @@
 
 @media (min-width: $small-breakpoint) {
   .nav--MAIN {
+    position:fixed;
     height: 100vh;
     width: $nav-mobile-width;
     background-color: $light-grey;
+    border-top: none;
+    border-bottom: none;
   }
   .nav--MOBILE {
     display: block;
@@ -64,6 +65,8 @@
     height: auto;
     left: 0;
     background-color: $white;
+    border-top: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
   }
   .nav--MOBILE {
     display: none;
