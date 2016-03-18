@@ -1,8 +1,7 @@
 .header--MAIN {
   @include h1;
   color: $secondary-color;
-  padding: 0 2.5%;
-  width: 100%;
+  margin: 0 $page-margin 5rem;
   font-size: 6rem;
   text-align: center;
   margin-top: 8rem;
@@ -15,3 +14,4 @@
   -webkit-background-clip: text;
   -webkit-text-stroke: rgba(255,255,255,0.01) 0.1px; // smoothing out the font in Safari
 }
+

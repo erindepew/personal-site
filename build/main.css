@@ -30,9 +30,10 @@ html {
   border-bottom: 2px solid #0C2370;
   padding: 1rem 0;
   bottom: 0;
+  z-index: 5;
 }
 
-/* line 9, ../styles/components/_navigation.scss */
+/* line 10, ../styles/components/_navigation.scss */
 .nav--nav-list {
   list-style: none;
   position: relative;
@@ -43,12 +44,12 @@ html {
   margin: 0;
 }
 
-/* line 19, ../styles/components/_navigation.scss */
+/* line 20, ../styles/components/_navigation.scss */
 .nav--nav-link {
   position: relative;
   max-width: 30rem;
 }
-/* line 22, ../styles/components/_navigation.scss */
+/* line 23, ../styles/components/_navigation.scss */
 .nav--nav-link a {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   font-size: 2.1rem;
@@ -60,7 +61,7 @@ html {
   transition: opacity 0.5s ease;
 }
 
-/* line 31, ../styles/components/_navigation.scss */
+/* line 32, ../styles/components/_navigation.scss */
 .nav--MOBILE {
   width: 100%;
   top: 0;
@@ -69,33 +70,33 @@ html {
 }
 
 @media (min-width: 10px) {
-  /* line 40, ../styles/components/_navigation.scss */
+  /* line 41, ../styles/components/_navigation.scss */
   .nav--MAIN {
     height: 100vh;
     width: 8rem;
     background-color: #efefef;
   }
 
-  /* line 45, ../styles/components/_navigation.scss */
+  /* line 46, ../styles/components/_navigation.scss */
   .nav--MOBILE {
     display: block;
   }
 
-  /* line 48, ../styles/components/_navigation.scss */
+  /* line 49, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: block;
     text-align: left;
     padding: 0 1rem;
     width: auto;
   }
-  /* line 53, ../styles/components/_navigation.scss */
+  /* line 54, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     font-size: 1.75rem;
     color: transparent;
   }
 }
 @media (min-width: 750px) {
-  /* line 61, ../styles/components/_navigation.scss */
+  /* line 62, ../styles/components/_navigation.scss */
   .nav--MAIN {
     width: 100%;
     height: auto;
@@ -103,12 +104,12 @@ html {
     background-color: #FFF;
   }
 
-  /* line 67, ../styles/components/_navigation.scss */
+  /* line 68, ../styles/components/_navigation.scss */
   .nav--MOBILE {
     display: none;
   }
 
-  /* line 70, ../styles/components/_navigation.scss */
+  /* line 71, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: inline-block;
     text-align: center;
@@ -117,11 +118,11 @@ html {
     line-height: 0.6rem;
     padding-left: 0;
   }
-  /* line 77, ../styles/components/_navigation.scss */
+  /* line 78, ../styles/components/_navigation.scss */
   .nav--nav-link:hover {
     background-color: transparent;
   }
-  /* line 80, ../styles/components/_navigation.scss */
+  /* line 81, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     color: #0C2370;
     font-size: 2rem;
@@ -148,35 +149,52 @@ html {
   letter-spacing: 0.25px;
   line-height: 2.4rem;
   color: #3a3a3a;
+  text-align: left;
 }
 
-/* line 6, ../styles/components/_about.scss */
+/* line 7, ../styles/components/_about.scss */
 .about--text-wrapper {
   width: 70%;
   float: right;
   padding-left: 5%;
 }
 
-/* line 13, ../styles/components/_about.scss */
+/* line 14, ../styles/components/_about.scss */
 .about--profile-image {
   width: 30%;
   float: left;
 }
 
-/* line 18, ../styles/components/_about.scss */
+/* line 19, ../styles/components/_about.scss */
 .about--MAIN {
   overflow: hidden;
-  margin: 0 20% 8rem;
+  margin: 0 20% 12rem;
 }
 
+@media (max-width: 750px) {
+  /* line 26, ../styles/components/_about.scss */
+  .about--profile-image {
+    display: none;
+  }
+
+  /* line 30, ../styles/components/_about.scss */
+  .about--text-wrapper {
+    width: 100%;
+  }
+
+  /* line 34, ../styles/components/_about.scss */
+  .about--MAIN {
+    margin: 0 1.5rem 8rem;
+    padding-left: 0;
+  }
+}
 /* line 1, ../styles/components/_header.scss */
 .header--MAIN {
   font-family: "Ubuntu-bold", Helvetica, Arial, sans-serif;
   font-size: 2.4rem;
   letter-spacing: 0.75px;
   color: #ED9487;
-  padding: 0 2.5%;
-  width: 100%;
+  margin: 0 1.5rem 5rem;
   font-size: 6rem;
   text-align: center;
   margin-top: 8rem;
@@ -203,27 +221,30 @@ html {
   margin: 0;
   overflow: auto;
 }
-/* line 11, ../styles/layout/_layout.scss */
-.layout--MAIN.open {
+
+/* line 13, ../styles/layout/_layout.scss */
+.layout--wrapper {
+  overflow: auto;
+  max-height: 100vh;
+  height: 100%;
+  z-index: 10;
+}
+/* line 18, ../styles/layout/_layout.scss */
+.layout--wrapper.open {
   margin-left: 8rem;
   width: 100vw;
   overflow: visible;
 }
-/* line 16, ../styles/layout/_layout.scss */
-.layout--MAIN.close {
+/* line 23, ../styles/layout/_layout.scss */
+.layout--wrapper.close {
   margin-left: 0;
   width: 100vw;
   overflow: visible;
 }
 
-/* line 23, ../styles/layout/_layout.scss */
-.layout--wrapper {
-  overflow: auto;
-  max-height: 100vh;
-  height: 100%;
-}
-
-/* line 29, ../styles/layout/_layout.scss */
+/* line 30, ../styles/layout/_layout.scss */
 body {
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }

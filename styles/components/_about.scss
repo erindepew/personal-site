@@ -1,6 +1,7 @@
 .about--text {
   @include p;
   color: $dark-grey;
+  text-align: left;
 }
 
 .about--text-wrapper {
@@ -17,5 +18,21 @@
 
 .about--MAIN {
   overflow: hidden;
-  margin: 0 20% 8rem;
+  margin: 0 20% 12rem;
+}
+
+
+@media (max-width: $medium-breakpoint) {
+  .about--profile-image {
+    display: none;
+  }
+
+  .about--text-wrapper {
+    width: 100%;
+  }
+
+  .about--MAIN {
+    margin: 0 $page-margin 8rem;
+    padding-left: 0;
+  }
 }
