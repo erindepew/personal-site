@@ -165,7 +165,7 @@ html {
 
 /* line 18, ../styles/components/_about.scss */
 .about--MAIN {
-  overflow: auto;
+  overflow: hidden;
   margin: 0 20% 8rem;
 }
 
@@ -195,50 +195,35 @@ html {
   -o-transition: margin-left 0.2s ease-out;
   transition: margin-left 0.2s ease-out;
   position: relative;
-  max-height: 100%;
+  height: 100%;
+  max-height: 100vh;
   width: 100%;
   text-align: center;
   top: 0;
   margin: 0;
   overflow: auto;
 }
-/* line 10, ../styles/layout/_layout.scss */
+/* line 11, ../styles/layout/_layout.scss */
 .layout--MAIN.open {
   margin-left: 8rem;
   width: 100vw;
   overflow: visible;
 }
-/* line 15, ../styles/layout/_layout.scss */
+/* line 16, ../styles/layout/_layout.scss */
 .layout--MAIN.close {
   margin-left: 0;
   width: 100vw;
   overflow: visible;
 }
 
-/* line 22, ../styles/layout/_layout.scss */
+/* line 23, ../styles/layout/_layout.scss */
 .layout--wrapper {
   overflow: auto;
   max-height: 100vh;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  height: 100%;
 }
 
-/* line 35, ../styles/layout/_layout.scss */
+/* line 29, ../styles/layout/_layout.scss */
 body {
-  height: 100vh;
-  max-height: 100vh;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
 }
