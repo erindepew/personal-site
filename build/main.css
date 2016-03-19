@@ -6,7 +6,7 @@
   -o-box-sizing: border-box;
 }
 
-/* line 9, ../styles/global/_reset.scss */
+/* line 8, ../styles/global/_reset.scss */
 html {
   font-size: 62.5%;
 }
@@ -68,7 +68,7 @@ html {
 }
 
 @media (min-width: 10px) {
-  /* line 39, ../styles/components/_navigation.scss */
+  /* line 38, ../styles/components/_navigation.scss */
   .nav--MAIN {
     position: fixed;
     height: 100vh;
@@ -78,26 +78,26 @@ html {
     border-bottom: none;
   }
 
-  /* line 47, ../styles/components/_navigation.scss */
+  /* line 46, ../styles/components/_navigation.scss */
   .nav--MOBILE {
     display: block;
   }
 
-  /* line 50, ../styles/components/_navigation.scss */
+  /* line 49, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: block;
     text-align: left;
     padding: 0 1rem;
     width: auto;
   }
-  /* line 55, ../styles/components/_navigation.scss */
+  /* line 54, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     font-size: 1.75rem;
     color: transparent;
   }
 }
 @media (min-width: 750px) {
-  /* line 63, ../styles/components/_navigation.scss */
+  /* line 62, ../styles/components/_navigation.scss */
   .nav--MAIN {
     width: 100%;
     height: auto;
@@ -107,12 +107,12 @@ html {
     border-bottom: 2px solid #0C2370;
   }
 
-  /* line 71, ../styles/components/_navigation.scss */
+  /* line 70, ../styles/components/_navigation.scss */
   .nav--MOBILE {
     display: none;
   }
 
-  /* line 74, ../styles/components/_navigation.scss */
+  /* line 73, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: inline-block;
     text-align: center;
@@ -121,11 +121,11 @@ html {
     line-height: 0.6rem;
     padding-left: 0;
   }
-  /* line 81, ../styles/components/_navigation.scss */
+  /* line 80, ../styles/components/_navigation.scss */
   .nav--nav-link:hover {
     background-color: transparent;
   }
-  /* line 84, ../styles/components/_navigation.scss */
+  /* line 83, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     color: #0C2370;
     font-size: 2rem;
@@ -162,30 +162,30 @@ html {
   padding-left: 5%;
 }
 
-/* line 14, ../styles/components/_about.scss */
+/* line 13, ../styles/components/_about.scss */
 .about--profile-image {
   width: 30%;
   float: left;
 }
 
-/* line 19, ../styles/components/_about.scss */
+/* line 18, ../styles/components/_about.scss */
 .about--MAIN {
   overflow: hidden;
   margin: 0 20% 12rem;
 }
 
 @media (max-width: 750px) {
-  /* line 26, ../styles/components/_about.scss */
+  /* line 24, ../styles/components/_about.scss */
   .about--profile-image {
     display: none;
   }
 
-  /* line 30, ../styles/components/_about.scss */
+  /* line 28, ../styles/components/_about.scss */
   .about--text-wrapper {
     width: 100%;
   }
 
-  /* line 34, ../styles/components/_about.scss */
+  /* line 32, ../styles/components/_about.scss */
   .about--MAIN {
     margin: 0 1.5rem 8rem;
     padding-left: 0;
@@ -246,6 +246,22 @@ html {
 }
 
 /* line 30, ../styles/layout/_layout.scss */
+.layout--primary-section {
+  width: calc(62% - 1.5rem);
+  float: left;
+  margin-left: 1.5rem;
+}
+
+/* line 36, ../styles/layout/_layout.scss */
+.layout--secondary-section {
+  width: calc(38% - 1.5rem);
+  float: right;
+  margin: 1.5rem 1.5rem 7rem 0;
+  min-height: calc(100vh - 8.5rem);
+  background-color: #efefef;
+}
+
+/* line 44, ../styles/layout/_layout.scss */
 body {
   overflow: hidden;
   margin: 0;

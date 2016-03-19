@@ -27,6 +27,20 @@
   }
 }
 
+.layout--primary-section {
+  width: calc(62% - 1.5rem); // golden ratio
+  float: left;
+  margin-left: $page-margin;
+}
+
+.layout--secondary-section {
+  width: calc(38% - 1.5rem);  // golden ratio
+  float: right;
+  margin: $page-margin $page-margin 7rem 0;
+  min-height: calc(100vh - 8.5rem);
+  background-color: $light-grey;
+}
+
 body {
   overflow: hidden;
   margin: 0;

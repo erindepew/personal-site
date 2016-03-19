@@ -11,22 +11,21 @@ var hashHistory = require('react-router').hashHistory;
 
 
 var App = React.createClass({
-    render: function() {
-        return (
-            <div className='layout--MAIN'>
-                {this.props.children}
-                <Navigation/>
-            </div>
-        );
-    }
+  render: function () {
+    return (
+      <div>
+        {this.props.children}
+      </div>
+    );
+  }
 });
 
 React.render((
-    <Router history = {hashHistory}>
-        <Route path="/" component={App}>
-            <IndexRoute component={Home} />
-            <Route path="/work" component={Work} />
-            <Route path="/resume" component={Resume} />
-        </Route>
-    </Router>
+  <Router history={hashHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home}/>
+      <Route path="/work" component={Work}/>
+      <Route path="/resume" component={Resume}/>
+    </Route>
+  </Router>
 ), document.body);

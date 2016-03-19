@@ -5,7 +5,7 @@
   z-index: 5;
 }
 
-.nav--nav-list{
+.nav--nav-list {
   list-style: none;
   position: relative;
   text-align: center;
@@ -15,10 +15,10 @@
   margin: 0;
 }
 
-.nav--nav-link{
+.nav--nav-link {
   position: relative;
   max-width: 30rem;
-  a{
+  a {
     @include h2;
     text-decoration: none;
     opacity: 1.0;
@@ -34,10 +34,9 @@
   z-index: 20;
 }
 
-
 @media (min-width: $small-breakpoint) {
   .nav--MAIN {
-    position:fixed;
+    position: fixed;
     height: 100vh;
     width: $nav-mobile-width;
     background-color: $light-grey;
