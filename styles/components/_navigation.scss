@@ -42,6 +42,7 @@
     background-color: $light-grey;
     border-top: none;
     border-bottom: none;
+    padding: 0;
   }
   .nav--MOBILE {
     display: block;
@@ -54,6 +55,18 @@
     a {
       font-size: 1.75rem;
       color: transparent;
+    }
+    &:nth-child(1) {
+      @include color-list(1);
+    }
+    &:nth-child(2) {
+      @include color-list(2);
+    }
+    &:nth-child(3) {
+      @include color-list(3);
+    }
+    &:nth-child(4) {
+      @include color-list(4);
     }
   }
 }
@@ -83,6 +96,18 @@
     a {
       color: $primary-color;
       font-size: 2rem;
+    }
+    &:nth-child(1) {
+      background-color: transparent;
+    }
+    &:nth-child(2) {
+      background-color: transparent;
+    }
+    &:nth-child(3) {
+      background-color: transparent;
+    }
+    &:nth-child(4) {
+      background-color: transparent;
     }
   }
 }

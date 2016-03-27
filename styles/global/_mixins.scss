@@ -19,3 +19,7 @@
     content: $icon;
   }
 }
+
+@mixin color-list($position) {
+  background-color: nth($colors, $position);
+}

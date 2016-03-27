@@ -76,28 +76,45 @@ html {
     background-color: #efefef;
     border-top: none;
     border-bottom: none;
+    padding: 0;
   }
 
-  /* line 46, ../styles/components/_navigation.scss */
+  /* line 47, ../styles/components/_navigation.scss */
   .nav--MOBILE {
     display: block;
   }
 
-  /* line 49, ../styles/components/_navigation.scss */
+  /* line 50, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: block;
     text-align: left;
     padding: 0 1rem;
     width: auto;
   }
-  /* line 54, ../styles/components/_navigation.scss */
+  /* line 55, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     font-size: 1.75rem;
     color: transparent;
   }
+  /* line 59, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(1) {
+    background-color: #0C2370;
+  }
+  /* line 62, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(2) {
+    background-color: #114884;
+  }
+  /* line 65, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(3) {
+    background-color: #ED9487;
+  }
+  /* line 68, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(4) {
+    background-color: #FFB59F;
+  }
 }
 @media (min-width: 750px) {
-  /* line 62, ../styles/components/_navigation.scss */
+  /* line 75, ../styles/components/_navigation.scss */
   .nav--MAIN {
     width: 100%;
     height: auto;
@@ -107,12 +124,12 @@ html {
     border-bottom: 2px solid #0C2370;
   }
 
-  /* line 70, ../styles/components/_navigation.scss */
+  /* line 83, ../styles/components/_navigation.scss */
   .nav--MOBILE {
     display: none;
   }
 
-  /* line 73, ../styles/components/_navigation.scss */
+  /* line 86, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: inline-block;
     text-align: center;
@@ -121,14 +138,30 @@ html {
     line-height: 0.6rem;
     padding-left: 0;
   }
-  /* line 80, ../styles/components/_navigation.scss */
+  /* line 93, ../styles/components/_navigation.scss */
   .nav--nav-link:hover {
     background-color: transparent;
   }
-  /* line 83, ../styles/components/_navigation.scss */
+  /* line 96, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     color: #0C2370;
     font-size: 2rem;
+  }
+  /* line 100, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(1) {
+    background-color: transparent;
+  }
+  /* line 103, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(2) {
+    background-color: transparent;
+  }
+  /* line 106, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(3) {
+    background-color: transparent;
+  }
+  /* line 109, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(4) {
+    background-color: transparent;
   }
 }
 /* line 1, ../styles/components/_button.scss */

@@ -33,7 +33,7 @@ var Resume = React.createClass({
           <Button label="download PDF"/>
         </div>
         </div>
-        <Navigation/>
+        <Navigation navState={this.props.navState}/>
       </div>
     );
   }

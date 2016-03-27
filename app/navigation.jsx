@@ -3,8 +3,9 @@ var Link = require('react-router').Link;
 
 var Navigation = React.createClass({
   render: function () {
+    var navClass = this.props.navState ? 'nav--MAIN closed' : 'nav--MAIN open';
     return (
-      <nav className='nav--MAIN'>
+      <nav className={navClass}>
         <ul className="nav--nav-list">
           <li className="nav--nav-link">
             <Link to="/">ABOUT</Link>

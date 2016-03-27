@@ -1,20 +1,26 @@
 var React = require('react');
-var Navigation = require('./Navigation.jsx');
 var Home = require('./Home.jsx');
 var Resume = require('./Resume.jsx');
 var Work = require('./Work.jsx');
 var Router = require('react-router').Router;
 var Route = require('react-router').Route;
 var IndexRoute = require('react-router').IndexRoute;
-var Link = require('react-router').Link;
 var hashHistory = require('react-router').hashHistory;
 
 
 var App = React.createClass({
+  getInitialState: function() {
+    return {navState: false};
+  },
+  navClick: function() {
+    this.setState({navState: !this.state.navState});
+  },
+
   render: function () {
     return (
       <div>
-        {this.props.children}
+        <span className="nav--mobile-icon" onClick={this.navClick}> navigation mobile icon</span>
+        {React.cloneElement(this.props.children, { navState: this.state.navState })}
       </div>
     );
   }

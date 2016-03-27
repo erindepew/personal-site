@@ -10,7 +10,7 @@ var Home = React.createClass({
         <div className="header--MAIN"> I am a developer &amp; designer.</div>
         <About/>
       </div>
-        <Navigation/>
+        <Navigation navState={this.props.navState}/>
       </div>
     );
   }
