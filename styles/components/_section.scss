@@ -1,0 +1,16 @@
+.section--header {
+  @include p;
+  font-family: $font-regular;
+}
+
+.section--subheader {
+  @include p;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-top: -1.75rem;
+}
+
+.section--content {
+  @include p;
+  margin-top: -2.25rem;
+}

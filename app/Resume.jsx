@@ -15,7 +15,15 @@ var experience = [
     subheader: '2013 - 2015',
     content: 'brief description'
   }
+];
 
+var skills = [
+  {
+    skillList: 'HTML, CSS, JavaScript'
+  },
+  {
+    skillList: 'Photoshop, Illustrator, Indesign'
+  }
 ];
 
 var Resume = React.createClass({
@@ -25,11 +33,16 @@ var Resume = React.createClass({
       <div className="layout--ALTERNATE">
         <div className='layout--wrapper'>
         <div className="layout--primary-section">
+          <h3 className='resume--header'>Experience</h3>
           {experience.map(function (item) {
             return <Section header={item.header} subheader={item.subheader} content={item.content}/>;
           })}
         </div>
         <div className="layout--secondary-section">
+          <h3 className='resume--header'>Technical Skills</h3>
+          {skills.map(function (item) {
+            return <span>{item.skillList}</span>;
+          })}
           <Button label="download PDF"/>
         </div>
         </div>

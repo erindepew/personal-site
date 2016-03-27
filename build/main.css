@@ -259,6 +259,43 @@ html {
   -webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
 }
 
+/* line 1, ../styles/components/_resume.scss */
+.resume--header {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  line-height: 2.7rem;
+}
+
+/* line 1, ../styles/components/_section.scss */
+.section--header {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 6, ../styles/components/_section.scss */
+.section--subheader {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-top: -1.75rem;
+}
+
+/* line 13, ../styles/components/_section.scss */
+.section--content {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  margin-top: -2.25rem;
+}
+
 /* line 1, ../styles/layout/_layout.scss */
 .layout--MAIN {
   -webkit-transition: margin-left 0.2s ease-out;
