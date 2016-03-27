@@ -11,6 +11,7 @@
 }
 
 .layout--wrapper {
+  @include transition(margin-left, 100ms);
   overflow: auto;
   max-height: 100vh;
   height: 100%;
@@ -20,7 +21,7 @@
     width: 100vw;
     overflow: visible;
   }
-  &.close {
+  &.closed {
     margin-left: 0;
     width: 100vw;
     overflow: visible;

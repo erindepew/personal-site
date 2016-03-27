@@ -17,9 +17,10 @@ var App = React.createClass({
   },
 
   render: function () {
+    var mobileNavClass = this.state.navState ? 'nav--mobile-icon open' : 'nav--mobile-icon closed';
     return (
       <div>
-        <span className="nav--mobile-icon" onClick={this.navClick}> navigation mobile icon</span>
+        <span className={mobileNavClass} onClick={this.navClick}> navigation mobile icon</span>
         {React.cloneElement(this.props.children, { navState: this.state.navState })}
       </div>
     );

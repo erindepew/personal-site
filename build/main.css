@@ -59,62 +59,8 @@ html {
   transition: opacity 0.5s ease;
 }
 
-/* line 30, ../styles/components/_navigation.scss */
-.nav--MOBILE {
-  width: 100%;
-  top: 0;
-  position: absolute;
-  z-index: 20;
-}
-
-@media (min-width: 10px) {
-  /* line 38, ../styles/components/_navigation.scss */
-  .nav--MAIN {
-    position: fixed;
-    height: 100vh;
-    width: 8rem;
-    background-color: #efefef;
-    border-top: none;
-    border-bottom: none;
-    padding: 0;
-  }
-
-  /* line 47, ../styles/components/_navigation.scss */
-  .nav--MOBILE {
-    display: block;
-  }
-
-  /* line 50, ../styles/components/_navigation.scss */
-  .nav--nav-link {
-    display: block;
-    text-align: left;
-    padding: 0 1rem;
-    width: auto;
-  }
-  /* line 55, ../styles/components/_navigation.scss */
-  .nav--nav-link a {
-    font-size: 1.75rem;
-    color: transparent;
-  }
-  /* line 59, ../styles/components/_navigation.scss */
-  .nav--nav-link:nth-child(1) {
-    background-color: #0C2370;
-  }
-  /* line 62, ../styles/components/_navigation.scss */
-  .nav--nav-link:nth-child(2) {
-    background-color: #114884;
-  }
-  /* line 65, ../styles/components/_navigation.scss */
-  .nav--nav-link:nth-child(3) {
-    background-color: #ED9487;
-  }
-  /* line 68, ../styles/components/_navigation.scss */
-  .nav--nav-link:nth-child(4) {
-    background-color: #FFB59F;
-  }
-}
 @media (min-width: 750px) {
-  /* line 75, ../styles/components/_navigation.scss */
+  /* line 31, ../styles/components/_navigation.scss */
   .nav--MAIN {
     width: 100%;
     height: auto;
@@ -124,12 +70,12 @@ html {
     border-bottom: 2px solid #0C2370;
   }
 
-  /* line 83, ../styles/components/_navigation.scss */
-  .nav--MOBILE {
+  /* line 39, ../styles/components/_navigation.scss */
+  .nav--mobile-icon {
     display: none;
   }
 
-  /* line 86, ../styles/components/_navigation.scss */
+  /* line 42, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: inline-block;
     text-align: center;
@@ -138,30 +84,100 @@ html {
     line-height: 0.6rem;
     padding-left: 0;
   }
-  /* line 93, ../styles/components/_navigation.scss */
+  /* line 49, ../styles/components/_navigation.scss */
   .nav--nav-link:hover {
     background-color: transparent;
   }
-  /* line 96, ../styles/components/_navigation.scss */
+  /* line 52, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     color: #0C2370;
     font-size: 2rem;
   }
-  /* line 100, ../styles/components/_navigation.scss */
+  /* line 56, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(1) {
     background-color: transparent;
   }
-  /* line 103, ../styles/components/_navigation.scss */
+  /* line 59, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(2) {
     background-color: transparent;
   }
-  /* line 106, ../styles/components/_navigation.scss */
+  /* line 62, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(3) {
     background-color: transparent;
   }
-  /* line 109, ../styles/components/_navigation.scss */
+  /* line 65, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(4) {
     background-color: transparent;
+  }
+}
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 73, ../styles/components/_navigation.scss */
+  .nav--MAIN {
+    -webkit-transition: left 100ms ease-out;
+    -moz-transition: left 100ms ease-out;
+    -o-transition: left 100ms ease-out;
+    transition: left 100ms ease-out;
+    position: fixed;
+    height: 100vh;
+    width: 8rem;
+    background-color: #efefef;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+  }
+  /* line 82, ../styles/components/_navigation.scss */
+  .nav--MAIN.open {
+    left: 0;
+  }
+  /* line 85, ../styles/components/_navigation.scss */
+  .nav--MAIN.closed {
+    left: -8rem;
+  }
+
+  /* line 89, ../styles/components/_navigation.scss */
+  .nav--mobile-icon {
+    -webkit-transition: margin-left 100ms ease-out;
+    -moz-transition: margin-left 100ms ease-out;
+    -o-transition: margin-left 100ms ease-out;
+    transition: margin-left 100ms ease-out;
+    display: block;
+  }
+  /* line 92, ../styles/components/_navigation.scss */
+  .nav--mobile-icon.open {
+    margin-left: 8rem;
+  }
+  /* line 95, ../styles/components/_navigation.scss */
+  .nav--mobile-icon.closed {
+    margin-left: 0;
+  }
+
+  /* line 99, ../styles/components/_navigation.scss */
+  .nav--nav-link {
+    display: block;
+    text-align: left;
+    padding: 0 1rem;
+    width: auto;
+  }
+  /* line 104, ../styles/components/_navigation.scss */
+  .nav--nav-link a {
+    font-size: 1.75rem;
+    color: transparent;
+  }
+  /* line 108, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(1) {
+    background-color: #0C2370;
+  }
+  /* line 111, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(2) {
+    background-color: #114884;
+  }
+  /* line 114, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(3) {
+    background-color: #ED9487;
+  }
+  /* line 117, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(4) {
+    background-color: #FFB59F;
   }
 }
 /* line 1, ../styles/components/_button.scss */
@@ -176,6 +192,7 @@ html {
   padding: 1.5rem 1rem 1.25rem;
   width: 100%;
   border: none;
+  cursor: pointer;
 }
 
 /* line 1, ../styles/components/_about.scss */
@@ -260,32 +277,36 @@ html {
 
 /* line 13, ../styles/layout/_layout.scss */
 .layout--wrapper {
+  -webkit-transition: margin-left 100ms ease-out;
+  -moz-transition: margin-left 100ms ease-out;
+  -o-transition: margin-left 100ms ease-out;
+  transition: margin-left 100ms ease-out;
   overflow: auto;
   max-height: 100vh;
   height: 100%;
   z-index: 10;
 }
-/* line 18, ../styles/layout/_layout.scss */
+/* line 19, ../styles/layout/_layout.scss */
 .layout--wrapper.open {
   margin-left: 8rem;
   width: 100vw;
   overflow: visible;
 }
-/* line 23, ../styles/layout/_layout.scss */
-.layout--wrapper.close {
+/* line 24, ../styles/layout/_layout.scss */
+.layout--wrapper.closed {
   margin-left: 0;
   width: 100vw;
   overflow: visible;
 }
 
-/* line 30, ../styles/layout/_layout.scss */
+/* line 31, ../styles/layout/_layout.scss */
 .layout--primary-section {
   width: calc(62% - 1.5rem);
   float: left;
   margin-left: 1.5rem;
 }
 
-/* line 36, ../styles/layout/_layout.scss */
+/* line 37, ../styles/layout/_layout.scss */
 .layout--secondary-section {
   width: calc(38% - 1.5rem);
   float: right;
@@ -294,7 +315,7 @@ html {
   background-color: #efefef;
 }
 
-/* line 44, ../styles/layout/_layout.scss */
+/* line 45, ../styles/layout/_layout.scss */
 body {
   overflow: hidden;
   margin: 0;

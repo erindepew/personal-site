@@ -27,50 +27,6 @@
   }
 }
 
-.nav--MOBILE {
-  width: 100%;
-  top: 0;
-  position: absolute;
-  z-index: 20;
-}
-
-@media (min-width: $small-breakpoint) {
-  .nav--MAIN {
-    position: fixed;
-    height: 100vh;
-    width: $nav-mobile-width;
-    background-color: $light-grey;
-    border-top: none;
-    border-bottom: none;
-    padding: 0;
-  }
-  .nav--MOBILE {
-    display: block;
-  }
-  .nav--nav-link {
-    display: block;
-    text-align: left;
-    padding: 0 1rem;
-    width: auto;
-    a {
-      font-size: 1.75rem;
-      color: transparent;
-    }
-    &:nth-child(1) {
-      @include color-list(1);
-    }
-    &:nth-child(2) {
-      @include color-list(2);
-    }
-    &:nth-child(3) {
-      @include color-list(3);
-    }
-    &:nth-child(4) {
-      @include color-list(4);
-    }
-  }
-}
-
 @media (min-width: $medium-breakpoint) {
   .nav--MAIN {
     width: 100%;
@@ -80,7 +36,7 @@
     border-top: 2px solid $primary-color;
     border-bottom: 2px solid $primary-color;
   }
-  .nav--MOBILE {
+  .nav--mobile-icon {
     display: none;
   }
   .nav--nav-link {
@@ -108,6 +64,58 @@
     }
     &:nth-child(4) {
       background-color: transparent;
+    }
+  }
+}
+
+
+@media (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+  .nav--MAIN {
+    @include transition(left, 100ms);
+    position: fixed;
+    height: 100vh;
+    width: $nav-mobile-width;
+    background-color: $light-grey;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+    &.open {
+      left: 0;
+    }
+    &.closed {
+      left: -$nav-mobile-width;
+    }
+  }
+  .nav--mobile-icon {
+    @include transition(margin-left, 100ms);
+    display: block;
+    &.open {
+      margin-left: $nav-mobile-width;
+    }
+    &.closed {
+      margin-left: 0;
+    }
+  }
+  .nav--nav-link {
+    display: block;
+    text-align: left;
+    padding: 0 1rem;
+    width: auto;
+    a {
+      font-size: 1.75rem;
+      color: transparent;
+    }
+    &:nth-child(1) {
+      @include color-list(1);
+    }
+    &:nth-child(2) {
+      @include color-list(2);
+    }
+    &:nth-child(3) {
+      @include color-list(3);
+    }
+    &:nth-child(4) {
+      @include color-list(4);
     }
   }
 }
