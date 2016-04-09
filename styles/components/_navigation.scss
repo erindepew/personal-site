@@ -88,7 +88,9 @@
   }
   .nav--mobile-icon {
     @include transition(margin-left, 100ms);
+    @include icon (rgba($dark-grey, 0.5), 3rem, '\e608');
     display: block;
+    padding: 1.5rem 1.5rem 0;
     &.open {
       margin-left: $nav-mobile-width;
     }
@@ -99,23 +101,34 @@
   .nav--nav-link {
     display: block;
     text-align: left;
-    padding: 0 1rem;
+    padding: 1rem 1rem 0.5rem;
     width: auto;
+    &:before {
+      position: absolute;
+      width: 2.9rem;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
     a {
       font-size: 1.75rem;
       color: transparent;
     }
     &:nth-child(1) {
       @include color-list(1);
+      @include icon($white, 3rem, '\e904');
     }
     &:nth-child(2) {
       @include color-list(2);
+      @include icon($white, 3rem, '\e903');
     }
     &:nth-child(3) {
       @include color-list(3);
+      @include icon($white, 3rem, '\e905');
     }
     &:nth-child(4) {
       @include color-list(4);
+      @include icon($white, 3rem, '\e901');
     }
   }
 }

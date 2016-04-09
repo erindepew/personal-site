@@ -15,7 +15,7 @@
   color: $color;
   font-size: $font-size;
   &:before {
-    //font-family: $font-icon;
+    font-family: $font-icon;
     content: $icon;
   }
 }

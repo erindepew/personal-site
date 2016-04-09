@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, ../styles/global/_reset.scss */
 * {
   box-sizing: border-box;
@@ -22,6 +23,10 @@ html {
 @font-face {
   font-family: 'Ubuntu-bold';
   src: url("../../fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: 'icon-font';
+  src: url("../../fonts/icons.ttf");
 }
 /* line 1, ../styles/components/_navigation.scss */
 .nav--MAIN {
@@ -140,44 +145,88 @@ html {
     -moz-transition: margin-left 100ms ease-out;
     -o-transition: margin-left 100ms ease-out;
     transition: margin-left 100ms ease-out;
+    color: rgba(58, 58, 58, 0.5);
+    font-size: 3rem;
     display: block;
+    padding: 1.5rem 1.5rem 0;
   }
-  /* line 92, ../styles/components/_navigation.scss */
+  /* line 17, ../styles/global/_mixins.scss */
+  .nav--mobile-icon:before {
+    font-family: "icon-font";
+    content: "";
+  }
+  /* line 94, ../styles/components/_navigation.scss */
   .nav--mobile-icon.open {
     margin-left: 8rem;
   }
-  /* line 95, ../styles/components/_navigation.scss */
+  /* line 97, ../styles/components/_navigation.scss */
   .nav--mobile-icon.closed {
     margin-left: 0;
   }
 
-  /* line 99, ../styles/components/_navigation.scss */
+  /* line 101, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: block;
     text-align: left;
-    padding: 0 1rem;
+    padding: 1rem 1rem 0.5rem;
     width: auto;
   }
-  /* line 104, ../styles/components/_navigation.scss */
+  /* line 106, ../styles/components/_navigation.scss */
+  .nav--nav-link:before {
+    position: absolute;
+    width: 2.9rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  /* line 113, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     font-size: 1.75rem;
     color: transparent;
   }
-  /* line 108, ../styles/components/_navigation.scss */
+  /* line 117, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(1) {
     background-color: #0C2370;
+    color: #FFF;
+    font-size: 3rem;
   }
-  /* line 111, ../styles/components/_navigation.scss */
+  /* line 17, ../styles/global/_mixins.scss */
+  .nav--nav-link:nth-child(1):before {
+    font-family: "icon-font";
+    content: "";
+  }
+  /* line 121, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(2) {
     background-color: #114884;
+    color: #FFF;
+    font-size: 3rem;
   }
-  /* line 114, ../styles/components/_navigation.scss */
+  /* line 17, ../styles/global/_mixins.scss */
+  .nav--nav-link:nth-child(2):before {
+    font-family: "icon-font";
+    content: "";
+  }
+  /* line 125, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(3) {
     background-color: #ED9487;
+    color: #FFF;
+    font-size: 3rem;
   }
-  /* line 117, ../styles/components/_navigation.scss */
+  /* line 17, ../styles/global/_mixins.scss */
+  .nav--nav-link:nth-child(3):before {
+    font-family: "icon-font";
+    content: "";
+  }
+  /* line 129, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(4) {
     background-color: #FFB59F;
+    color: #FFF;
+    font-size: 3rem;
+  }
+  /* line 17, ../styles/global/_mixins.scss */
+  .nav--nav-link:nth-child(4):before {
+    font-family: "icon-font";
+    content: "";
   }
 }
 /* line 1, ../styles/components/_button.scss */
@@ -259,6 +308,12 @@ html {
   -webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
 }
 
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 19, ../styles/components/_header.scss */
+  .header--MAIN {
+    margin-top: 0;
+  }
+}
 /* line 1, ../styles/components/_resume.scss */
 .resume--header {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
