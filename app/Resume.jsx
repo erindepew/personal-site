@@ -6,25 +6,30 @@ var Navigation = require ('./Navigation.jsx');
 
 var experience = [
   {
-    header: 'Bitly',
-    subheader: '2015 - present',
+    header: 'Frontend Developer',
+    subheader: 'Bitly, 2015 - present',
     content: 'brief description'
   },
   {
-    header: 'NBCUniversal',
-    subheader: '2013 - 2015',
+    header: 'Frontend Design Developer',
+    subheader: 'NBCUniversal, 2013 - 2015',
+    content: 'brief description'
+  },
+  {
+    header: 'Freelance Designer and Developer',
+    subheader: '2012 - present',
+    content: 'brief description'
+  },
+  {
+    header: 'Curator',
+    subheader: 'Swirl Network, 2011 - 2012',
     content: 'brief description'
   }
 ];
 
-var skills = [
-  {
-    skillList: 'HTML, CSS, JavaScript'
-  },
-  {
-    skillList: 'Photoshop, Illustrator, Indesign'
-  }
-];
+var skills = ['JavaScript, CSS3, HTML5, Sass, ES6, React, Omniscient, Immutable', 'Illustrator, Photoshop, Indesign', 'Wordpress, Drupal', 'Python, PHP', 'git, sh, grep, awk, webstorm', 'MySQL'];
+
+var contact = [ 'erinldepew@gmail.com', '@erindepew', 'github.com/erindepew', 'linkedin.com/erindepew'];
 
 var Resume = React.createClass({
 
@@ -33,16 +38,24 @@ var Resume = React.createClass({
       <div className="layout--ALTERNATE">
         <div className='layout--wrapper'>
         <div className="layout--primary-section">
-          <h3 className='resume--header'>Experience</h3>
+          <h3 className='resume--header experience'><span className='experience'> </span>Experience</h3>
           {experience.map(function (item) {
             return <Section header={item.header} subheader={item.subheader} content={item.content}/>;
           })}
         </div>
         <div className="layout--secondary-section">
-          <h3 className='resume--header'>Technical Skills</h3>
-          {skills.map(function (item) {
-            return <span>{item.skillList}</span>;
-          })}
+          <h3 className='resume--header'><span className='contact'> </span>Contact</h3>
+          <ul className='resume--list'>
+            {contact.map(function (item) {
+              return <li>{item}</li>;
+            })}
+          </ul>
+          <h3 className='resume--header'><span className='tech-skills'> </span>Technical Skills</h3>
+          <ul className='resume--list'>
+            {skills.map(function (item) {
+              return <li>{item}</li>;
+            })}
+          </ul>
           <Button label="download PDF"/>
         </div>
         </div>

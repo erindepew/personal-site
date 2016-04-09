@@ -18,7 +18,7 @@
   z-index: 10;
   &.open {
     margin-left: $nav-mobile-width;
-    width: 100vw;
+    width: calc(100vw - #{$nav-mobile-width});
     overflow: visible;
   }
   &.closed {
@@ -29,15 +29,17 @@
 }
 
 .layout--primary-section {
-  width: calc(62% - 1.5rem); // golden ratio
+  width: calc(62% - #{$page-margin + 2.5rem}); // golden ratio
   float: left;
-  margin-left: $page-margin;
+  margin-left: $page-margin + 2.5rem;
+  margin-top: 1.75rem;
 }
 
 .layout--secondary-section {
-  width: calc(38% - 1.5rem);  // golden ratio
+  width: calc(38% - #{$page-margin});  // golden ratio
   float: right;
   margin: $page-margin $page-margin 7rem 0;
+  padding: 0 2.5rem;
   min-height: calc(100vh - 8.5rem);
   background-color: $light-grey;
 }
