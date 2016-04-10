@@ -1,0 +1,11 @@
+.input-field--MAIN {
+  border: 1px solid $light-grey;
+}
+
+.input-field--label {
+  @include p;
+}
+
+.input-field--input-field {
+  border: none;
+}

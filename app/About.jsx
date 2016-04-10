@@ -1,4 +1,5 @@
 var React = require('react');
+var Link = require('react-router').Link;
 var Button = require('./Button.jsx');
 
 var About = React.createClass({
@@ -12,7 +13,7 @@ var About = React.createClass({
             or a programmer with a knack for beautiful design, my diverse skill set is what allows
             me to holistically solve problems. I believe that one of life's greatest pleasures is creation, no matter
             your medium of choice.</p>
-          <Button label="CONTACT"/>
+          <Link to="/contact"><Button label="CONTACT"/></Link>
         </div>
       </div>
     );

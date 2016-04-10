@@ -2,6 +2,7 @@ var React = require('react');
 var Home = require('./Home.jsx');
 var Resume = require('./Resume.jsx');
 var Work = require('./Work.jsx');
+var Contact = require('./Contact.jsx');
 var Router = require('react-router').Router;
 var Route = require('react-router').Route;
 var IndexRoute = require('react-router').IndexRoute;
@@ -31,6 +32,7 @@ React.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
+      <Route path="/contact" component={Contact}/>
       <Route path="/work" component={Work}/>
       <Route path="/resume" component={Resume}/>
     </Route>
