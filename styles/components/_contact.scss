@@ -1,4 +1,25 @@
 .contact-form--MAIN {
-  width: 100%;
+  width: 80%;
   text-align: left;
+  margin-top: 5rem;
+  .input-field--MAIN{
+    margin-bottom: 2rem;
+  }
+
+  .text-area--MAIN {
+    margin-bottom: 2rem;
+    .text-area--input-field {
+      height: 20rem;
+    }
+  }
+}
+
+.contact-form--header {
+  @include h2;
+}
+
+.contact--list {
+  @include p;
+  list-style-type: none;
+  padding-left: 0;
 }

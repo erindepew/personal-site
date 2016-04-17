@@ -414,26 +414,76 @@ html {
 
 /* line 1, ../styles/components/_contact.scss */
 .contact-form--MAIN {
-  width: 100%;
+  width: 80%;
   text-align: left;
+  margin-top: 5rem;
+}
+/* line 5, ../styles/components/_contact.scss */
+.contact-form--MAIN .input-field--MAIN {
+  margin-bottom: 2rem;
+}
+/* line 9, ../styles/components/_contact.scss */
+.contact-form--MAIN .text-area--MAIN {
+  margin-bottom: 2rem;
+}
+/* line 11, ../styles/components/_contact.scss */
+.contact-form--MAIN .text-area--MAIN .text-area--input-field {
+  height: 20rem;
 }
 
-/* line 1, ../styles/components/_input-field.scss */
-.input-field--MAIN {
-  border: 1px solid #efefef;
+/* line 17, ../styles/components/_contact.scss */
+.contact-form--header {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.13rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
 }
 
-/* line 5, ../styles/components/_input-field.scss */
-.input-field--label {
+/* line 21, ../styles/components/_contact.scss */
+.contact--list {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  list-style-type: none;
+  padding-left: 0;
 }
 
-/* line 9, ../styles/components/_input-field.scss */
-.input-field--input-field {
+/* line 1, ../styles/components/_input-field.scss */
+.input-field--input-field, .text-area--input-field {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
   border: none;
+  width: 100%;
+  height: 4rem;
+  padding: 0 0 0.5rem 1rem;
+}
+/* line 7, ../styles/components/_input-field.scss */
+.input-field--input-field:focus, .text-area--input-field:focus {
+  outline: none;
+}
+
+/* line 13, ../styles/components/_input-field.scss */
+.input-field--MAIN, .text-area--MAIN {
+  border: 1px solid #efefef;
+}
+
+/* line 17, ../styles/components/_input-field.scss */
+.input-field--label, .text-area--label {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #c9c9c9;
+  padding: 0;
+  margin: 0.75rem 1rem 0;
+}
+
+/* line 28, ../styles/components/_input-field.scss */
+.text-area--input-field {
+  resize: none;
 }
 
 /* line 1, ../styles/layout/_layout.scss */
