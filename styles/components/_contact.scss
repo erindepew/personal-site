@@ -23,3 +23,9 @@
   list-style-type: none;
   padding-left: 0;
 }
+
+@media (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+  .contact-form--MAIN {
+    width: 100%;
+  }
+}

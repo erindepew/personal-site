@@ -449,6 +449,12 @@ html {
   padding-left: 0;
 }
 
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 28, ../styles/components/_contact.scss */
+  .contact-form--MAIN {
+    width: 100%;
+  }
+}
 /* line 1, ../styles/components/_input-field.scss */
 .input-field--input-field, .text-area--input-field {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
@@ -561,7 +567,7 @@ body {
 
 @media (min-width: 10px) and (max-width: 750px) {
   /* line 69, ../styles/layout/_layout.scss */
-  .layout--ALTERNATE .layout--secondary-section {
+  .layout--ALTERNATE .layout--primary-section, .layout--ALTERNATE .layout--secondary-section {
     width: calc(100% - 3rem);
     float: left;
     margin: 2rem 1.5rem;
