@@ -558,10 +558,7 @@ html {
 
 /* line 9, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay {
-  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.25px;
-  line-height: 1.8rem;
+  text-align: left;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -569,16 +566,38 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  color: transparent;
   cursor: pointer;
 }
-/* line 20, ../styles/components/_thumbnail.scss */
+/* line 19, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay:hover {
   background-color: rgba(255, 255, 255, 0.75);
+}
+/* line 21, ../styles/components/_thumbnail.scss */
+.thumbnail--overlay:hover .thumbnail--text, .thumbnail--overlay:hover .thumbnail--title {
   color: #000;
 }
 
-/* line 26, ../styles/components/_thumbnail.scss */
+/* line 27, ../styles/components/_thumbnail.scss */
+.thumbnail--text {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: transparent;
+}
+
+/* line 32, ../styles/components/_thumbnail.scss */
+.thumbnail--title {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: transparent;
+}
+
+/* line 39, ../styles/components/_thumbnail.scss */
 .thumbnail--image {
   width: 100%;
 }
