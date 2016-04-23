@@ -5,7 +5,7 @@ var Thumbnail = React.createClass({
     return (
       <div className="thumbnail--MAIN">
         <div className="thumbnail--overlay">{this.props.text}</div>
-        <img/>
+        <img className='thumbnail--image' src={`images/${this.props.imageUrl}`}/>
       </div>
     );
   }

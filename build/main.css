@@ -515,19 +515,19 @@ html {
 .filter--MAIN {
   text-align: left;
 }
-/* line 30, ../styles/global/_mixins.scss */
+/* line 36, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(1n) {
   background-color: #0C2370;
 }
-/* line 33, ../styles/global/_mixins.scss */
+/* line 39, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(2n) {
   background-color: #114884;
 }
-/* line 36, ../styles/global/_mixins.scss */
+/* line 42, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(3n) {
   background-color: #ED9487;
 }
-/* line 39, ../styles/global/_mixins.scss */
+/* line 45, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(4n) {
   background-color: #FFB59F;
 }
@@ -542,6 +542,45 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 1, ../styles/components/_thumbnail.scss */
+.thumbnail--MAIN {
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin: 0.75rem;
+}
+
+/* line 9, ../styles/components/_thumbnail.scss */
+.thumbnail--overlay {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.25px;
+  line-height: 1.8rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  cursor: pointer;
+}
+/* line 20, ../styles/components/_thumbnail.scss */
+.thumbnail--overlay:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #000;
+}
+
+/* line 26, ../styles/components/_thumbnail.scss */
+.thumbnail--image {
+  width: 100%;
 }
 
 /* line 1, ../styles/layout/_layout.scss */

@@ -1,0 +1,28 @@
+.thumbnail--MAIN {
+  @include intrinsic-ratio(25%);
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin: 0.75rem;
+}
+
+.thumbnail--overlay {
+  @include small;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($white, 0.75);
+    color: $black;
+  }
+}
+
+.thumbnail--image {
+  width: 100%;
+}
