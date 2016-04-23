@@ -1,0 +1,11 @@
+.filter--MAIN {
+  @include rainbow-buttons;
+  text-align: left;
+  button {
+    margin: 0 0.75rem;
+  }
+}
+
+.filter--label {
+  @include p;
+}

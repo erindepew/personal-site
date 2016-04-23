@@ -50,3 +50,11 @@ $font-icon: 'icon-font';
   line-height: 2.4rem;
 }
 
+@mixin small {
+  font-family: $font-regular;
+  font-size: 1.2rem;
+  letter-spacing: 0.25px;
+  line-height: 1.8rem;
+}
+
+

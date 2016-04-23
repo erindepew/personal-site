@@ -34,10 +34,9 @@ var contact = [ 'erinldepew@gmail.com', '@erindepew', 'github.com/erindepew', 'l
 var Resume = React.createClass({
 
   render: function () {
-    var layoutClass = this.props.navState ? 'layout--wrapper open' : 'layout--wrapper closed';
     return (
       <div className="layout--ALTERNATE">
-        <div className={layoutClass}>
+        <div className={`layout--wrapper ${this.props.navState ? 'layout--wrapper open' : 'layout--wrapper closed'}`}>
         <div className="layout--primary-section">
           <h3 className='resume--header experience'><span className='experience'> </span>Experience</h3>
           {experience.map(function (item) {
@@ -57,7 +56,7 @@ var Resume = React.createClass({
               return <li>{item}</li>;
             })}
           </ul>
-          <a href='downloads/resume.pdf' target='_blank'><Button label="download PDF"/></a>
+          <a href='downloads/resume.pdf' target='_blank'><Button label="download PDF" aspect='MAIN'/></a>
         </div>
         </div>
         <Navigation navState={this.props.navState}/>

@@ -1,10 +1,25 @@
-.button--MAIN {
-  @include h2;
-  background-color: $secondary-color;
-  color: $white;
-  text-transform: uppercase;
-  padding: 1.5rem 1rem 1.25rem;
-  width: 100%;
+%button--default {
   border: none;
   cursor: pointer;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.button--MAIN {
+  @extend %button--default;
+  @include h2;
+  width: 100%;
+  background-color: $secondary-color;
+  padding: 1.5rem 1rem 1.25rem;
+  &:hover {
+    background-color: lighten($secondary-color, 10%);
+  }
+}
+
+.button--AlTERNATE {
+  @extend %button--default;
+  @include small;
+  border-radius: 4px;
+  padding: 0.5rem 1rem 0.4rem;
+  min-width: 8rem;
 }

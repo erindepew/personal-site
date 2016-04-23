@@ -3,7 +3,7 @@ var React = require('react');
 var Button = React.createClass({
   render: function () {
     return (
-      <button className="button--MAIN">{this.props.label}</button>
+      <button className={`button--${this.props.aspect}`}>{this.props.label}</button>
     );
   }
 });

@@ -13,7 +13,7 @@ var About = React.createClass({
             or a programmer with a knack for beautiful design, my diverse skill set is what allows
             me to holistically solve problems. I believe that one of life's greatest pleasures is creation, no matter
             your medium of choice.</p>
-          <Link to="/contact"><Button label="CONTACT"/></Link>
+          <Link to="/contact"><Button label="CONTACT" aspect="MAIN"/></Link>
         </div>
       </div>
     );
