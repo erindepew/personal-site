@@ -602,6 +602,26 @@ html {
   width: 100%;
 }
 
+/* line 1, ../styles/components/_portfolio-page.scss */
+.portfolio-page--header {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.13rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+  width: 100%;
+  text-align: left;
+}
+
+/* line 7, ../styles/components/_portfolio-page.scss */
+.portfolio-page--text {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  text-align: left;
+  width: 100%;
+}
+
 /* line 1, ../styles/layout/_layout.scss */
 .layout--MAIN, .layout--ALTERNATE {
   -webkit-transition: margin-left 0.2s ease-out;
@@ -621,8 +641,30 @@ html {
 .layout--MAIN {
   text-align: center;
 }
+/* line 15, ../styles/layout/_layout.scss */
+.layout--MAIN .layout--primary-section {
+  width: 100%;
+  margin: 3rem;
+}
 
-/* line 22, ../styles/layout/_layout.scss */
+/* line 23, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--primary-section {
+  width: calc(62% - 4rem);
+  float: left;
+  margin-left: 4rem;
+  margin-top: 1.75rem;
+}
+/* line 30, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--secondary-section {
+  width: calc(38% - 1.5rem);
+  float: right;
+  margin: 1.5rem 1.5rem 7rem 0;
+  padding: 0 2.5rem;
+  min-height: calc(100vh - 8.5rem);
+  background-color: #efefef;
+}
+
+/* line 42, ../styles/layout/_layout.scss */
 .layout--wrapper {
   -webkit-transition: margin-left 100ms ease-out;
   -moz-transition: margin-left 100ms ease-out;
@@ -633,7 +675,7 @@ html {
   height: 100%;
   z-index: 10;
 }
-/* line 28, ../styles/layout/_layout.scss */
+/* line 48, ../styles/layout/_layout.scss */
 .layout--wrapper.open {
   margin-left: 8rem;
   width: calc(100vw - 8rem);
@@ -641,7 +683,7 @@ html {
   max-height: 100vh;
   height: 100%;
 }
-/* line 35, ../styles/layout/_layout.scss */
+/* line 55, ../styles/layout/_layout.scss */
 .layout--wrapper.closed {
   margin-left: 0;
   width: 100vw;
@@ -650,25 +692,7 @@ html {
   height: 100%;
 }
 
-/* line 44, ../styles/layout/_layout.scss */
-.layout--primary-section {
-  width: calc(62% - 4rem);
-  float: left;
-  margin-left: 4rem;
-  margin-top: 1.75rem;
-}
-
-/* line 51, ../styles/layout/_layout.scss */
-.layout--secondary-section {
-  width: calc(38% - 1.5rem);
-  float: right;
-  margin: 1.5rem 1.5rem 7rem 0;
-  padding: 0 2.5rem;
-  min-height: calc(100vh - 8.5rem);
-  background-color: #efefef;
-}
-
-/* line 60, ../styles/layout/_layout.scss */
+/* line 64, ../styles/layout/_layout.scss */
 body {
   overflow: hidden;
   margin: 0;
@@ -676,7 +700,7 @@ body {
 }
 
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 69, ../styles/layout/_layout.scss */
+  /* line 73, ../styles/layout/_layout.scss */
   .layout--ALTERNATE .layout--primary-section, .layout--ALTERNATE .layout--secondary-section {
     width: calc(100% - 3rem);
     float: left;

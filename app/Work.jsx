@@ -41,16 +41,18 @@ var Work = React.createClass({
     return (
       <div className='layout--MAIN'>
         <div className={`layout--wrapper ${this.props.navState ? 'layout--wrapper open' : 'layout--wrapper closed'}`}>
-          <Filter label='Filter by' buttons={filterOptions} handleClick={this.handleClick}/>
-          {length.map(function (item, index) {
-            return (
-            work.map(function (item) {
-              if (item[index]) {
-                debugger;
-                return <Link to={`/work/${item[index].name}`}><Thumbnail text={item[index].text} title={item[index].title} imageUrl={`portfolio/${item[index].image}` }/></Link>;
-              }
-            }));
-          })}
+          <div className='layout--primary-section'>
+            <Filter label='Filter by' buttons={filterOptions} handleClick={this.handleClick}/>
+            {length.map(function (item, index) {
+              return (
+              work.map(function (item) {
+                if (item[index]) {
+                  debugger;
+                  return <Link to={`/work/${item[index].name}`}><Thumbnail text={item[index].text} title={item[index].title} imageUrl={`portfolio/${item[index].image}` }/></Link>;
+                }
+              }));
+            })}
+          </div>
         </div>
         <Navigation navState={this.props.navState}/>
       </div>

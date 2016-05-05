@@ -1,0 +1,12 @@
+.portfolio-page--header {
+  @include h2;
+  width: 100%;
+  text-align: left;
+}
+
+.portfolio-page--text {
+  @include p;
+  text-align: left;
+  width: 100%;
+}
+

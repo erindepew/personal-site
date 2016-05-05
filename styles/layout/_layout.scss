@@ -12,10 +12,30 @@
 .layout--MAIN {
   @extend %layout--default;
   text-align: center; //makes it easier to handle center layout
+  .layout--primary-section {
+    width: 100%;
+    margin: $page-margin * 2;
+  }
 }
 
 .layout--ALTERNATE {
   @extend %layout--default;
+  .layout--primary-section {
+    width: calc(62% - #{$page-margin + 2.5rem}); // golden ratio
+    float: left;
+    margin-left: $page-margin + 2.5rem;
+    margin-top: 1.75rem;
+  }
+
+  .layout--secondary-section {
+    width: calc(38% - #{$page-margin});  // golden ratio
+    float: right;
+    margin: $page-margin $page-margin 7rem 0;
+    padding: 0 2.5rem;
+    min-height: calc(100vh - 8.5rem);
+    background-color: $light-grey;
+  }
+
 }
 
 
@@ -39,22 +59,6 @@
     max-height: 100vh;
     height: 100%;
   }
-}
-
-.layout--primary-section {
-  width: calc(62% - #{$page-margin + 2.5rem}); // golden ratio
-  float: left;
-  margin-left: $page-margin + 2.5rem;
-  margin-top: 1.75rem;
-}
-
-.layout--secondary-section {
-  width: calc(38% - #{$page-margin});  // golden ratio
-  float: right;
-  margin: $page-margin $page-margin 7rem 0;
-  padding: 0 2.5rem;
-  min-height: calc(100vh - 8.5rem);
-  background-color: $light-grey;
 }
 
 body {
