@@ -1,4 +1,5 @@
 var React = require('react');
+var Link = require('react-router').Link;
 var Thumbnail = require('./Thumbnail.jsx');
 var Navigation = require('./Navigation.jsx');
 var Filter = require('./Filter.jsx');
@@ -6,15 +7,15 @@ var Filter = require('./Filter.jsx');
 const filterOptions = ['photos', 'code', 'design', 'ux'];
 
 const categories = {
-  design : [{image:'sunflower.jpg', text:'text content', title: 'title for thing'},
-  {image:'sunflower.jpg', text:'text content', title: 'title for thing'},
-  {image:'sunflower.jpg', text:'text content', title: 'title for thing'}],
-  ux : [{image:'waves.jpg', text:'text content', title: 'title for thing'},
-  {image:'waves.jpg', text:'text content', title: 'title for thing'},
-  {image:'waves.jpg', text:'text content', title: 'title for thing'}, {image:'waves.jpg', text:'text content', title: 'title for thing'}],
-  code : [{image:'snow.jpg', text:'text content', title: 'title for thing'},
-    {image:'snow.jpg', text:'text content', title: 'title for thing'},
-    {image:'snow.jpg', text:'text content', title: 'title for thing'}]
+  design : [{image:'sunflower.jpg', text:'text content', title: 'title for thing', name: 'name1'},
+  {image:'sunflower.jpg', text:'text content', title: 'title for thing', name: 'name1'},
+  {image:'sunflower.jpg', text:'text content', title: 'title for thing', name: 'name1'}],
+  ux : [{image:'waves.jpg', text:'text content', title: 'title for thing', name: 'name1'},
+  {image:'waves.jpg', text:'text content', title: 'title for thing', name: 'name1'},
+  {image:'waves.jpg', text:'text content', title: 'title for thing', name: 'name1'}, {image:'waves.jpg', text:'text content', title: 'title for thing', name: 'name7'}],
+  code : [{image:'snow.jpg', text:'text content', title: 'title for thing', name: 'name8'},
+    {image:'snow.jpg', text:'text content', title: 'title for thing', name: 'name9'},
+    {image:'snow.jpg', text:'text content', title: 'title for thing', name: 'name10'}]
 };
 
 var Work = React.createClass({
@@ -45,12 +46,13 @@ var Work = React.createClass({
             return (
             work.map(function (item) {
               if (item[index]) {
-                return <Thumbnail text={item[index].text} title={item[index].title} imageUrl={`portfolio/${item[index].image}` }/>;
+                debugger;
+                return <Link to={`/work/${item[index].name}`}><Thumbnail text={item[index].text} title={item[index].title} imageUrl={`portfolio/${item[index].image}` }/></Link>;
               }
             }));
           })}
         </div>
-        {/*<Navigation navState={this.props.navState}/>*/}
+        <Navigation navState={this.props.navState}/>
       </div>
     );
   }
