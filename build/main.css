@@ -514,49 +514,75 @@ html {
 /* line 1, ../styles/components/_filter.scss */
 .filter--MAIN {
   text-align: left;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 7.5rem;
+  margin-left: 0.5%;
 }
-/* line 36, ../styles/global/_mixins.scss */
+/* line 45, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(1n) {
   background-color: #0C2370;
 }
-/* line 39, ../styles/global/_mixins.scss */
+/* line 48, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(2n) {
   background-color: #114884;
 }
-/* line 42, ../styles/global/_mixins.scss */
+/* line 51, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(3n) {
   background-color: #ED9487;
 }
-/* line 45, ../styles/global/_mixins.scss */
+/* line 54, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(4n) {
   background-color: #FFB59F;
 }
-/* line 4, ../styles/components/_filter.scss */
+/* line 8, ../styles/components/_filter.scss */
 .filter--MAIN button {
   margin: 0 0.75rem;
 }
 
-/* line 9, ../styles/components/_filter.scss */
+/* line 13, ../styles/components/_filter.scss */
 .filter--label {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 2px;
+  left: 0;
 }
 
-/* line 1, ../styles/components/_thumbnail.scss */
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 23, ../styles/components/_filter.scss */
+  .filter--MAIN {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  /* line 26, ../styles/components/_filter.scss */
+  .filter--MAIN button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* line 31, ../styles/components/_filter.scss */
+  .filter--label {
+    position: relative;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+/* line 3, ../styles/components/_thumbnail.scss */
 .thumbnail--MAIN {
-  width: 25%;
+  width: 24%;
   height: 0;
-  padding-bottom: 25%;
+  padding-bottom: 24%;
   display: inline-block;
   float: left;
   position: relative;
-  margin: 0.75rem;
+  margin: 0.5%;
 }
 
-/* line 9, ../styles/components/_thumbnail.scss */
+/* line 11, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay {
   text-align: left;
   position: absolute;
@@ -567,26 +593,40 @@ html {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  padding: 6%;
 }
-/* line 19, ../styles/components/_thumbnail.scss */
+/* line 22, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay:hover {
   background-color: rgba(255, 255, 255, 0.75);
 }
-/* line 21, ../styles/components/_thumbnail.scss */
+/* line 24, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay:hover .thumbnail--text, .thumbnail--overlay:hover .thumbnail--title {
   color: #000;
 }
 
-/* line 27, ../styles/components/_thumbnail.scss */
+/* line 30, ../styles/components/_thumbnail.scss */
+.thumbnail--overlay-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  float: left;
+  overflow: auto;
+  width: 88%;
+}
+
+/* line 37, ../styles/components/_thumbnail.scss */
 .thumbnail--text {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
   color: transparent;
+  margin: 0.75rem 0;
 }
 
-/* line 32, ../styles/components/_thumbnail.scss */
+/* line 43, ../styles/components/_thumbnail.scss */
 .thumbnail--title {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -595,13 +635,30 @@ html {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: transparent;
+  margin: 0;
 }
 
-/* line 39, ../styles/components/_thumbnail.scss */
+/* line 51, ../styles/components/_thumbnail.scss */
 .thumbnail--image {
   width: 100%;
 }
 
+@media (min-width: 750px) and (max-width: 1000px) {
+  /* line 56, ../styles/components/_thumbnail.scss */
+  .thumbnail--MAIN {
+    width: 32%;
+    height: 0;
+    padding-bottom: 32%;
+  }
+}
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 62, ../styles/components/_thumbnail.scss */
+  .thumbnail--MAIN {
+    width: 49%;
+    height: 0;
+    padding-bottom: 49%;
+  }
+}
 /* line 1, ../styles/components/_portfolio-page.scss */
 .portfolio-page--header {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
@@ -643,8 +700,8 @@ html {
 }
 /* line 15, ../styles/layout/_layout.scss */
 .layout--MAIN .layout--primary-section {
-  width: 100%;
-  margin: 3rem;
+  margin: 3rem 3rem 7rem;
+  overflow: auto;
 }
 
 /* line 23, ../styles/layout/_layout.scss */
@@ -705,5 +762,10 @@ body {
     width: calc(100% - 3rem);
     float: left;
     margin: 2rem 1.5rem;
+  }
+
+  /* line 80, ../styles/layout/_layout.scss */
+  .layout--MAIN .layout--primary-section {
+    margin-top: 0;
   }
 }

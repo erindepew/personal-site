@@ -1,5 +1,4 @@
 var React = require('react');
-var Link = require('react-router').Link;
 var Thumbnail = require('./Thumbnail.jsx');
 var Navigation = require('./Navigation.jsx');
 var Filter = require('./Filter.jsx');
@@ -47,8 +46,7 @@ var Work = React.createClass({
               return (
               work.map(function (item) {
                 if (item[index]) {
-                  debugger;
-                  return <Link to={`/work/${item[index].name}`}><Thumbnail text={item[index].text} title={item[index].title} imageUrl={`portfolio/${item[index].image}` }/></Link>;
+                  return <Thumbnail text={item[index].text} title={item[index].title} imageUrl={`portfolio/${item[index].image}`} link={`/work/${item[index].name}`}/>;
                 }
               }));
             })}

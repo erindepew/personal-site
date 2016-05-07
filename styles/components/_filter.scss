@@ -1,6 +1,10 @@
 .filter--MAIN {
   @include rainbow-buttons;
   text-align: left;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 7.5rem;
+  margin-left: 0.5%;
   button {
     margin: 0 0.75rem;
   }
@@ -9,4 +13,24 @@
 .filter--label {
   @include p;
   font-family: $font-regular;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+
+@media (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+  .filter--MAIN {
+    padding-left: 0;
+    margin-left: 0;
+    button {
+      width: 100%;
+      margin: 0.5rem 0;
+    }
+  }
+  .filter--label {
+    position: relative;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 }

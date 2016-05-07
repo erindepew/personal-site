@@ -13,8 +13,8 @@
   @extend %layout--default;
   text-align: center; //makes it easier to handle center layout
   .layout--primary-section {
-    width: 100%;
-    margin: $page-margin * 2;
+    margin: $page-margin * 2 $page-margin * 2 7rem;
+    overflow: auto;
   }
 }
 
@@ -76,4 +76,9 @@ body {
         margin: 2rem $page-margin;
       }
     }
+  .layout--MAIN {
+    .layout--primary-section {
+      margin-top: 0;
+    }
+  }
 }
