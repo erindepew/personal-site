@@ -32,27 +32,37 @@
   transform: translateY(-50%);
 }
 
-
 @mixin intrinsic-ratio($size) {
   width: $size;
   height: 0;
   padding-bottom: $size;
 }
 
-
 @mixin rainbow-buttons() {
   button {
     &:nth-of-type(1n) {
       background-color: $primary-color;
+      &:hover {
+        background-color: lighten($primary-color, 10%);
+      }
     }
     &:nth-of-type(2n) {
       background-color: $tertiary-color;
+      &:hover {
+        background-color: lighten($tertiary-color, 10%);
+      }
     }
     &:nth-of-type(3n) {
       background-color: $secondary-color;
+      &:hover {
+        background-color: lighten($secondary-color, 10%);
+      }
     }
     &:nth-of-type(4n) {
       background-color: $quaternary-color;
+      &:hover {
+        background-color: lighten($quaternary-color, 10%);
+      }
     }
   }
 }
