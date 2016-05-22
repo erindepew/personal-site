@@ -39,7 +39,7 @@ var Work = React.createClass({
       <div className='layout--MAIN'>
         <div className={`layout--wrapper ${this.props.navState ? 'layout--wrapper open' : 'layout--wrapper closed'}`}>
           <div className='layout--primary-section'>
-            <Filter label='Filter by' buttons={filterOptions} handleClick={this.handleClick}/>
+            <Filter label='Filter by' buttons={filterOptions} handleClick={this.handleClick} selected={this.state.selected}/>
             {work.map(function (item) {
                   return <Thumbnail text={item.text} title={item.title} imageUrl={`portfolio/${item.image}`} link={`/work/${item.name}`}/>;
                 }) }

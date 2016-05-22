@@ -56,7 +56,7 @@ var Resume = React.createClass({
               return <li>{item}</li>;
             })}
           </ul>
-          <a href='downloads/resume.pdf' target='_blank'><Button label="download PDF" aspect='MAIN'/></a>
+          <a href='downloads/resume.pdf' target='_blank'><Button label="download PDF" aspect='MAIN' selected={false}/></a>
         </div>
         </div>
         <Navigation navState={this.props.navState}/>

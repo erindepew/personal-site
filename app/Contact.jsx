@@ -17,7 +17,7 @@ var Contact = React.createClass({
             <InputField label='Name'/>
             <InputField label='Email'/>
             <TextArea label='Message'/>
-            <Button label='Send Message' aspect='MAIN'/>
+            <Button label='Send Message' aspect='MAIN' selected={false}/>
            </div>
         </div>
         <div className='layout--secondary-section'>
