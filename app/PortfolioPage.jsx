@@ -23,8 +23,6 @@ var PortfolioPage = React.createClass({
                   <p className='portfolio-page--text'>{item.caption}</p>
                 </div>);
             })}
-
-
           </div>
           </div>
          </div>
