@@ -2,6 +2,8 @@ $thumbnail-padding: 6%;
 
 .thumbnail--MAIN {
   @include intrinsic-ratio(24%);
+  @include boxshadow();
+  border-radius: 0.5rem;
   display: inline-block;
   float: left;
   position: relative;

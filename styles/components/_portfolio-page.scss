@@ -4,6 +4,10 @@
   text-align: left;
 }
 
+.portfolio-page--image {
+  @include boxshadow();
+}
+
 .portfolio-page--text {
   @include p;
   text-align: left;

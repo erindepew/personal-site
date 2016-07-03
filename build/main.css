@@ -519,35 +519,35 @@ html {
   padding-left: 7.5rem;
   margin-left: 0.5%;
 }
-/* line 43, ../styles/global/_mixins.scss */
+/* line 49, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(1n) {
   background-color: #0C2370;
 }
-/* line 45, ../styles/global/_mixins.scss */
+/* line 51, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(1n):hover {
   background-color: #11319e;
 }
-/* line 49, ../styles/global/_mixins.scss */
+/* line 55, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(2n) {
   background-color: #114884;
 }
-/* line 51, ../styles/global/_mixins.scss */
+/* line 57, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(2n):hover {
   background-color: #1761b1;
 }
-/* line 55, ../styles/global/_mixins.scss */
+/* line 61, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(3n) {
   background-color: #ED9487;
 }
-/* line 57, ../styles/global/_mixins.scss */
+/* line 63, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(3n):hover {
   background-color: #f4bcb3;
 }
-/* line 61, ../styles/global/_mixins.scss */
+/* line 67, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(4n) {
   background-color: #FFB59F;
 }
-/* line 63, ../styles/global/_mixins.scss */
+/* line 69, ../styles/global/_mixins.scss */
 .filter--MAIN button:nth-of-type(4n):hover {
   background-color: #ffdcd2;
 }
@@ -592,13 +592,17 @@ html {
   width: 24%;
   height: 0;
   padding-bottom: 24%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
   display: inline-block;
   float: left;
   position: relative;
   margin: 0.5%;
 }
 
-/* line 11, ../styles/components/_thumbnail.scss */
+/* line 13, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay {
   text-align: left;
   position: absolute;
@@ -611,16 +615,16 @@ html {
   cursor: pointer;
   padding: 6%;
 }
-/* line 22, ../styles/components/_thumbnail.scss */
+/* line 24, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay:hover {
   background-color: rgba(255, 255, 255, 0.75);
 }
-/* line 24, ../styles/components/_thumbnail.scss */
+/* line 26, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay:hover .thumbnail--text, .thumbnail--overlay:hover .thumbnail--title {
   color: #000;
 }
 
-/* line 30, ../styles/components/_thumbnail.scss */
+/* line 32, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay-text {
   position: absolute;
   top: 50%;
@@ -632,7 +636,7 @@ html {
   width: 88%;
 }
 
-/* line 37, ../styles/components/_thumbnail.scss */
+/* line 39, ../styles/components/_thumbnail.scss */
 .thumbnail--text {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -642,7 +646,7 @@ html {
   margin: 0.75rem 0;
 }
 
-/* line 43, ../styles/components/_thumbnail.scss */
+/* line 45, ../styles/components/_thumbnail.scss */
 .thumbnail--title {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -654,13 +658,13 @@ html {
   margin: 0;
 }
 
-/* line 51, ../styles/components/_thumbnail.scss */
+/* line 53, ../styles/components/_thumbnail.scss */
 .thumbnail--image {
   width: 100%;
 }
 
 @media (min-width: 750px) and (max-width: 1000px) {
-  /* line 56, ../styles/components/_thumbnail.scss */
+  /* line 58, ../styles/components/_thumbnail.scss */
   .thumbnail--MAIN {
     width: 32%;
     height: 0;
@@ -668,7 +672,7 @@ html {
   }
 }
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 62, ../styles/components/_thumbnail.scss */
+  /* line 64, ../styles/components/_thumbnail.scss */
   .thumbnail--MAIN {
     width: 49%;
     height: 0;
@@ -686,6 +690,13 @@ html {
 }
 
 /* line 7, ../styles/components/_portfolio-page.scss */
+.portfolio-page--image {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 11, ../styles/components/_portfolio-page.scss */
 .portfolio-page--text {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;

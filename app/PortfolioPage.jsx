@@ -2,7 +2,10 @@ var React = require('react');
 var Navigation = require('./Navigation.jsx');
 
 const pages = {
-  name1: {title: 'title', intro: 'intro text', content: [{image: 'sunflower.jpg', caption: 'caption text here'}, {image: 'sunflower.jpg', caption: 'caption text here'}, {image: 'sunflower.jpg', caption: 'caption text here'}]}
+  logos: {title: 'Logo Designs', intro: 'A collection of logos that I designed for NBCUniversal.', content: [{image: 'logos/logo1.jpg', caption: 'caption text here'}, {image: 'logos/logo2.png', caption: 'caption text here'}, {image: 'logos/logo3.png', caption: 'caption text here'},  {image: 'logos/logo4.png', caption: 'caption text here'}]},
+  haskell: {title: 'Haskell Platform Redesign', intro: 'UX, design and code for Haskell Platform redesign.', content: [{image: 'haskell/haskell-platform-1.png', caption: 'caption text here'}, {image: 'haskell/haskell-platform-2.png', caption: 'caption text here'}, {image: 'haskell/haskell-platform-3.png', caption: 'caption text here'} ]},
+  SSOLogin: {title: 'SSO Login redesign', intro: 'UX and design for single-sign-on login for NBCUniversal.', content: [{image: 'SSOlogin/SSOLogin-1.png', caption: 'caption text here'}, {image: 'SSOlogin/SSOLogin-2.png', caption: 'caption text here'}, {image: 'SSOlogin/SSOLogin-3.png', caption: 'caption text here'},
+    {image: 'SSOlogin/SSOLogin-4.png', caption: 'caption text here'}, {image: 'SSOlogin/SSOLogin-5.png', caption: 'caption text here'}, {image: 'SSOlogin/SSOLogin-6.png', caption: 'caption text here'} ]}
 };
 
 var PortfolioPage = React.createClass({
@@ -19,7 +22,7 @@ var PortfolioPage = React.createClass({
             {currentProject.content.map(function(item){
               return (
                 <div>
-                  <img className='thumbnail--image' src={`images/portfolio/${item.image}`}/>
+                  <img className='portfolio-page--image' src={`images/portfolio/${item.image}`}/>
                   <p className='portfolio-page--text'>{item.caption}</p>
                 </div>);
             })}
