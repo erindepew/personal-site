@@ -240,14 +240,18 @@ html {
   }
 }
 /* line 1, ../styles/components/_button.scss */
-.button--MAIN, .button--AlTERNATE {
+.button--MAIN, .button--ALTERNATE, .button--ALTERNATE-SELECTED {
   border: none;
   cursor: pointer;
   color: #FFF;
   text-transform: uppercase;
 }
+/* line 6, ../styles/components/_button.scss */
+.button--MAIN:focus, .button--ALTERNATE:focus, .button--ALTERNATE-SELECTED:focus {
+  outline: 0;
+}
 
-/* line 8, ../styles/components/_button.scss */
+/* line 11, ../styles/components/_button.scss */
 .button--MAIN {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   font-size: 2.13rem;
@@ -257,13 +261,13 @@ html {
   background-color: #ED9487;
   padding: 1.5rem 1rem 1.25rem;
 }
-/* line 14, ../styles/components/_button.scss */
+/* line 17, ../styles/components/_button.scss */
 .button--MAIN:hover {
   background-color: #f4bcb3;
 }
 
-/* line 19, ../styles/components/_button.scss */
-.button--AlTERNATE {
+/* line 22, ../styles/components/_button.scss */
+.button--ALTERNATE, .button--ALTERNATE-SELECTED {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.25px;
@@ -512,7 +516,7 @@ html {
 }
 
 /* line 1, ../styles/components/_filter.scss */
-.filter--MAIN {
+.filter--MAIN, .filter--MAIN-SELECTED {
   text-align: left;
   margin-bottom: 1rem;
   position: relative;
@@ -520,43 +524,49 @@ html {
   margin-left: 0.5%;
 }
 /* line 49, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(1n) {
+.filter--MAIN button:nth-of-type(1n), .filter--MAIN-SELECTED button:nth-of-type(1n) {
   background-color: #0C2370;
 }
 /* line 51, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(1n):hover {
+.filter--MAIN button:nth-of-type(1n):hover, .filter--MAIN-SELECTED button:nth-of-type(1n):hover {
   background-color: #11319e;
 }
 /* line 55, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(2n) {
+.filter--MAIN button:nth-of-type(2n), .filter--MAIN-SELECTED button:nth-of-type(2n) {
   background-color: #114884;
 }
 /* line 57, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(2n):hover {
+.filter--MAIN button:nth-of-type(2n):hover, .filter--MAIN-SELECTED button:nth-of-type(2n):hover {
   background-color: #1761b1;
 }
 /* line 61, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(3n) {
+.filter--MAIN button:nth-of-type(3n), .filter--MAIN-SELECTED button:nth-of-type(3n) {
   background-color: #ED9487;
 }
 /* line 63, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(3n):hover {
+.filter--MAIN button:nth-of-type(3n):hover, .filter--MAIN-SELECTED button:nth-of-type(3n):hover {
   background-color: #f4bcb3;
 }
 /* line 67, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(4n) {
+.filter--MAIN button:nth-of-type(4n), .filter--MAIN-SELECTED button:nth-of-type(4n) {
   background-color: #FFB59F;
 }
 /* line 69, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(4n):hover {
+.filter--MAIN button:nth-of-type(4n):hover, .filter--MAIN-SELECTED button:nth-of-type(4n):hover {
   background-color: #ffdcd2;
 }
 /* line 8, ../styles/components/_filter.scss */
-.filter--MAIN button {
+.filter--MAIN button, .filter--MAIN-SELECTED button {
   margin: 0 0.75rem;
 }
 
-/* line 13, ../styles/components/_filter.scss */
+/* line 19, ../styles/components/_filter.scss */
+.filter--MAIN-SELECTED .button--ALTERNATE {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* line 25, ../styles/components/_filter.scss */
 .filter--label {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -569,18 +579,18 @@ html {
 }
 
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 22, ../styles/components/_filter.scss */
+  /* line 34, ../styles/components/_filter.scss */
   .filter--MAIN {
     padding-left: 0;
     margin-left: 0;
   }
-  /* line 25, ../styles/components/_filter.scss */
+  /* line 37, ../styles/components/_filter.scss */
   .filter--MAIN button {
     width: 100%;
     margin: 0.5rem 0;
   }
 
-  /* line 30, ../styles/components/_filter.scss */
+  /* line 42, ../styles/components/_filter.scss */
   .filter--label {
     position: relative;
     display: block;

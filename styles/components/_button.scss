@@ -3,6 +3,9 @@
   cursor: pointer;
   color: $white;
   text-transform: uppercase;
+  &:focus {
+    outline: 0;
+  }
 }
 
 .button--MAIN {
@@ -16,10 +19,11 @@
   }
 }
 
-.button--AlTERNATE {
+.button--ALTERNATE, .button--ALTERNATE-SELECTED {
   @extend %button--default;
   @include small;
   border-radius: 4px;
   padding: 0.5rem 1rem 0.4rem;
   min-width: 8rem;
 }
+

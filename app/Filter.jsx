@@ -6,10 +6,10 @@ var Filter = React.createClass({
     var clickFunction = this.props.handleClick;
     var selected = this.props.selected;
     return (
-      <div className='filter--MAIN'>
+      <div className={`filter--MAIN${selected ? `-SELECTED` : ``}`}>
         <span className='filter--label'>{this.props.label}:</span>
         {this.props.buttons.map(function (item) {
-          return <Button label={item} aspect='AlTERNATE' ref={item} selected={selected == item} handleClick={clickFunction}/>;
+          return <Button label={item} aspect='ALTERNATE' ref={item} selected={selected == item} handleClick={(selected == item || !selected) ? clickFunction : null}/>;
         })}
       </div>
     );

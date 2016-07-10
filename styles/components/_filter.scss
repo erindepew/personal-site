@@ -1,4 +1,4 @@
-.filter--MAIN {
+%filter--default {
   @include rainbow-buttons;
   text-align: left;
   margin-bottom: 1rem;
@@ -7,6 +7,18 @@
   margin-left: 0.5%;
   button {
     margin: 0 0.75rem;
+  }
+}
+
+.filter--MAIN {
+  @extend %filter--default;
+}
+
+.filter--MAIN-SELECTED {
+  @extend %filter--default;
+  .button--ALTERNATE {
+    opacity: 0.5;
+    cursor: default;
   }
 }
 

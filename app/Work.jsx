@@ -7,12 +7,9 @@ const filterOptions = ['photos', 'code', 'design', 'ux'];
 
 const projects = [{image:'logos.jpg', text:'Logo desings for NBCUniversal', title: 'Logo Designs', name: 'logos', tag:['design']},
   {image:'haskell.png', text:'UX, design and code for Haskell Platform redesign', title: 'Haskell Platform Redesign', name: 'haskell', tag:[ 'code', 'ux', 'design'] },
-  {image:'SSOlogin.png', text:'NBC SSO Login', title: 'Single sign-on login page', name: 'SSOLogin', tag:[ 'ux', 'design']}, {image:'waves.jpg', text:'text content', title: 'title for thing', name: 'name1', tag:[ 'ux', 'design', 'code']},
-  {image:'waves.jpg', text:'text content', title: 'title for thing', name: 'name1', tag:[ 'code']}, {image:'waves.jpg', text:'text content', title: 'title for thing', name: 'name1', tag:[ 'ux', 'design', 'code']},
-  {image:'waves.jpg', text:'text content', title: 'title for thing', name: 'name7', tag:[ 'ux', 'code']},
-  {image:'snow.jpg', text:'text content', title: 'title for thing', name: 'name8', tag:[ 'ux', 'design', 'code']},
-    {image:'snow.jpg', text:'text content', title: 'title for thing', name: 'name9', tag:[ 'design', 'code']},
-    {image:'snow.jpg', text:'text content', title: 'title for thing', name: 'name10', tag:[ 'ux']}];
+  {image:'SSOlogin.png', text:'NBC SSO Login', title: 'Single sign-on login page', name: 'SSOLogin', tag:[ 'ux', 'design']},
+  {image:'sports_dashboard.png', text:'single page app for NBC Sports stats', title: 'NBC Sports dashboard', name: 'sports_dashboard', tag:[ 'ux', 'design']},
+  {image:'telemundo.png', text:'Development work and design assitance for the Telemundo.com redesign', title: 'Telemundo.com redesign', name: 'telemundo', tag:[ 'code']}];
 
 var Work = React.createClass({
   getInitialState: function() {
