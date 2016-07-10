@@ -18,7 +18,12 @@
   @extend %filter--default;
   .button--ALTERNATE {
     opacity: 0.5;
+  }
+  .button--ALTERNATE-SELECTED {
     cursor: default;
+    &:hover {
+      background-color: inherit;
+    }
   }
 }
 
@@ -31,7 +36,7 @@
 }
 
 @media (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
-  .filter--MAIN {
+  .filter--MAIN, .filter--MAIN-SELECTED {
     padding-left: 0;
     margin-left: 0;
     button {

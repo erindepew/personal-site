@@ -9,7 +9,7 @@ var Filter = React.createClass({
       <div className={`filter--MAIN${selected ? `-SELECTED` : ``}`}>
         <span className='filter--label'>{this.props.label}:</span>
         {this.props.buttons.map(function (item) {
-          return <Button label={item} aspect='ALTERNATE' ref={item} selected={selected == item} handleClick={(selected == item || !selected) ? clickFunction : null}/>;
+          return <Button label={item} aspect='ALTERNATE' ref={item} selected={selected == item} handleClick={selected !== item ? clickFunction : null}/>;
         })}
       </div>
     );

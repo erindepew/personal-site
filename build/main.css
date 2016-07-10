@@ -563,10 +563,17 @@ html {
 /* line 19, ../styles/components/_filter.scss */
 .filter--MAIN-SELECTED .button--ALTERNATE {
   opacity: 0.5;
+}
+/* line 22, ../styles/components/_filter.scss */
+.filter--MAIN-SELECTED .button--ALTERNATE-SELECTED {
   cursor: default;
 }
+/* line 24, ../styles/components/_filter.scss */
+.filter--MAIN-SELECTED .button--ALTERNATE-SELECTED:hover {
+  background-color: inherit;
+}
 
-/* line 25, ../styles/components/_filter.scss */
+/* line 30, ../styles/components/_filter.scss */
 .filter--label {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -579,18 +586,18 @@ html {
 }
 
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 34, ../styles/components/_filter.scss */
-  .filter--MAIN {
+  /* line 39, ../styles/components/_filter.scss */
+  .filter--MAIN, .filter--MAIN-SELECTED {
     padding-left: 0;
     margin-left: 0;
   }
-  /* line 37, ../styles/components/_filter.scss */
-  .filter--MAIN button {
+  /* line 42, ../styles/components/_filter.scss */
+  .filter--MAIN button, .filter--MAIN-SELECTED button {
     width: 100%;
     margin: 0.5rem 0;
   }
 
-  /* line 42, ../styles/components/_filter.scss */
+  /* line 47, ../styles/components/_filter.scss */
   .filter--label {
     position: relative;
     display: block;

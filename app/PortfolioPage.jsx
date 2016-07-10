@@ -8,7 +8,10 @@ const pages = {
     {image: 'SSOlogin/SSOLogin-4.png', caption: 'caption text here'}, {image: 'SSOlogin/SSOLogin-5.png', caption: 'caption text here'}, {image: 'SSOlogin/SSOLogin-6.png', caption: 'caption text here'} ]},
   sports_dashboard: {title: 'NBC Sports dashboard', intro: 'UX and design for single page app for NBC Sports.', content: [{image: 'sports_dashboard/sports-dashboard-1.png', caption: 'caption text here'}, {image: 'sports_dashboard/sports-dashboard-2.png', caption: 'caption text here'}, {image: 'sports_dashboard/sports-dashboard-3.png', caption: 'caption text here'},
     {image: 'sports_dashboard/sports-dashboard-4.png', caption: 'caption text here'}]},
-    telemundo: {title: 'Telemundo.com redesign', intro: 'Development and design assitance for the Telemundo.com redesign', content: [{image: 'telemundo/Telemundo-1.png', caption: 'caption text here'}, {image: 'telemundo/Telemundo-2.png', caption: 'caption text here'}]}
+    telemundo: {title: 'Telemundo.com redesign', intro: 'Development and design assitance for the Telemundo.com redesign', content: [{image: 'telemundo/Telemundo-1.png', caption: 'caption text here'}, {image: 'telemundo/Telemundo-2.png', caption: 'caption text here'}]},
+  field_hockey: {title: 'New York Field Hockey t-shirt designs', intro: 'Designs for New York Field Hockey club`s 10 year anniversary', content: [{image: 'field-hockey/mockup-dark_v1.jpg', caption: 'caption text here'}, {image: 'field-hockey/mockup-light_v1.jpg', caption: 'caption text here'},
+    {image: 'field-hockey/mockup-dark_v2.jpg', caption: 'caption text here'}, {image: 'field-hockey/mockup-light_v2.jpg', caption: 'caption text here'},
+    {image: 'field-hockey/mockup-dark_v3.jpg', caption: 'caption text here'}, {image: 'field-hockey/mockup-light_v3.jpg', caption: 'caption text here'}]}
 };
 
 var PortfolioPage = React.createClass({
