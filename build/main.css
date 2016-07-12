@@ -46,26 +46,35 @@ html {
   padding: 0;
   margin: 0;
 }
+/* line 16, ../styles/components/_navigation.scss */
+.nav--nav-list:hover > .nav--nav-link a {
+  opacity: 0.5;
+}
+/* line 19, ../styles/components/_navigation.scss */
+.nav--nav-list:hover > .nav--nav-link a:hover {
+  opacity: 1;
+}
 
-/* line 18, ../styles/components/_navigation.scss */
+/* line 24, ../styles/components/_navigation.scss */
 .nav--nav-link {
   position: relative;
   max-width: 30rem;
 }
-/* line 21, ../styles/components/_navigation.scss */
+/* line 27, ../styles/components/_navigation.scss */
 .nav--nav-link a {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   font-size: 2.13rem;
   letter-spacing: 0.75px;
   line-height: 3.25rem;
   text-decoration: none;
-  opacity: 1.0;
-  -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
 }
 
 @media (min-width: 750px) {
-  /* line 31, ../styles/components/_navigation.scss */
+  /* line 35, ../styles/components/_navigation.scss */
   .nav--MAIN {
     width: 100%;
     height: auto;
@@ -75,12 +84,12 @@ html {
     border-bottom: 2px solid #0C2370;
   }
 
-  /* line 39, ../styles/components/_navigation.scss */
+  /* line 43, ../styles/components/_navigation.scss */
   .nav--mobile-icon {
     display: none;
   }
 
-  /* line 42, ../styles/components/_navigation.scss */
+  /* line 46, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: inline-block;
     text-align: center;
@@ -89,34 +98,34 @@ html {
     line-height: 0.6rem;
     padding-left: 0;
   }
-  /* line 49, ../styles/components/_navigation.scss */
+  /* line 53, ../styles/components/_navigation.scss */
   .nav--nav-link:hover {
     background-color: transparent;
   }
-  /* line 52, ../styles/components/_navigation.scss */
+  /* line 56, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     color: #0C2370;
     font-size: 2rem;
   }
-  /* line 56, ../styles/components/_navigation.scss */
+  /* line 60, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(1) {
     background-color: transparent;
   }
-  /* line 59, ../styles/components/_navigation.scss */
+  /* line 63, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(2) {
     background-color: transparent;
   }
-  /* line 62, ../styles/components/_navigation.scss */
+  /* line 66, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(3) {
     background-color: transparent;
   }
-  /* line 65, ../styles/components/_navigation.scss */
+  /* line 69, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(4) {
     background-color: transparent;
   }
 }
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 73, ../styles/components/_navigation.scss */
+  /* line 77, ../styles/components/_navigation.scss */
   .nav--MAIN {
     -webkit-transition: left 100ms ease-out;
     -moz-transition: left 100ms ease-out;
@@ -130,16 +139,16 @@ html {
     border-bottom: none;
     padding: 0;
   }
-  /* line 82, ../styles/components/_navigation.scss */
+  /* line 86, ../styles/components/_navigation.scss */
   .nav--MAIN.open {
     left: 0;
   }
-  /* line 85, ../styles/components/_navigation.scss */
+  /* line 89, ../styles/components/_navigation.scss */
   .nav--MAIN.closed {
     left: -8rem;
   }
 
-  /* line 89, ../styles/components/_navigation.scss */
+  /* line 93, ../styles/components/_navigation.scss */
   .nav--mobile-icon {
     -webkit-transition: margin-left 100ms ease-out;
     -moz-transition: margin-left 100ms ease-out;
@@ -158,16 +167,16 @@ html {
     font-family: "icon-font";
     content: "";
   }
-  /* line 97, ../styles/components/_navigation.scss */
+  /* line 101, ../styles/components/_navigation.scss */
   .nav--mobile-icon.open {
     margin-left: 8rem;
   }
-  /* line 100, ../styles/components/_navigation.scss */
+  /* line 104, ../styles/components/_navigation.scss */
   .nav--mobile-icon.closed {
     margin-left: 0;
   }
 
-  /* line 104, ../styles/components/_navigation.scss */
+  /* line 108, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: block;
     text-align: left;
@@ -176,7 +185,7 @@ html {
     position: relative;
     height: 5rem;
   }
-  /* line 111, ../styles/components/_navigation.scss */
+  /* line 115, ../styles/components/_navigation.scss */
   .nav--nav-link:before {
     position: absolute;
     width: 2.9rem;
@@ -184,7 +193,7 @@ html {
     left: 0;
     right: 0;
   }
-  /* line 118, ../styles/components/_navigation.scss */
+  /* line 122, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     font-size: 1.75rem;
     color: transparent;
@@ -194,7 +203,7 @@ html {
     top: 0;
     left: 0;
   }
-  /* line 127, ../styles/components/_navigation.scss */
+  /* line 131, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(1) {
     background-color: #0C2370;
     color: #FFF;
@@ -205,7 +214,7 @@ html {
     font-family: "icon-font";
     content: "";
   }
-  /* line 131, ../styles/components/_navigation.scss */
+  /* line 135, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(2) {
     background-color: #114884;
     color: #FFF;
@@ -216,7 +225,7 @@ html {
     font-family: "icon-font";
     content: "";
   }
-  /* line 135, ../styles/components/_navigation.scss */
+  /* line 139, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(3) {
     background-color: #ED9487;
     color: #FFF;
@@ -227,7 +236,7 @@ html {
     font-family: "icon-font";
     content: "";
   }
-  /* line 139, ../styles/components/_navigation.scss */
+  /* line 143, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(4) {
     background-color: #FFB59F;
     color: #FFF;
@@ -257,16 +266,20 @@ html {
   font-size: 2.13rem;
   letter-spacing: 0.75px;
   line-height: 3.25rem;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
   width: 100%;
   background-color: #ED9487;
   padding: 1.5rem 1rem 1.25rem;
 }
-/* line 17, ../styles/components/_button.scss */
+/* line 18, ../styles/components/_button.scss */
 .button--MAIN:hover {
   background-color: #f4bcb3;
 }
 
-/* line 22, ../styles/components/_button.scss */
+/* line 23, ../styles/components/_button.scss */
 .button--ALTERNATE, .button--ALTERNATE-SELECTED {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
@@ -523,36 +536,43 @@ html {
   padding-left: 7.5rem;
   margin-left: 0.5%;
 }
-/* line 49, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(1n), .filter--MAIN-SELECTED button:nth-of-type(1n) {
+/* line 48, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE, .filter--MAIN-SELECTED button.button--ALTERNATE, .filter--MAIN button.button--MAIN, .filter--MAIN-SELECTED button.button--MAIN, .filter--MAIN button.button--ALTERNATE-SELECTED, .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+/* line 50, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(1n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(1n), .filter--MAIN button.button--MAIN:nth-of-type(1n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(1n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(1n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(1n) {
   background-color: #0C2370;
 }
-/* line 51, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(1n):hover, .filter--MAIN-SELECTED button:nth-of-type(1n):hover {
-  background-color: #11319e;
-}
-/* line 55, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(2n), .filter--MAIN-SELECTED button:nth-of-type(2n) {
+/* line 53, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(2n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(2n), .filter--MAIN button.button--MAIN:nth-of-type(2n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(2n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(2n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(2n) {
   background-color: #114884;
 }
-/* line 57, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(2n):hover, .filter--MAIN-SELECTED button:nth-of-type(2n):hover {
-  background-color: #1761b1;
-}
-/* line 61, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(3n), .filter--MAIN-SELECTED button:nth-of-type(3n) {
+/* line 56, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(3n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(3n), .filter--MAIN button.button--MAIN:nth-of-type(3n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(3n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(3n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(3n) {
   background-color: #ED9487;
 }
-/* line 63, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(3n):hover, .filter--MAIN-SELECTED button:nth-of-type(3n):hover {
-  background-color: #f4bcb3;
-}
-/* line 67, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(4n), .filter--MAIN-SELECTED button:nth-of-type(4n) {
+/* line 59, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(4n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(4n), .filter--MAIN button.button--MAIN:nth-of-type(4n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(4n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(4n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(4n) {
   background-color: #FFB59F;
 }
-/* line 69, ../styles/global/_mixins.scss */
-.filter--MAIN button:nth-of-type(4n):hover, .filter--MAIN-SELECTED button:nth-of-type(4n):hover {
+/* line 65, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(1n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(1n):hover, .filter--MAIN button.button--MAIN:nth-of-type(1n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(1n):hover {
+  background-color: #11319e;
+}
+/* line 70, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(2n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(2n):hover, .filter--MAIN button.button--MAIN:nth-of-type(2n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(2n):hover {
+  background-color: #1761b1;
+}
+/* line 75, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(3n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(3n):hover, .filter--MAIN button.button--MAIN:nth-of-type(3n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(3n):hover {
+  background-color: #f4bcb3;
+}
+/* line 80, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(4n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(4n):hover, .filter--MAIN button.button--MAIN:nth-of-type(4n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(4n):hover {
   background-color: #ffdcd2;
 }
 /* line 8, ../styles/components/_filter.scss */
@@ -568,12 +588,8 @@ html {
 .filter--MAIN-SELECTED .button--ALTERNATE-SELECTED {
   cursor: default;
 }
-/* line 24, ../styles/components/_filter.scss */
-.filter--MAIN-SELECTED .button--ALTERNATE-SELECTED:hover {
-  background-color: inherit;
-}
 
-/* line 30, ../styles/components/_filter.scss */
+/* line 27, ../styles/components/_filter.scss */
 .filter--label {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -586,18 +602,18 @@ html {
 }
 
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 39, ../styles/components/_filter.scss */
+  /* line 36, ../styles/components/_filter.scss */
   .filter--MAIN, .filter--MAIN-SELECTED {
     padding-left: 0;
     margin-left: 0;
   }
-  /* line 42, ../styles/components/_filter.scss */
+  /* line 39, ../styles/components/_filter.scss */
   .filter--MAIN button, .filter--MAIN-SELECTED button {
     width: 100%;
     margin: 0.5rem 0;
   }
 
-  /* line 47, ../styles/components/_filter.scss */
+  /* line 44, ../styles/components/_filter.scss */
   .filter--label {
     position: relative;
     display: block;
@@ -609,9 +625,9 @@ html {
   width: 24%;
   height: 0;
   padding-bottom: 24%;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   display: inline-block;
   float: left;
@@ -708,9 +724,9 @@ html {
 
 /* line 7, ../styles/components/_portfolio-page.scss */
 .portfolio-page--image {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* line 11, ../styles/components/_portfolio-page.scss */

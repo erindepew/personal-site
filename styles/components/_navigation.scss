@@ -13,17 +13,21 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  &:hover > .nav--nav-link a {
+     opacity: 0.5;
+  }
+  &:hover > .nav--nav-link a:hover {
+    opacity: 1;
+  }
 }
 
 .nav--nav-link {
   position: relative;
   max-width: 30rem;
   a {
+    @include transition(opacity, 0.5s);
     @include h2;
     text-decoration: none;
-    opacity: 1.0;
-    -webkit-transition: opacity 0.5s ease;
-    transition: opacity 0.5s ease;
   }
 }
 
