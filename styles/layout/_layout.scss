@@ -21,19 +21,27 @@
 .layout--ALTERNATE {
   @extend %layout--default;
   .layout--primary-section {
-    width: calc(62% - #{$page-margin + 2.5rem}); // golden ratio
+    width: calc(62% - #{$page-margin * 2 + 5rem}); // golden ratio
     float: left;
-    margin-left: $page-margin + 2.5rem;
-    margin-top: 1.75rem;
+    margin: 1.75rem $page-margin + $section-padding 8.5rem;
   }
 
   .layout--secondary-section {
     width: calc(38% - #{$page-margin});  // golden ratio
     float: right;
     margin: $page-margin $page-margin 7rem 0;
-    padding: 0 2.5rem;
+    padding: 0 $section-padding $section-padding;
     min-height: calc(100vh - 8.5rem);
     background-color: $light-grey;
+    .resume--list {
+      margin-top: 0.5rem;
+    }
+    .contact-form--header {
+      margin-bottom: 0;
+    }
+    .button--MAIN {
+      margin-top: 2rem;
+    }
   }
 
 }
@@ -44,6 +52,7 @@
   max-height: 100vh;
   height: 100%;
   z-index: 10;
+  max-width: $max-layout-width;
   &.open {
     margin-left: $nav-mobile-width;
     width: calc(100vw - #{$nav-mobile-width});
@@ -52,7 +61,7 @@
     height: 100%;
   }
   &.closed {
-    margin-left: 0;
+    margin: 0 auto;
     width: 100vw;
     overflow: auto;
     max-height: 100vh;
@@ -67,6 +76,9 @@ body {
 }
 
 @media (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
+  .layout--primary-section {
+    padding: 0 $section-padding;
+  }
     .layout--ALTERNATE {
       .layout--primary-section, .layout--secondary-section {
         width: calc(100% - #{$page-margin * 2});

@@ -26,6 +26,7 @@
 
 .filter--label {
   @include p;
+  font-size: 1.4rem;
   font-family: $font-regular;
   position: absolute;
   top: 2px;
@@ -44,6 +45,7 @@
   .filter--label {
     position: relative;
     display: block;
+    text-align: center;
     margin-bottom: 0.5rem;
   }
 }

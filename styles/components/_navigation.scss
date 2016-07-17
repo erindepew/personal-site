@@ -28,6 +28,7 @@
     @include transition(opacity, 0.5s);
     @include h2;
     text-decoration: none;
+    cursor: pointer;
   }
 }
 

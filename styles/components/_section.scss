@@ -13,4 +13,18 @@
 .section--content {
   @include p;
   margin-top: -2.25rem;
+  padding: 0;
+}
+
+.section--content-item {
+  margin: 1rem 0 1rem 1.3rem;
+  list-style-type: none;
+  position: relative;
+  &:before {
+    @include circle(0.5rem, $dark-grey);
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: -1.25rem;
+  }
 }

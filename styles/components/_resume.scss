@@ -2,6 +2,7 @@
   @include h2;
   position: relative;
   padding-left: 4rem;
+  margin-bottom: 0;
 
   .experience {
     @include icon($black, 3rem, '\e903');

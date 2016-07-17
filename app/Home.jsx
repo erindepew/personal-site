@@ -6,7 +6,7 @@ var Home = React.createClass({
   render: function () {
     return (
       <div className='layout--MAIN'>
-      <div className={`layout--wrapper ${this.props.navState ? 'layout--wrapper open' : 'layout--wrapper closed'}`}>
+      <div className={`layout--wrapper ${this.props.navState ? 'open' : 'closed'}`}>
         <div className="header--MAIN"> I am a developer &amp; designer.</div>
         <About/>
       </div>

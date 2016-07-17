@@ -20,7 +20,7 @@ var PortfolioPage = React.createClass({
     const currentProject = pages[this.props.routeParams.projectName];
     return (
       <div className='layout--MAIN'>
-        <div className={`layout--wrapper ${this.props.navState ? 'layout--wrapper open' : 'layout--wrapper closed'}`}>
+        <div className={`layout--wrapper ${this.props.navState ? 'open' : 'closed'}`}>
           <div className='layout--primary-section'>
           <div className='portfolio-page--MAIN'>
             <h1 className='portfolio-page--header'>{currentProject.title}</h1>

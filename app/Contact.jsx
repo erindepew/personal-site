@@ -10,7 +10,7 @@ var Contact = React.createClass({
   render: function () {
     return (
       <div className='layout--ALTERNATE'>
-        <div className={`layout--wrapper ${this.props.navState ? 'layout--wrapper open' : 'layout--wrapper closed'}`}>
+        <div className={`layout--wrapper ${this.props.navState ? 'open' : 'closed'}`}>
           <div className="layout--primary-section">
           <div className='contact-form--MAIN'>
             <h2 className='contact-form--header'>What's On Your Mind?</h2>

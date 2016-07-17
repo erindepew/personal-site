@@ -5,7 +5,8 @@
 }
 
 .portfolio-page--image {
-  @include boxshadow();
+  @include boxshadow;
+  max-width: 100%;
 }
 
 .portfolio-page--text {

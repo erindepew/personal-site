@@ -70,11 +70,13 @@ html {
   font-size: 2.13rem;
   letter-spacing: 0.75px;
   line-height: 3.25rem;
+  color: #3a3a3a;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @media (min-width: 750px) {
-  /* line 35, ../styles/components/_navigation.scss */
+  /* line 36, ../styles/components/_navigation.scss */
   .nav--MAIN {
     width: 100%;
     height: auto;
@@ -84,12 +86,12 @@ html {
     border-bottom: 2px solid #0C2370;
   }
 
-  /* line 43, ../styles/components/_navigation.scss */
+  /* line 44, ../styles/components/_navigation.scss */
   .nav--mobile-icon {
     display: none;
   }
 
-  /* line 46, ../styles/components/_navigation.scss */
+  /* line 47, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: inline-block;
     text-align: center;
@@ -98,34 +100,34 @@ html {
     line-height: 0.6rem;
     padding-left: 0;
   }
-  /* line 53, ../styles/components/_navigation.scss */
+  /* line 54, ../styles/components/_navigation.scss */
   .nav--nav-link:hover {
     background-color: transparent;
   }
-  /* line 56, ../styles/components/_navigation.scss */
+  /* line 57, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     color: #0C2370;
     font-size: 2rem;
   }
-  /* line 60, ../styles/components/_navigation.scss */
+  /* line 61, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(1) {
     background-color: transparent;
   }
-  /* line 63, ../styles/components/_navigation.scss */
+  /* line 64, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(2) {
     background-color: transparent;
   }
-  /* line 66, ../styles/components/_navigation.scss */
+  /* line 67, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(3) {
     background-color: transparent;
   }
-  /* line 69, ../styles/components/_navigation.scss */
+  /* line 70, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(4) {
     background-color: transparent;
   }
 }
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 77, ../styles/components/_navigation.scss */
+  /* line 78, ../styles/components/_navigation.scss */
   .nav--MAIN {
     -webkit-transition: left 100ms ease-out;
     -moz-transition: left 100ms ease-out;
@@ -139,16 +141,16 @@ html {
     border-bottom: none;
     padding: 0;
   }
-  /* line 86, ../styles/components/_navigation.scss */
+  /* line 87, ../styles/components/_navigation.scss */
   .nav--MAIN.open {
     left: 0;
   }
-  /* line 89, ../styles/components/_navigation.scss */
+  /* line 90, ../styles/components/_navigation.scss */
   .nav--MAIN.closed {
     left: -8rem;
   }
 
-  /* line 93, ../styles/components/_navigation.scss */
+  /* line 94, ../styles/components/_navigation.scss */
   .nav--mobile-icon {
     -webkit-transition: margin-left 100ms ease-out;
     -moz-transition: margin-left 100ms ease-out;
@@ -162,21 +164,21 @@ html {
     cursor: pointer;
     padding: 1.5rem 1.5rem 0;
   }
-  /* line 17, ../styles/global/_mixins.scss */
+  /* line 30, ../styles/global/_mixins.scss */
   .nav--mobile-icon:before {
     font-family: "icon-font";
     content: "";
   }
-  /* line 101, ../styles/components/_navigation.scss */
+  /* line 102, ../styles/components/_navigation.scss */
   .nav--mobile-icon.open {
     margin-left: 8rem;
   }
-  /* line 104, ../styles/components/_navigation.scss */
+  /* line 105, ../styles/components/_navigation.scss */
   .nav--mobile-icon.closed {
     margin-left: 0;
   }
 
-  /* line 108, ../styles/components/_navigation.scss */
+  /* line 109, ../styles/components/_navigation.scss */
   .nav--nav-link {
     display: block;
     text-align: left;
@@ -185,7 +187,7 @@ html {
     position: relative;
     height: 5rem;
   }
-  /* line 115, ../styles/components/_navigation.scss */
+  /* line 116, ../styles/components/_navigation.scss */
   .nav--nav-link:before {
     position: absolute;
     width: 2.9rem;
@@ -193,7 +195,7 @@ html {
     left: 0;
     right: 0;
   }
-  /* line 122, ../styles/components/_navigation.scss */
+  /* line 123, ../styles/components/_navigation.scss */
   .nav--nav-link a {
     font-size: 1.75rem;
     color: transparent;
@@ -203,46 +205,46 @@ html {
     top: 0;
     left: 0;
   }
-  /* line 131, ../styles/components/_navigation.scss */
+  /* line 132, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(1) {
     background-color: #0C2370;
     color: #FFF;
     font-size: 3rem;
   }
-  /* line 17, ../styles/global/_mixins.scss */
+  /* line 30, ../styles/global/_mixins.scss */
   .nav--nav-link:nth-child(1):before {
     font-family: "icon-font";
     content: "";
   }
-  /* line 135, ../styles/components/_navigation.scss */
+  /* line 136, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(2) {
     background-color: #114884;
     color: #FFF;
     font-size: 3rem;
   }
-  /* line 17, ../styles/global/_mixins.scss */
+  /* line 30, ../styles/global/_mixins.scss */
   .nav--nav-link:nth-child(2):before {
     font-family: "icon-font";
     content: "";
   }
-  /* line 139, ../styles/components/_navigation.scss */
+  /* line 140, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(3) {
     background-color: #ED9487;
     color: #FFF;
     font-size: 3rem;
   }
-  /* line 17, ../styles/global/_mixins.scss */
+  /* line 30, ../styles/global/_mixins.scss */
   .nav--nav-link:nth-child(3):before {
     font-family: "icon-font";
     content: "";
   }
-  /* line 143, ../styles/components/_navigation.scss */
+  /* line 144, ../styles/components/_navigation.scss */
   .nav--nav-link:nth-child(4) {
     background-color: #FFB59F;
     color: #FFF;
     font-size: 3rem;
   }
-  /* line 17, ../styles/global/_mixins.scss */
+  /* line 30, ../styles/global/_mixins.scss */
   .nav--nav-link:nth-child(4):before {
     font-family: "icon-font";
     content: "";
@@ -252,7 +254,7 @@ html {
 .button--MAIN, .button--ALTERNATE, .button--ALTERNATE-SELECTED {
   border: none;
   cursor: pointer;
-  color: #FFF;
+  color: #FFF !important;
   text-transform: uppercase;
 }
 /* line 6, ../styles/components/_button.scss */
@@ -266,6 +268,7 @@ html {
   font-size: 2.13rem;
   letter-spacing: 0.75px;
   line-height: 3.25rem;
+  color: #3a3a3a;
   -webkit-transition: background-color 0.5s ease-out;
   -moz-transition: background-color 0.5s ease-out;
   -o-transition: background-color 0.5s ease-out;
@@ -285,6 +288,7 @@ html {
   font-size: 1.2rem;
   letter-spacing: 0.25px;
   line-height: 1.8rem;
+  color: #3a3a3a;
   border-radius: 4px;
   padding: 0.5rem 1rem 0.4rem;
   min-width: 8rem;
@@ -296,6 +300,7 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   color: #3a3a3a;
   text-align: left;
 }
@@ -319,18 +324,25 @@ html {
   margin: 0 20% 12rem;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   /* line 24, ../styles/components/_about.scss */
+  .about--MAIN {
+    margin: 0 1.5rem 12rem;
+  }
+}
+@media (max-width: 750px) {
+  /* line 29, ../styles/components/_about.scss */
   .about--profile-image {
     display: none;
   }
 
-  /* line 28, ../styles/components/_about.scss */
+  /* line 33, ../styles/components/_about.scss */
   .about--text-wrapper {
     width: 100%;
+    padding: 0;
   }
 
-  /* line 32, ../styles/components/_about.scss */
+  /* line 38, ../styles/components/_about.scss */
   .about--MAIN {
     margin: 0 1.5rem 8rem;
     padding-left: 0;
@@ -341,6 +353,7 @@ html {
   font-family: "Ubuntu-bold", Helvetica, Arial, sans-serif;
   font-size: 2.4rem;
   letter-spacing: 0.75px;
+  color: #3a3a3a;
   color: #ED9487;
   margin: 0 1.5rem 5rem;
   font-size: 6rem;
@@ -366,10 +379,12 @@ html {
   font-size: 2.13rem;
   letter-spacing: 0.75px;
   line-height: 3.25rem;
+  color: #3a3a3a;
   position: relative;
   padding-left: 4rem;
+  margin-bottom: 0;
 }
-/* line 6, ../styles/components/_resume.scss */
+/* line 7, ../styles/components/_resume.scss */
 .resume--header .experience {
   color: #000;
   font-size: 3rem;
@@ -377,12 +392,12 @@ html {
   top: -1px;
   left: 0;
 }
-/* line 17, ../styles/global/_mixins.scss */
+/* line 30, ../styles/global/_mixins.scss */
 .resume--header .experience:before {
   font-family: "icon-font";
   content: "";
 }
-/* line 13, ../styles/components/_resume.scss */
+/* line 14, ../styles/components/_resume.scss */
 .resume--header .tech-skills {
   color: #000;
   font-size: 2.75rem;
@@ -390,12 +405,12 @@ html {
   top: -1px;
   left: 0;
 }
-/* line 17, ../styles/global/_mixins.scss */
+/* line 30, ../styles/global/_mixins.scss */
 .resume--header .tech-skills:before {
   font-family: "icon-font";
   content: "";
 }
-/* line 20, ../styles/components/_resume.scss */
+/* line 21, ../styles/components/_resume.scss */
 .resume--header .contact {
   color: #000;
   font-size: 2.75rem;
@@ -403,18 +418,19 @@ html {
   top: -1px;
   left: 0;
 }
-/* line 17, ../styles/global/_mixins.scss */
+/* line 30, ../styles/global/_mixins.scss */
 .resume--header .contact:before {
   font-family: "icon-font";
   content: "";
 }
 
-/* line 29, ../styles/components/_resume.scss */
+/* line 30, ../styles/components/_resume.scss */
 .resume--list {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   list-style-type: none;
   padding-left: 0;
 }
@@ -425,6 +441,7 @@ html {
   font-size: 1.87rem;
   letter-spacing: 0.75px;
   line-height: 2.7rem;
+  color: #3a3a3a;
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
 }
 
@@ -434,6 +451,7 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   font-style: italic;
   font-size: 1.4rem;
   margin-top: -1.75rem;
@@ -445,7 +463,29 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   margin-top: -2.25rem;
+  padding: 0;
+}
+
+/* line 19, ../styles/components/_section.scss */
+.section--content-item {
+  margin: 1rem 0 1rem 1.3rem;
+  list-style-type: none;
+  position: relative;
+}
+/* line 23, ../styles/components/_section.scss */
+.section--content-item:before {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #3a3a3a;
+  height: 0.5rem;
+  width: 0.5rem;
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: -1.25rem;
 }
 
 /* line 1, ../styles/components/_contact.scss */
@@ -473,6 +513,7 @@ html {
   font-size: 2.13rem;
   letter-spacing: 0.75px;
   line-height: 3.25rem;
+  color: #3a3a3a;
 }
 
 /* line 21, ../styles/components/_contact.scss */
@@ -481,12 +522,14 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   list-style-type: none;
   padding-left: 0;
+  margin-top: 0;
 }
 
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 28, ../styles/components/_contact.scss */
+  /* line 29, ../styles/components/_contact.scss */
   .contact-form--MAIN {
     width: 100%;
   }
@@ -497,6 +540,7 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   border: none;
   width: 100%;
   height: 4rem;
@@ -518,6 +562,7 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   color: #c9c9c9;
   padding: 0;
   margin: 0.75rem 1rem 0;
@@ -536,42 +581,42 @@ html {
   padding-left: 7.5rem;
   margin-left: 0.5%;
 }
-/* line 48, ../styles/global/_mixins.scss */
+/* line 61, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE, .filter--MAIN-SELECTED button.button--ALTERNATE, .filter--MAIN button.button--MAIN, .filter--MAIN-SELECTED button.button--MAIN, .filter--MAIN button.button--ALTERNATE-SELECTED, .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED {
   -webkit-transition: background-color 0.5s ease-out;
   -moz-transition: background-color 0.5s ease-out;
   -o-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
-/* line 50, ../styles/global/_mixins.scss */
+/* line 63, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(1n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(1n), .filter--MAIN button.button--MAIN:nth-of-type(1n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(1n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(1n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(1n) {
   background-color: #0C2370;
 }
-/* line 53, ../styles/global/_mixins.scss */
+/* line 66, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(2n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(2n), .filter--MAIN button.button--MAIN:nth-of-type(2n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(2n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(2n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(2n) {
   background-color: #114884;
 }
-/* line 56, ../styles/global/_mixins.scss */
+/* line 69, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(3n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(3n), .filter--MAIN button.button--MAIN:nth-of-type(3n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(3n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(3n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(3n) {
   background-color: #ED9487;
 }
-/* line 59, ../styles/global/_mixins.scss */
+/* line 72, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(4n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(4n), .filter--MAIN button.button--MAIN:nth-of-type(4n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(4n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(4n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(4n) {
   background-color: #FFB59F;
 }
-/* line 65, ../styles/global/_mixins.scss */
+/* line 78, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(1n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(1n):hover, .filter--MAIN button.button--MAIN:nth-of-type(1n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(1n):hover {
   background-color: #11319e;
 }
-/* line 70, ../styles/global/_mixins.scss */
+/* line 83, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(2n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(2n):hover, .filter--MAIN button.button--MAIN:nth-of-type(2n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(2n):hover {
   background-color: #1761b1;
 }
-/* line 75, ../styles/global/_mixins.scss */
+/* line 88, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(3n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(3n):hover, .filter--MAIN button.button--MAIN:nth-of-type(3n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(3n):hover {
   background-color: #f4bcb3;
 }
-/* line 80, ../styles/global/_mixins.scss */
+/* line 93, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(4n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(4n):hover, .filter--MAIN button.button--MAIN:nth-of-type(4n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(4n):hover {
   background-color: #ffdcd2;
 }
@@ -595,6 +640,8 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
+  font-size: 1.4rem;
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   position: absolute;
   top: 2px;
@@ -602,21 +649,22 @@ html {
 }
 
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 36, ../styles/components/_filter.scss */
+  /* line 37, ../styles/components/_filter.scss */
   .filter--MAIN, .filter--MAIN-SELECTED {
     padding-left: 0;
     margin-left: 0;
   }
-  /* line 39, ../styles/components/_filter.scss */
+  /* line 40, ../styles/components/_filter.scss */
   .filter--MAIN button, .filter--MAIN-SELECTED button {
     width: 100%;
     margin: 0.5rem 0;
   }
 
-  /* line 44, ../styles/components/_filter.scss */
+  /* line 45, ../styles/components/_filter.scss */
   .filter--label {
     position: relative;
     display: block;
+    text-align: center;
     margin-bottom: 0.5rem;
   }
 }
@@ -675,6 +723,7 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   color: transparent;
   margin: 0.75rem 0;
 }
@@ -685,6 +734,7 @@ html {
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: transparent;
@@ -718,6 +768,7 @@ html {
   font-size: 2.13rem;
   letter-spacing: 0.75px;
   line-height: 3.25rem;
+  color: #3a3a3a;
   width: 100%;
   text-align: left;
 }
@@ -727,14 +778,16 @@ html {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  max-width: 100%;
 }
 
-/* line 11, ../styles/components/_portfolio-page.scss */
+/* line 12, ../styles/components/_portfolio-page.scss */
 .portfolio-page--text {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: #3a3a3a;
   text-align: left;
   width: 100%;
 }
@@ -766,22 +819,33 @@ html {
 
 /* line 23, ../styles/layout/_layout.scss */
 .layout--ALTERNATE .layout--primary-section {
-  width: calc(62% - 4rem);
+  width: calc(62% - 8rem);
   float: left;
-  margin-left: 4rem;
-  margin-top: 1.75rem;
+  margin: 1.75rem 4rem 8.5rem;
 }
-/* line 30, ../styles/layout/_layout.scss */
+/* line 29, ../styles/layout/_layout.scss */
 .layout--ALTERNATE .layout--secondary-section {
   width: calc(38% - 1.5rem);
   float: right;
   margin: 1.5rem 1.5rem 7rem 0;
-  padding: 0 2.5rem;
+  padding: 0 2.5rem 2.5rem;
   min-height: calc(100vh - 8.5rem);
   background-color: #efefef;
 }
+/* line 36, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--secondary-section .resume--list {
+  margin-top: 0.5rem;
+}
+/* line 39, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--secondary-section .contact-form--header {
+  margin-bottom: 0;
+}
+/* line 42, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--secondary-section .button--MAIN {
+  margin-top: 2rem;
+}
 
-/* line 41, ../styles/layout/_layout.scss */
+/* line 49, ../styles/layout/_layout.scss */
 .layout--wrapper {
   -webkit-transition: margin-left 100ms ease-out;
   -moz-transition: margin-left 100ms ease-out;
@@ -791,8 +855,9 @@ html {
   max-height: 100vh;
   height: 100%;
   z-index: 10;
+  max-width: 150rem;
 }
-/* line 47, ../styles/layout/_layout.scss */
+/* line 56, ../styles/layout/_layout.scss */
 .layout--wrapper.open {
   margin-left: 8rem;
   width: calc(100vw - 8rem);
@@ -800,16 +865,16 @@ html {
   max-height: 100vh;
   height: 100%;
 }
-/* line 54, ../styles/layout/_layout.scss */
+/* line 63, ../styles/layout/_layout.scss */
 .layout--wrapper.closed {
-  margin-left: 0;
+  margin: 0 auto;
   width: 100vw;
   overflow: auto;
   max-height: 100vh;
   height: 100%;
 }
 
-/* line 63, ../styles/layout/_layout.scss */
+/* line 72, ../styles/layout/_layout.scss */
 body {
   overflow: hidden;
   margin: 0;
@@ -817,14 +882,19 @@ body {
 }
 
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 71, ../styles/layout/_layout.scss */
+  /* line 79, ../styles/layout/_layout.scss */
+  .layout--primary-section {
+    padding: 0 2.5rem;
+  }
+
+  /* line 83, ../styles/layout/_layout.scss */
   .layout--ALTERNATE .layout--primary-section, .layout--ALTERNATE .layout--secondary-section {
     width: calc(100% - 3rem);
     float: left;
     margin: 2rem 1.5rem;
   }
 
-  /* line 78, ../styles/layout/_layout.scss */
+  /* line 90, ../styles/layout/_layout.scss */
   .layout--MAIN .layout--primary-section {
     margin-top: 0;
   }

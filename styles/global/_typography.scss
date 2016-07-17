@@ -27,6 +27,7 @@ $font-icon: 'icon-font';
   font-family: $font-bold;
   font-size: 2.4rem;
   letter-spacing: 0.75px;
+  color: $dark-grey;
 }
 
 @mixin h2 {
@@ -34,6 +35,7 @@ $font-icon: 'icon-font';
   font-size: 2.13rem;
   letter-spacing: 0.75px;
   line-height: 3.25rem;
+  color: $dark-grey;
 }
 
 @mixin h3 {
@@ -41,6 +43,7 @@ $font-icon: 'icon-font';
   font-size: 1.87rem;
   letter-spacing: 0.75px;
   line-height: 2.7rem;
+  color: $dark-grey;
 }
 
 @mixin p {
@@ -48,6 +51,7 @@ $font-icon: 'icon-font';
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
+  color: $dark-grey;
 }
 
 @mixin small {
@@ -55,6 +59,7 @@ $font-icon: 'icon-font';
   font-size: 1.2rem;
   letter-spacing: 0.25px;
   line-height: 1.8rem;
+  color: $dark-grey;
 }
 
 
