@@ -5,12 +5,12 @@ var Filter = require('./Filter.jsx');
 
 const filterOptions = ['photos', 'code', 'design', 'ux', 'all'];
 
-const projects = [{image:'logos.jpg', text:'Logo desings for NBCUniversal', title: 'Logo Designs', name: 'logos', tag:['design']},
-  {image:'haskell.png', text:'UX, design and code for Haskell Platform redesign', title: 'Haskell Platform Redesign', name: 'haskell', tag:[ 'code', 'ux', 'design'] },
-  {image:'SSOlogin.png', text:'NBC SSO Login', title: 'Single sign-on login page', name: 'SSOLogin', tag:[ 'ux', 'design']},
-  {image:'sports_dashboard.png', text:'single page app for NBC Sports stats', title: 'NBC Sports dashboard', name: 'sports_dashboard', tag:[ 'ux', 'design']},
-  {image:'telemundo.png', text:'Development work and design assitance for the Telemundo.com redesign', title: 'Telemundo.com redesign', name: 'telemundo', tag:[ 'code']},
-  {image:'field-hockey.png', text:'Designs for New York Field Hockey club`s 10 year anniversary', title: 'New York Field Hockey t-shirt designs', name: 'field_hockey', tag:[ 'design']}];
+const projects = [{image:'logos.jpg', title: 'Logo Designs', name: 'logos', tag:['design']},
+  {image:'haskell.png', title: 'Haskell Platform Redesign', name: 'haskell', tag:[ 'code', 'ux', 'design'] },
+  {image:'SSOlogin.png',title: 'Single sign-on login page', name: 'SSOLogin', tag:[ 'ux', 'design']},
+  {image:'sports_dashboard.png', title: 'NBC Sports dashboard', name: 'sports_dashboard', tag:[ 'ux', 'design']},
+  {image:'telemundo.png', title: 'Telemundo.com redesign', name: 'telemundo', tag:[ 'code']},
+  {image:'field-hockey.png', title: 'New York Field Hockey shirt design', name: 'field_hockey', tag:[ 'design']}];
 
 var Work = React.createClass({
   getInitialState: function() {
@@ -35,7 +35,7 @@ var Work = React.createClass({
           <div className='layout--primary-section'>
             <Filter label='FILTER BY' buttons={filterOptions} handleClick={this.handleClick} selected={this.state.selected}/>
             {work.map(function (item) {
-                  return <Thumbnail text={item.text} title={item.title} imageUrl={`portfolio/thumbnails/${item.image}`} link={`/work/${item.name}`}/>;
+                  return <Thumbnail title={item.title} imageUrl={`portfolio/thumbnails/${item.image}`} link={`/work/${item.name}`}/>;
                 }) }
           </div>
         </div>

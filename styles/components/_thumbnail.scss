@@ -22,9 +22,9 @@ $thumbnail-padding: 6%;
   cursor: pointer;
   padding: $thumbnail-padding;
   &:hover {
-    background-color: rgba($white, 0.75);
-    .thumbnail--text, .thumbnail--title {
-      color: $black;
+    background-color: rgba($white, 0.9);
+    .thumbnail--title {
+      color: $dark-grey;
     }
   }
 }
@@ -36,18 +36,14 @@ $thumbnail-padding: 6%;
   width: 100% - ($thumbnail-padding * 2);
 }
 
-.thumbnail--text {
-  @include p;
-  color: transparent;
-  margin: 0.75rem 0;
-}
-
 .thumbnail--title {
-  @include p;
   font-family: $font-regular;
   text-transform: uppercase;
   color: transparent;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
   margin: 0;
+  text-align: center;
 }
 
 .thumbnail--image {

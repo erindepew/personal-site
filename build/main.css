@@ -698,11 +698,11 @@ html {
 }
 /* line 24, ../styles/components/_thumbnail.scss */
 .thumbnail--overlay:hover {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 /* line 26, ../styles/components/_thumbnail.scss */
-.thumbnail--overlay:hover .thumbnail--text, .thumbnail--overlay:hover .thumbnail--title {
-  color: #000;
+.thumbnail--overlay:hover .thumbnail--title {
+  color: #3a3a3a;
 }
 
 /* line 32, ../styles/components/_thumbnail.scss */
@@ -718,36 +718,23 @@ html {
 }
 
 /* line 39, ../styles/components/_thumbnail.scss */
-.thumbnail--text {
-  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.25px;
-  line-height: 2.4rem;
-  color: #3a3a3a;
-  color: transparent;
-  margin: 0.75rem 0;
-}
-
-/* line 45, ../styles/components/_thumbnail.scss */
 .thumbnail--title {
-  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 0.25px;
-  line-height: 2.4rem;
-  color: #3a3a3a;
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: transparent;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
   margin: 0;
+  text-align: center;
 }
 
-/* line 53, ../styles/components/_thumbnail.scss */
+/* line 49, ../styles/components/_thumbnail.scss */
 .thumbnail--image {
   width: 100%;
 }
 
 @media (min-width: 750px) and (max-width: 1000px) {
-  /* line 58, ../styles/components/_thumbnail.scss */
+  /* line 54, ../styles/components/_thumbnail.scss */
   .thumbnail--MAIN {
     width: 32%;
     height: 0;
@@ -755,7 +742,7 @@ html {
   }
 }
 @media (min-width: 10px) and (max-width: 750px) {
-  /* line 64, ../styles/components/_thumbnail.scss */
+  /* line 60, ../styles/components/_thumbnail.scss */
   .thumbnail--MAIN {
     width: 49%;
     height: 0;
