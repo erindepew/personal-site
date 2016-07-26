@@ -5,6 +5,7 @@ var watchify = require('watchify');
 var reactify = require('reactify'); 
 var gulpif = require('gulp-if');
 var uglify = require('gulp-uglify');
+var babel = require('gulp-babel');
 var streamify = require('gulp-streamify');
 var notify = require('gulp-notify');
 var concat = require('gulp-concat');
@@ -45,7 +46,8 @@ var browserifyTask = function (options) {
     appBundler.bundle()
       .on('error', gutil.log)
       .pipe(source('main.js'))
-      .pipe(gulpif(!options.development, streamify(uglify())))
+      .pipe(streamify(babel({presets: ['es2015']})))
+      .pipe(gulpif(!options.development, streamify(uglify().on('error', gutil.log))))
       .pipe(gulp.dest(options.dest))
       .pipe(gulpif(options.development, livereload()))
       .pipe(notify(function () {

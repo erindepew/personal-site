@@ -40,3 +40,6 @@ React.render((
     </Route>
   </Router>
 ), document.body);
+
+
+module.exports = App;

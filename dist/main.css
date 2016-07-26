@@ -1,1 +1,888 @@
-body{background-color:#EAEAEA}
+@charset "UTF-8";
+/* line 1, ../styles/global/_reset.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/* line 8, ../styles/global/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'Ubuntu-light';
+  src: url("../../fonts/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: 'Ubuntu-regular';
+  src: url("../../fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: 'Ubuntu-bold';
+  src: url("../../fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: 'icon-font';
+  src: url("../../fonts/icons.ttf");
+}
+/* line 1, ../styles/components/_navigation.scss */
+.nav--MAIN {
+  position: absolute;
+  padding: 1rem 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+/* line 8, ../styles/components/_navigation.scss */
+.nav--nav-list {
+  list-style: none;
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 16, ../styles/components/_navigation.scss */
+.nav--nav-list:hover > .nav--nav-link a {
+  opacity: 0.5;
+}
+/* line 19, ../styles/components/_navigation.scss */
+.nav--nav-list:hover > .nav--nav-link a:hover {
+  opacity: 1;
+}
+
+/* line 24, ../styles/components/_navigation.scss */
+.nav--nav-link {
+  position: relative;
+  max-width: 30rem;
+}
+/* line 27, ../styles/components/_navigation.scss */
+.nav--nav-link a {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.13rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+  color: #3a3a3a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  /* line 36, ../styles/components/_navigation.scss */
+  .nav--MAIN {
+    width: 100%;
+    height: auto;
+    left: 0;
+    background-color: #FFF;
+    border-top: 2px solid #0C2370;
+    border-bottom: 2px solid #0C2370;
+  }
+
+  /* line 44, ../styles/components/_navigation.scss */
+  .nav--mobile-icon {
+    display: none;
+  }
+
+  /* line 47, ../styles/components/_navigation.scss */
+  .nav--nav-link {
+    display: inline-block;
+    text-align: center;
+    border-bottom: none;
+    width: 24.5%;
+    line-height: 0.6rem;
+    padding-left: 0;
+  }
+  /* line 54, ../styles/components/_navigation.scss */
+  .nav--nav-link:hover {
+    background-color: transparent;
+  }
+  /* line 57, ../styles/components/_navigation.scss */
+  .nav--nav-link a {
+    color: #0C2370;
+    font-size: 2rem;
+  }
+  /* line 61, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(1) {
+    background-color: transparent;
+  }
+  /* line 64, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(2) {
+    background-color: transparent;
+  }
+  /* line 67, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(3) {
+    background-color: transparent;
+  }
+  /* line 70, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(4) {
+    background-color: transparent;
+  }
+}
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 78, ../styles/components/_navigation.scss */
+  .nav--MAIN {
+    -webkit-transition: left 100ms ease-out;
+    -moz-transition: left 100ms ease-out;
+    -o-transition: left 100ms ease-out;
+    transition: left 100ms ease-out;
+    position: fixed;
+    height: 100vh;
+    width: 8rem;
+    background-color: #efefef;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+  }
+  /* line 87, ../styles/components/_navigation.scss */
+  .nav--MAIN.open {
+    left: 0;
+  }
+  /* line 90, ../styles/components/_navigation.scss */
+  .nav--MAIN.closed {
+    left: -8rem;
+  }
+
+  /* line 94, ../styles/components/_navigation.scss */
+  .nav--mobile-icon {
+    -webkit-transition: margin-left 100ms ease-out;
+    -moz-transition: margin-left 100ms ease-out;
+    -o-transition: margin-left 100ms ease-out;
+    transition: margin-left 100ms ease-out;
+    color: rgba(58, 58, 58, 0.5);
+    font-size: 3rem;
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+    padding: 1.5rem 1.5rem 0;
+  }
+  /* line 30, ../styles/global/_mixins.scss */
+  .nav--mobile-icon:before {
+    font-family: "icon-font";
+    content: "";
+  }
+  /* line 102, ../styles/components/_navigation.scss */
+  .nav--mobile-icon.open {
+    margin-left: 8rem;
+  }
+  /* line 105, ../styles/components/_navigation.scss */
+  .nav--mobile-icon.closed {
+    margin-left: 0;
+  }
+
+  /* line 109, ../styles/components/_navigation.scss */
+  .nav--nav-link {
+    display: block;
+    text-align: left;
+    padding: 1rem 1rem 0.5rem;
+    width: auto;
+    position: relative;
+    height: 5rem;
+  }
+  /* line 116, ../styles/components/_navigation.scss */
+  .nav--nav-link:before {
+    position: absolute;
+    width: 2.9rem;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  /* line 123, ../styles/components/_navigation.scss */
+  .nav--nav-link a {
+    font-size: 1.75rem;
+    color: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  /* line 132, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(1) {
+    background-color: #0C2370;
+    color: #FFF;
+    font-size: 3rem;
+  }
+  /* line 30, ../styles/global/_mixins.scss */
+  .nav--nav-link:nth-child(1):before {
+    font-family: "icon-font";
+    content: "";
+  }
+  /* line 136, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(2) {
+    background-color: #114884;
+    color: #FFF;
+    font-size: 3rem;
+  }
+  /* line 30, ../styles/global/_mixins.scss */
+  .nav--nav-link:nth-child(2):before {
+    font-family: "icon-font";
+    content: "";
+  }
+  /* line 140, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(3) {
+    background-color: #ED9487;
+    color: #FFF;
+    font-size: 3rem;
+  }
+  /* line 30, ../styles/global/_mixins.scss */
+  .nav--nav-link:nth-child(3):before {
+    font-family: "icon-font";
+    content: "";
+  }
+  /* line 144, ../styles/components/_navigation.scss */
+  .nav--nav-link:nth-child(4) {
+    background-color: #FFB59F;
+    color: #FFF;
+    font-size: 3rem;
+  }
+  /* line 30, ../styles/global/_mixins.scss */
+  .nav--nav-link:nth-child(4):before {
+    font-family: "icon-font";
+    content: "";
+  }
+}
+/* line 1, ../styles/components/_button.scss */
+.button--MAIN, .button--ALTERNATE, .button--ALTERNATE-SELECTED {
+  border: none;
+  cursor: pointer;
+  color: #FFF !important;
+  text-transform: uppercase;
+}
+/* line 6, ../styles/components/_button.scss */
+.button--MAIN:focus, .button--ALTERNATE:focus, .button--ALTERNATE-SELECTED:focus {
+  outline: 0;
+}
+
+/* line 11, ../styles/components/_button.scss */
+.button--MAIN {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.13rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+  color: #3a3a3a;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  width: 100%;
+  background-color: #ED9487;
+  padding: 1.5rem 1rem 1.25rem;
+}
+/* line 18, ../styles/components/_button.scss */
+.button--MAIN:hover {
+  background-color: #f4bcb3;
+}
+
+/* line 23, ../styles/components/_button.scss */
+.button--ALTERNATE, .button--ALTERNATE-SELECTED {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.25px;
+  line-height: 1.8rem;
+  color: #3a3a3a;
+  border-radius: 4px;
+  padding: 0.5rem 1rem 0.4rem;
+  min-width: 8rem;
+}
+
+/* line 1, ../styles/components/_about.scss */
+.about--text {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  color: #3a3a3a;
+  text-align: left;
+}
+
+/* line 7, ../styles/components/_about.scss */
+.about--text-wrapper {
+  width: 70%;
+  float: right;
+  padding-left: 5%;
+}
+
+/* line 13, ../styles/components/_about.scss */
+.about--profile-image {
+  width: 30%;
+  float: left;
+}
+
+/* line 18, ../styles/components/_about.scss */
+.about--MAIN {
+  overflow: hidden;
+  margin: 0 20% 12rem;
+}
+
+@media (max-width: 1000px) {
+  /* line 24, ../styles/components/_about.scss */
+  .about--MAIN {
+    margin: 0 1.5rem 12rem;
+  }
+}
+@media (max-width: 750px) {
+  /* line 29, ../styles/components/_about.scss */
+  .about--profile-image {
+    display: none;
+  }
+
+  /* line 33, ../styles/components/_about.scss */
+  .about--text-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* line 38, ../styles/components/_about.scss */
+  .about--MAIN {
+    margin: 0 1.5rem 8rem;
+    padding-left: 0;
+  }
+}
+/* line 1, ../styles/components/_header.scss */
+.header--MAIN {
+  font-family: "Ubuntu-bold", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.75px;
+  color: #3a3a3a;
+  color: #ED9487;
+  margin: 0 1.5rem 5rem;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 8rem;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 3px 3px;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), #ED9487;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: rgba(255, 255, 255, 0.01) 0.1px;
+}
+
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 19, ../styles/components/_header.scss */
+  .header--MAIN {
+    margin-top: 0;
+  }
+}
+/* line 1, ../styles/components/_resume.scss */
+.resume--header {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.13rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+  color: #3a3a3a;
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 0;
+}
+/* line 7, ../styles/components/_resume.scss */
+.resume--header .experience {
+  color: #000;
+  font-size: 3rem;
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+/* line 30, ../styles/global/_mixins.scss */
+.resume--header .experience:before {
+  font-family: "icon-font";
+  content: "";
+}
+/* line 14, ../styles/components/_resume.scss */
+.resume--header .tech-skills {
+  color: #000;
+  font-size: 2.75rem;
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+/* line 30, ../styles/global/_mixins.scss */
+.resume--header .tech-skills:before {
+  font-family: "icon-font";
+  content: "";
+}
+/* line 21, ../styles/components/_resume.scss */
+.resume--header .contact {
+  color: #000;
+  font-size: 2.75rem;
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+/* line 30, ../styles/global/_mixins.scss */
+.resume--header .contact:before {
+  font-family: "icon-font";
+  content: "";
+}
+
+/* line 30, ../styles/components/_resume.scss */
+.resume--list {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 1, ../styles/components/_section.scss */
+.section--header {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 1.87rem;
+  letter-spacing: 0.75px;
+  line-height: 2.7rem;
+  color: #3a3a3a;
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+}
+
+/* line 6, ../styles/components/_section.scss */
+.section--subheader {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-top: -1.75rem;
+}
+
+/* line 13, ../styles/components/_section.scss */
+.section--content {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  margin-top: -2.25rem;
+  padding: 0;
+}
+
+/* line 19, ../styles/components/_section.scss */
+.section--content-item {
+  margin: 1rem 0 1rem 1.3rem;
+  list-style-type: none;
+  position: relative;
+}
+/* line 23, ../styles/components/_section.scss */
+.section--content-item:before {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #3a3a3a;
+  height: 0.5rem;
+  width: 0.5rem;
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: -1.25rem;
+}
+
+/* line 1, ../styles/components/_contact.scss */
+.contact-form--MAIN {
+  width: 80%;
+  text-align: left;
+  margin-top: 5rem;
+}
+/* line 5, ../styles/components/_contact.scss */
+.contact-form--MAIN .input-field--MAIN {
+  margin-bottom: 2rem;
+}
+/* line 9, ../styles/components/_contact.scss */
+.contact-form--MAIN .text-area--MAIN {
+  margin-bottom: 2rem;
+}
+/* line 11, ../styles/components/_contact.scss */
+.contact-form--MAIN .text-area--MAIN .text-area--input-field {
+  height: 20rem;
+}
+
+/* line 17, ../styles/components/_contact.scss */
+.contact-form--header {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.13rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+  color: #3a3a3a;
+}
+
+/* line 21, ../styles/components/_contact.scss */
+.contact--list {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 29, ../styles/components/_contact.scss */
+  .contact-form--MAIN {
+    width: 100%;
+  }
+}
+/* line 1, ../styles/components/_input-field.scss */
+.input-field--input-field, .text-area--input-field {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  border: none;
+  width: 100%;
+  height: 4rem;
+  padding: 0 0 0.5rem 1rem;
+}
+/* line 7, ../styles/components/_input-field.scss */
+.input-field--input-field:focus, .text-area--input-field:focus {
+  outline: none;
+}
+
+/* line 13, ../styles/components/_input-field.scss */
+.input-field--MAIN, .text-area--MAIN {
+  border: 1px solid #efefef;
+}
+
+/* line 17, ../styles/components/_input-field.scss */
+.input-field--label, .text-area--label {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  color: #c9c9c9;
+  padding: 0;
+  margin: 0.75rem 1rem 0;
+}
+
+/* line 28, ../styles/components/_input-field.scss */
+.text-area--input-field {
+  resize: none;
+}
+
+/* line 1, ../styles/components/_filter.scss */
+.filter--MAIN, .filter--MAIN-SELECTED {
+  text-align: left;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 7.5rem;
+  margin-left: 0.5%;
+}
+/* line 61, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE, .filter--MAIN-SELECTED button.button--ALTERNATE, .filter--MAIN button.button--MAIN, .filter--MAIN-SELECTED button.button--MAIN, .filter--MAIN button.button--ALTERNATE-SELECTED, .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED {
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+/* line 63, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(1n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(1n), .filter--MAIN button.button--MAIN:nth-of-type(1n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(1n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(1n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(1n) {
+  background-color: #0C2370;
+}
+/* line 66, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(2n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(2n), .filter--MAIN button.button--MAIN:nth-of-type(2n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(2n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(2n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(2n) {
+  background-color: #114884;
+}
+/* line 69, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(3n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(3n), .filter--MAIN button.button--MAIN:nth-of-type(3n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(3n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(3n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(3n) {
+  background-color: #ED9487;
+}
+/* line 72, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(4n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(4n), .filter--MAIN button.button--MAIN:nth-of-type(4n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(4n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(4n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(4n) {
+  background-color: #FFB59F;
+}
+/* line 78, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(1n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(1n):hover, .filter--MAIN button.button--MAIN:nth-of-type(1n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(1n):hover {
+  background-color: #11319e;
+}
+/* line 83, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(2n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(2n):hover, .filter--MAIN button.button--MAIN:nth-of-type(2n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(2n):hover {
+  background-color: #1761b1;
+}
+/* line 88, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(3n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(3n):hover, .filter--MAIN button.button--MAIN:nth-of-type(3n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(3n):hover {
+  background-color: #f4bcb3;
+}
+/* line 93, ../styles/global/_mixins.scss */
+.filter--MAIN button.button--ALTERNATE:nth-of-type(4n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(4n):hover, .filter--MAIN button.button--MAIN:nth-of-type(4n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(4n):hover {
+  background-color: #ffdcd2;
+}
+/* line 8, ../styles/components/_filter.scss */
+.filter--MAIN button, .filter--MAIN-SELECTED button {
+  margin: 0 0.75rem;
+}
+
+/* line 19, ../styles/components/_filter.scss */
+.filter--MAIN-SELECTED .button--ALTERNATE {
+  opacity: 0.5;
+}
+/* line 22, ../styles/components/_filter.scss */
+.filter--MAIN-SELECTED .button--ALTERNATE-SELECTED {
+  cursor: default;
+}
+
+/* line 27, ../styles/components/_filter.scss */
+.filter--label {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  font-size: 1.4rem;
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 37, ../styles/components/_filter.scss */
+  .filter--MAIN, .filter--MAIN-SELECTED {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  /* line 40, ../styles/components/_filter.scss */
+  .filter--MAIN button, .filter--MAIN-SELECTED button {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* line 45, ../styles/components/_filter.scss */
+  .filter--label {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+/* line 3, ../styles/components/_thumbnail.scss */
+.thumbnail--MAIN {
+  width: 24%;
+  height: 0;
+  padding-bottom: 24%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+  margin: 0.5%;
+}
+
+/* line 13, ../styles/components/_thumbnail.scss */
+.thumbnail--overlay {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 6%;
+}
+/* line 24, ../styles/components/_thumbnail.scss */
+.thumbnail--overlay:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 26, ../styles/components/_thumbnail.scss */
+.thumbnail--overlay:hover .thumbnail--title {
+  color: #3a3a3a;
+}
+
+/* line 32, ../styles/components/_thumbnail.scss */
+.thumbnail--overlay-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  float: left;
+  overflow: auto;
+  width: 88%;
+}
+
+/* line 39, ../styles/components/_thumbnail.scss */
+.thumbnail--title {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: transparent;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 49, ../styles/components/_thumbnail.scss */
+.thumbnail--image {
+  width: 100%;
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  /* line 54, ../styles/components/_thumbnail.scss */
+  .thumbnail--MAIN {
+    width: 32%;
+    height: 0;
+    padding-bottom: 32%;
+  }
+}
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 60, ../styles/components/_thumbnail.scss */
+  .thumbnail--MAIN {
+    width: 49%;
+    height: 0;
+    padding-bottom: 49%;
+  }
+}
+/* line 1, ../styles/components/_portfolio-page.scss */
+.portfolio-page--header {
+  font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.13rem;
+  letter-spacing: 0.75px;
+  line-height: 3.25rem;
+  color: #3a3a3a;
+  width: 100%;
+  text-align: left;
+}
+
+/* line 7, ../styles/components/_portfolio-page.scss */
+.portfolio-page--image {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  max-width: 100%;
+}
+
+/* line 12, ../styles/components/_portfolio-page.scss */
+.portfolio-page--text {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 1, ../styles/layout/_layout.scss */
+.layout--MAIN, .layout--ALTERNATE {
+  -webkit-transition: margin-left 0.2s ease-out;
+  -moz-transition: margin-left 0.2s ease-out;
+  -o-transition: margin-left 0.2s ease-out;
+  transition: margin-left 0.2s ease-out;
+  position: relative;
+  height: 100%;
+  max-height: 100vh;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+/* line 12, ../styles/layout/_layout.scss */
+.layout--MAIN {
+  text-align: center;
+}
+/* line 15, ../styles/layout/_layout.scss */
+.layout--MAIN .layout--primary-section {
+  margin: 3rem 3rem 7rem;
+  overflow: auto;
+}
+
+/* line 23, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--primary-section {
+  width: calc(62% - 8rem);
+  float: left;
+  margin: 1.75rem 4rem 8.5rem;
+}
+/* line 29, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--secondary-section {
+  width: calc(38% - 1.5rem);
+  float: right;
+  margin: 1.5rem 1.5rem 7rem 0;
+  padding: 0 2.5rem 2.5rem;
+  min-height: calc(100vh - 8.5rem);
+  background-color: #efefef;
+}
+/* line 36, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--secondary-section .resume--list {
+  margin-top: 0.5rem;
+}
+/* line 39, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--secondary-section .contact-form--header {
+  margin-bottom: 0;
+}
+/* line 42, ../styles/layout/_layout.scss */
+.layout--ALTERNATE .layout--secondary-section .button--MAIN {
+  margin-top: 2rem;
+}
+
+/* line 49, ../styles/layout/_layout.scss */
+.layout--wrapper {
+  -webkit-transition: margin-left 100ms ease-out;
+  -moz-transition: margin-left 100ms ease-out;
+  -o-transition: margin-left 100ms ease-out;
+  transition: margin-left 100ms ease-out;
+  overflow: auto;
+  max-height: 100vh;
+  height: 100%;
+  z-index: 10;
+  max-width: 150rem;
+}
+/* line 56, ../styles/layout/_layout.scss */
+.layout--wrapper.open {
+  margin-left: 8rem;
+  width: calc(100vw - 8rem);
+  overflow: auto;
+  max-height: 100vh;
+  height: 100%;
+}
+/* line 63, ../styles/layout/_layout.scss */
+.layout--wrapper.closed {
+  margin: 0 auto;
+  width: 100vw;
+  overflow: auto;
+  max-height: 100vh;
+  height: 100%;
+}
+
+/* line 72, ../styles/layout/_layout.scss */
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 10px) and (max-width: 750px) {
+  /* line 79, ../styles/layout/_layout.scss */
+  .layout--primary-section {
+    padding: 0 2.5rem;
+  }
+
+  /* line 83, ../styles/layout/_layout.scss */
+  .layout--ALTERNATE .layout--primary-section, .layout--ALTERNATE .layout--secondary-section {
+    width: calc(100% - 3rem);
+    float: left;
+    margin: 2rem 1.5rem;
+  }
+
+  /* line 90, ../styles/layout/_layout.scss */
+  .layout--MAIN .layout--primary-section {
+    margin-top: 0;
+  }
+}
