@@ -45,6 +45,40 @@
   transform: translateY(-50%);
 }
 
+@mixin link-style($link-color, $hover-color) {
+  position: relative;
+  text-decoration: none;
+  color: $link-color;
+  &:before {
+    @include transition(max-width, 0.5s);
+    position: absolute;
+    top: -3px;
+    left: 0;
+    overflow: hidden;
+    padding: 0;
+    max-width: 0;
+    color: $hover-color;
+    content: attr(data-hover);
+  }
+  &:after {
+    @include transition(max-width, 0.5s);
+    content: '';
+    max-width: 100%;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid $link-color;
+  }
+  &:hover:before{
+    max-width: 100%;
+  }
+  &:hover:after{
+    max-width: 0;
+    border-bottom: 1px solid $hover-color;
+  }
+}
+
 @mixin intrinsic-ratio($size) {
   width: $size;
   height: 0;

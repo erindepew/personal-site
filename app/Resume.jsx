@@ -1,7 +1,7 @@
 var React = require('react');
 var Section = require('./Section.jsx');
 var Button = require('./Button.jsx');
-var Navigation = require ('./Navigation.jsx');
+var Layout = require ('./Layout.jsx');
 
 
 var experience = [
@@ -17,19 +17,41 @@ var experience = [
   }
 ];
 
+var talks = [
+  {
+    header: 'Bitly Podcast',
+    subheader: 'Bitly, November 2015',
+    content: ['Talk for Bitly Podcast']
+  },
+  {
+    header: 'Modular CSS: Developing, Extending and Maintaining CSS',
+    subheader: 'Codemash, January 2016',
+    content: ['Talk on developing and maintaining CSS Modules using Sass and React']
+  },
+  {
+    header: 'React, Omniscient and Immutable: the gateway drugs to functional programming',
+    subheader: 'ForwardJS, July 2016',
+    content: ['Talk on our stack at Bitly using React, Omniscient, Immutable and Immstruct']
+  }
+];
+
 var skills = ['JavaScript, CSS3, HTML5, Sass, ES6, React, Omniscient, Immutable', 'Illustrator, Photoshop, Indesign', 'Wordpress, Drupal', 'Python, PHP', 'git, grep, awk', 'MySQL'];
 
-var contact = [ 'erinldepew@gmail.com', '@erindepew', 'github.com/erindepew', 'linkedin.com/erindepew'];
+var contact = [{text: 'erinldepew@gmail.com', link: null}, {text: '@erindepew', link: 'twitter.com/erindepew'},
+  {text: 'github.com/erindepew', link: 'github.com/erindepew'}, {text: 'linkedin.com/erindepew', link: 'linkedin.com/erindepew'}];
 
 var Resume = React.createClass({
 
   render: function () {
     return (
-      <div className="layout--ALTERNATE">
-        <div className={`layout--wrapper ${this.props.navState ? 'open' : 'closed'}`}>
+    <Layout navState={this.props.navState} aspect='ALTERNATE' includeNav={true}>
         <div className="layout--primary-section">
           <h3 className='resume--header experience'><span className='experience'> </span>Experience</h3>
           {experience.map(function (item) {
+            return <Section header={item.header} subheader={item.subheader} content={item.content}/>;
+          })}
+          <h3 className='resume--header talks'><span className='talks'> </span>Talks</h3>
+          {talks.map(function (item) {
             return <Section header={item.header} subheader={item.subheader} content={item.content}/>;
           })}
         </div>
@@ -37,7 +59,7 @@ var Resume = React.createClass({
           <h3 className='resume--header'><span className='contact'> </span>Contact</h3>
           <ul className='resume--list'>
             {contact.map(function (item) {
-              return <li>{item}</li>;
+              return item.link ? <li className='resume--list-item'><a className='resume--list-link'data-hover={item.text} href={item.link}>{item.text}</a></li>: <li className='resume--list-item'>{item.text}</li>;
             })}
           </ul>
           <h3 className='resume--header'><span className='tech-skills'> </span>Technical Skills</h3>
@@ -48,9 +70,7 @@ var Resume = React.createClass({
           </ul>
           <a href='downloads/resume.pdf' target='_blank'><Button label="download PDF" aspect='MAIN' selected={false}/></a>
         </div>
-        </div>
-        <Navigation navState={this.props.navState}/>
-      </div>
+      </Layout>
     );
   }
 });

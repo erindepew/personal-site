@@ -1,0 +1,26 @@
+.not-found--MAIN {
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  padding: $page-margin;
+  .button--MAIN {
+    width: 30rem;
+  }
+}
+
+.not-found--image {
+  width: 30rem;
+  height: 30rem;
+  background-color: grey;
+  margin: 0 auto 3rem;
+}
+
+.not-found--header {
+  @include h2;
+  margin: 0;
+}
+
+.not-found--text {
+  @include p;
+  margin: 0 0 5rem;
+}

@@ -5,6 +5,7 @@
   "author": "Christian Alfoni",
   "license": "ISC",
   "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
     "browserify": "^10.2.1",
     "glob": "^4.0.6",
     "gulp": "^3.8.9",

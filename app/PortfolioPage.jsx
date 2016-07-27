@@ -1,5 +1,5 @@
 var React = require('react');
-var Navigation = require('./Navigation.jsx');
+var Layout = require('./Layout.jsx');
 
 const pages = {
   logos: {title: 'Logo Designs', intro: 'A collection of logos that I designed for NBCUniversal.', content: [{image: 'logos/logo1.jpg', caption: 'caption text here'}, {image: 'logos/logo2.png', caption: 'caption text here'}, {image: 'logos/logo3.png', caption: 'caption text here'},  {image: 'logos/logo4.png', caption: 'caption text here'}]},
@@ -19,8 +19,7 @@ var PortfolioPage = React.createClass({
     debugger;
     const currentProject = pages[this.props.routeParams.projectName];
     return (
-      <div className='layout--MAIN'>
-        <div className={`layout--wrapper ${this.props.navState ? 'open' : 'closed'}`}>
+     <Layout navState={this.props.navState} aspect='MAIN' includeNav={true}>
           <div className='layout--primary-section'>
           <div className='portfolio-page--MAIN'>
             <h1 className='portfolio-page--header'>{currentProject.title}</h1>
@@ -34,9 +33,7 @@ var PortfolioPage = React.createClass({
             })}
           </div>
           </div>
-         </div>
-        <Navigation navState={this.props.navState}/>
-        </div>
+    </Layout>
     );
   }
 });

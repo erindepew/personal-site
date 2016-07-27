@@ -1,6 +1,6 @@
 var React = require('react');
 var Thumbnail = require('./Thumbnail.jsx');
-var Navigation = require('./Navigation.jsx');
+var Layout = require('./Layout.jsx');
 var Filter = require('./Filter.jsx');
 
 const filterOptions = ['photos', 'code', 'design', 'ux', 'all'];
@@ -30,17 +30,14 @@ var Work = React.createClass({
     });
 
     return (
-      <div className='layout--MAIN'>
-        <div className={`layout--wrapper ${this.props.navState ? 'open' : 'closed'}`}>
-          <div className='layout--primary-section'>
-            <Filter label='FILTER BY' buttons={filterOptions} handleClick={this.handleClick} selected={this.state.selected}/>
-            {work.map(function (item) {
-                  return <Thumbnail title={item.title} imageUrl={`portfolio/thumbnails/${item.image}`} link={`/work/${item.name}`}/>;
-                }) }
-          </div>
+      <Layout navState={this.props.navState} aspect='MAIN' includeNav={true}>
+        <div className='layout--primary-section'>
+          <Filter label='FILTER BY' buttons={filterOptions} handleClick={this.handleClick} selected={this.state.selected}/>
+          {work.map(function (item) {
+                return <Thumbnail title={item.title} imageUrl={`portfolio/thumbnails/${item.image}`} link={`/work/${item.name}`}/>;
+              }) }
         </div>
-        <Navigation navState={this.props.navState}/>
-      </div>
+      </Layout>
     );
   }
 });

@@ -18,6 +18,15 @@
   @include h2;
 }
 
+
+.contact--list-item {
+  margin: 1rem 0;
+}
+
+.contact--list-link {
+  @include link-style($dark-grey, $secondary-color);
+}
+
 .contact--list {
   @include p;
   list-style-type: none;

@@ -25,6 +25,21 @@
     left: 0;
   }
 
+  .talks {
+    @include icon($black, 3.5rem, '\e906');
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+
+}
+
+.resume--list-item {
+  margin: 1rem 0;
+}
+
+.resume--list-link {
+  @include link-style($dark-grey, $secondary-color);
 }
 
 .resume--list {
