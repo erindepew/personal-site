@@ -2,11 +2,11 @@
   width: 80%;
   text-align: left;
   margin-top: 5rem;
-  .input-field--MAIN{
+  .input-field--MAIN, .input-field--ACTIVE{
     margin-bottom: 2rem;
   }
 
-  .text-area--MAIN {
+  .text-area--MAIN, .text-area--ACTIVE {
     margin-bottom: 2rem;
     .text-area--input-field {
       height: 20rem;

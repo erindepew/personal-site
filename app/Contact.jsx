@@ -4,7 +4,7 @@ var TextArea = require('./TextArea.jsx');
 var Layout = require ('./Layout.jsx');
 var Button = require ('./Button.jsx');
 
-var contact = [{text: 'erinldepew@gmail.com', link: null}, {text: '@erindepew', link: 'twitter.com/erindepew'},
+var contact = [{text: '@erindepew', link: 'twitter.com/erindepew'},
  {text: 'github.com/erindepew', link: 'github.com/erindepew'}, {text: 'linkedin.com/erindepew', link: 'linkedin.com/erindepew'}];
 
 var Contact = React.createClass({
@@ -15,9 +15,9 @@ var Contact = React.createClass({
            <form action="https://formspree.io/erinldepew@gmail.com" method="POST">
              <div className='contact-form--MAIN'>
                <h2 className='contact-form--header'>What's On Your Mind?</h2>
-               <InputField label='Name' type='text' name='name'/>
-               <InputField label='Email' type='email' name='_replyto'/>
-               <TextArea label='Message' type='text' name='message'/>
+               <InputField label='Name' type='text' name='name' focus={true}/>
+               <InputField label='Email' type='email' name='_replyto' focus={false}/>
+               <TextArea label='Message' type='text' name='message' focus={false}/>
                <input type='hidden' name='_next' value='http://localhost:8889/#/thanks'></input>
                <Button label='Send Message' aspect='MAIN' selected={false} type='submit' value='Send'/>
              </div>

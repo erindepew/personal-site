@@ -37,7 +37,7 @@ var talks = [
 
 var skills = ['JavaScript, CSS3, HTML5, Sass, ES6, React, Omniscient, Immutable', 'Illustrator, Photoshop, Indesign', 'Wordpress, Drupal', 'Python, PHP', 'git, grep, awk', 'MySQL'];
 
-var contact = [{text: 'erinldepew@gmail.com', link: null}, {text: '@erindepew', link: 'twitter.com/erindepew'},
+var contact = [{text: 'erinldepew@gmail.com', link: '/#/contact'}, {text: '@erindepew', link: 'twitter.com/erindepew'},
   {text: 'github.com/erindepew', link: 'github.com/erindepew'}, {text: 'linkedin.com/erindepew', link: 'linkedin.com/erindepew'}];
 
 var Resume = React.createClass({

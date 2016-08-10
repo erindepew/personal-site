@@ -558,15 +558,15 @@ html {
   margin-top: 5rem;
 }
 /* line 5, ../styles/components/_contact.scss */
-.contact-form--MAIN .input-field--MAIN {
+.contact-form--MAIN .input-field--MAIN, .contact-form--MAIN .input-field--ACTIVE {
   margin-bottom: 2rem;
 }
 /* line 9, ../styles/components/_contact.scss */
-.contact-form--MAIN .text-area--MAIN {
+.contact-form--MAIN .text-area--MAIN, .contact-form--MAIN .text-area--ACTIVE {
   margin-bottom: 2rem;
 }
 /* line 11, ../styles/components/_contact.scss */
-.contact-form--MAIN .text-area--MAIN .text-area--input-field {
+.contact-form--MAIN .text-area--MAIN .text-area--input-field, .contact-form--MAIN .text-area--ACTIVE .text-area--input-field {
   height: 20rem;
 }
 
@@ -665,14 +665,42 @@ html {
   outline: none;
 }
 
-/* line 14, ../styles/components/_input-field.scss */
-.input-field--MAIN, .text-area--MAIN {
-  border: 1px solid #efefef;
+/* line 13, ../styles/components/_input-field.scss */
+.input-field--MAIN, .text-area--MAIN, .input-field--ACTIVE, .text-area--ACTIVE {
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -webkit-transition: border 0.5s ease-out;
+  -moz-transition: border 0.5s ease-out;
+  -o-transition: border 0.5s ease-out;
+  transition: border 0.5s ease-out;
   background-color: #FFF;
 }
 
 /* line 19, ../styles/components/_input-field.scss */
+.input-field--MAIN, .text-area--MAIN {
+  border: 1px solid #efefef;
+}
+
+/* line 24, ../styles/components/_input-field.scss */
+.input-field--ACTIVE, .text-area--ACTIVE {
+  border: 1px solid #3a3a3a;
+}
+/* line 27, ../styles/components/_input-field.scss */
+.input-field--ACTIVE .input-field--label, .input-field--ACTIVE .text-area--label, .text-area--ACTIVE .input-field--label, .text-area--ACTIVE .text-area--label {
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  color: #3a3a3a;
+}
+
+/* line 33, ../styles/components/_input-field.scss */
 .input-field--label, .text-area--label {
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.25px;
@@ -683,7 +711,7 @@ html {
   margin: 0.75rem 1rem 0;
 }
 
-/* line 30, ../styles/components/_input-field.scss */
+/* line 45, ../styles/components/_input-field.scss */
 .text-area--input-field {
   resize: none;
 }

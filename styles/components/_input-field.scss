@@ -10,13 +10,28 @@
   }
 }
 
-
-.input-field--MAIN, .text-area--MAIN {
-  border: 1px solid $light-grey;
+%input-wrapper--default {
+  @include border-radius(0.5rem);
+  @include transition(border, 0.5s);
   background-color: $white;
 }
 
+.input-field--MAIN, .text-area--MAIN {
+  @extend %input-wrapper--default;
+  border: 1px solid $light-grey;
+}
+
+.input-field--ACTIVE, .text-area--ACTIVE {
+  @extend %input-wrapper--default;
+  border: 1px solid $dark-grey;
+  .input-field--label, .text-area--label {
+    @include transition(color, 0.5s);
+    color: $dark-grey;
+  }
+}
+
 .input-field--label, .text-area--label {
+  @include transition(color, 0.5s);
   @include p;
   color: darken($light-grey, 15%);
   padding: 0;
