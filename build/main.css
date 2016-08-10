@@ -461,9 +461,10 @@ html {
   padding: 0;
   max-width: 0;
   color: #ED9487;
+  white-space: nowrap;
   content: attr(data-hover);
 }
-/* line 63, ../styles/global/_mixins.scss */
+/* line 64, ../styles/global/_mixins.scss */
 .resume--list-link:after {
   -webkit-transition: max-width 0.5s ease-out;
   -moz-transition: max-width 0.5s ease-out;
@@ -477,11 +478,11 @@ html {
   right: 0;
   border-bottom: 1px solid #3a3a3a;
 }
-/* line 73, ../styles/global/_mixins.scss */
+/* line 74, ../styles/global/_mixins.scss */
 .resume--list-link:hover:before {
   max-width: 100%;
 }
-/* line 76, ../styles/global/_mixins.scss */
+/* line 77, ../styles/global/_mixins.scss */
 .resume--list-link:hover:after {
   max-width: 0;
   border-bottom: 1px solid #ED9487;
@@ -603,9 +604,10 @@ html {
   padding: 0;
   max-width: 0;
   color: #ED9487;
+  white-space: nowrap;
   content: attr(data-hover);
 }
-/* line 63, ../styles/global/_mixins.scss */
+/* line 64, ../styles/global/_mixins.scss */
 .contact--list-link:after {
   -webkit-transition: max-width 0.5s ease-out;
   -moz-transition: max-width 0.5s ease-out;
@@ -619,11 +621,11 @@ html {
   right: 0;
   border-bottom: 1px solid #3a3a3a;
 }
-/* line 73, ../styles/global/_mixins.scss */
+/* line 74, ../styles/global/_mixins.scss */
 .contact--list-link:hover:before {
   max-width: 100%;
 }
-/* line 76, ../styles/global/_mixins.scss */
+/* line 77, ../styles/global/_mixins.scss */
 .contact--list-link:hover:after {
   max-width: 0;
   border-bottom: 1px solid #ED9487;
@@ -659,13 +661,14 @@ html {
   height: 4rem;
   background-color: transparent;
   padding: 0 0 0.5rem 1rem;
+  cursor: pointer;
 }
-/* line 8, ../styles/components/_input-field.scss */
+/* line 9, ../styles/components/_input-field.scss */
 .input-field--input-field:focus, .text-area--input-field:focus {
   outline: none;
 }
 
-/* line 13, ../styles/components/_input-field.scss */
+/* line 14, ../styles/components/_input-field.scss */
 .input-field--MAIN, .text-area--MAIN, .input-field--ACTIVE, .text-area--ACTIVE {
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
@@ -675,18 +678,19 @@ html {
   -o-transition: border 0.5s ease-out;
   transition: border 0.5s ease-out;
   background-color: #FFF;
+  cursor: pointer;
 }
 
-/* line 19, ../styles/components/_input-field.scss */
+/* line 21, ../styles/components/_input-field.scss */
 .input-field--MAIN, .text-area--MAIN {
   border: 1px solid #efefef;
 }
 
-/* line 24, ../styles/components/_input-field.scss */
+/* line 26, ../styles/components/_input-field.scss */
 .input-field--ACTIVE, .text-area--ACTIVE {
   border: 1px solid #3a3a3a;
 }
-/* line 27, ../styles/components/_input-field.scss */
+/* line 29, ../styles/components/_input-field.scss */
 .input-field--ACTIVE .input-field--label, .input-field--ACTIVE .text-area--label, .text-area--ACTIVE .input-field--label, .text-area--ACTIVE .text-area--label {
   -webkit-transition: color 0.5s ease-out;
   -moz-transition: color 0.5s ease-out;
@@ -695,7 +699,7 @@ html {
   color: #3a3a3a;
 }
 
-/* line 33, ../styles/components/_input-field.scss */
+/* line 35, ../styles/components/_input-field.scss */
 .input-field--label, .text-area--label {
   -webkit-transition: color 0.5s ease-out;
   -moz-transition: color 0.5s ease-out;
@@ -711,7 +715,7 @@ html {
   margin: 0.75rem 1rem 0;
 }
 
-/* line 45, ../styles/components/_input-field.scss */
+/* line 47, ../styles/components/_input-field.scss */
 .text-area--input-field {
   resize: none;
 }
@@ -724,42 +728,42 @@ html {
   padding-left: 7.5rem;
   margin-left: 0.5%;
 }
-/* line 95, ../styles/global/_mixins.scss */
+/* line 96, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE, .filter--MAIN-SELECTED button.button--ALTERNATE, .filter--MAIN button.button--MAIN, .filter--MAIN-SELECTED button.button--MAIN, .filter--MAIN button.button--ALTERNATE-SELECTED, .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED {
   -webkit-transition: background-color 0.5s ease-out;
   -moz-transition: background-color 0.5s ease-out;
   -o-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
-/* line 97, ../styles/global/_mixins.scss */
+/* line 98, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(1n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(1n), .filter--MAIN button.button--MAIN:nth-of-type(1n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(1n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(1n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(1n) {
   background-color: #0C2370;
 }
-/* line 100, ../styles/global/_mixins.scss */
+/* line 101, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(2n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(2n), .filter--MAIN button.button--MAIN:nth-of-type(2n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(2n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(2n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(2n) {
   background-color: #114884;
 }
-/* line 103, ../styles/global/_mixins.scss */
+/* line 104, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(3n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(3n), .filter--MAIN button.button--MAIN:nth-of-type(3n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(3n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(3n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(3n) {
   background-color: #ED9487;
 }
-/* line 106, ../styles/global/_mixins.scss */
+/* line 107, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(4n), .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(4n), .filter--MAIN button.button--MAIN:nth-of-type(4n), .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(4n), .filter--MAIN button.button--ALTERNATE-SELECTED:nth-of-type(4n), .filter--MAIN-SELECTED button.button--ALTERNATE-SELECTED:nth-of-type(4n) {
   background-color: #FFB59F;
 }
-/* line 112, ../styles/global/_mixins.scss */
+/* line 113, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(1n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(1n):hover, .filter--MAIN button.button--MAIN:nth-of-type(1n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(1n):hover {
   background-color: #11319e;
 }
-/* line 117, ../styles/global/_mixins.scss */
+/* line 118, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(2n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(2n):hover, .filter--MAIN button.button--MAIN:nth-of-type(2n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(2n):hover {
   background-color: #1761b1;
 }
-/* line 122, ../styles/global/_mixins.scss */
+/* line 123, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(3n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(3n):hover, .filter--MAIN button.button--MAIN:nth-of-type(3n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(3n):hover {
   background-color: #f4bcb3;
 }
-/* line 127, ../styles/global/_mixins.scss */
+/* line 128, ../styles/global/_mixins.scss */
 .filter--MAIN button.button--ALTERNATE:nth-of-type(4n):hover, .filter--MAIN-SELECTED button.button--ALTERNATE:nth-of-type(4n):hover, .filter--MAIN button.button--MAIN:nth-of-type(4n):hover, .filter--MAIN-SELECTED button.button--MAIN:nth-of-type(4n):hover {
   background-color: #ffdcd2;
 }
@@ -917,17 +921,76 @@ html {
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
-/* line 12, ../styles/components/_portfolio-page.scss */
+/* line 14, ../styles/components/_portfolio-page.scss */
 .portfolio-page--text {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.25px;
   line-height: 2.4rem;
   color: #3a3a3a;
+  display: inline-block;
   text-align: left;
-  width: 100%;
+}
+
+/* line 20, ../styles/components/_portfolio-page.scss */
+.portfolio-page--link {
+  font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.25px;
+  line-height: 2.4rem;
+  color: #3a3a3a;
+  position: relative;
+  text-decoration: none;
+  color: #3a3a3a;
+  display: inline-block;
+  margin-left: 1rem;
+}
+/* line 52, ../styles/global/_mixins.scss */
+.portfolio-page--link:before {
+  -webkit-transition: max-width 0.5s ease-out;
+  -moz-transition: max-width 0.5s ease-out;
+  -o-transition: max-width 0.5s ease-out;
+  transition: max-width 0.5s ease-out;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  overflow: hidden;
+  padding: 0;
+  max-width: 0;
+  color: #ED9487;
+  white-space: nowrap;
+  content: attr(data-hover);
+}
+/* line 64, ../styles/global/_mixins.scss */
+.portfolio-page--link:after {
+  -webkit-transition: max-width 0.5s ease-out;
+  -moz-transition: max-width 0.5s ease-out;
+  -o-transition: max-width 0.5s ease-out;
+  transition: max-width 0.5s ease-out;
+  content: '';
+  max-width: 100%;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #3a3a3a;
+}
+/* line 74, ../styles/global/_mixins.scss */
+.portfolio-page--link:hover:before {
+  max-width: 100%;
+}
+/* line 77, ../styles/global/_mixins.scss */
+.portfolio-page--link:hover:after {
+  max-width: 0;
+  border-bottom: 1px solid #ED9487;
+}
+/* line 25, ../styles/components/_portfolio-page.scss */
+.portfolio-page--link:before {
+  top: 0;
 }
 
 /* line 1, ../styles/components/_not-found.scss */

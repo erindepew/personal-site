@@ -22,7 +22,7 @@ var InputField = React.createClass({
     return (
       <div className={`input-field--${this.state.active ? `ACTIVE` : `MAIN`}`} onClick={this.onClick}>
         <p className='input-field--label'>{this.props.label}</p>
-        <input type={this.props.type} ref='inputField' name={this.props.name} onBlur={() => this.onBlur()} onFocus={() => this.onFocus()} className='input-field--input-field'/>
+        <input type={this.props.type} maxLength={this.props.max} ref='inputField' name={this.props.name} onBlur={() => this.onBlur()} onFocus={() => this.onFocus()} className='input-field--input-field'/>
       </div>
     );
   }

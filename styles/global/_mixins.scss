@@ -58,6 +58,7 @@
     padding: 0;
     max-width: 0;
     color: $hover-color;
+    white-space: nowrap;
     content: attr(data-hover);
   }
   &:after {

@@ -15,9 +15,9 @@ var Contact = React.createClass({
            <form action="https://formspree.io/erinldepew@gmail.com" method="POST">
              <div className='contact-form--MAIN'>
                <h2 className='contact-form--header'>What's On Your Mind?</h2>
-               <InputField label='Name' type='text' name='name' focus={true}/>
-               <InputField label='Email' type='email' name='_replyto' focus={false}/>
-               <TextArea label='Message' type='text' name='message' focus={false}/>
+               <InputField label='Name' type='text' name='name' focus={true} max='100'/>
+               <InputField label='Email' type='email' name='_replyto' focus={false} max='100'/>
+               <TextArea label='Message' type='text' name='message' focus={false} max='2000'/>
                <input type='hidden' name='_next' value='http://localhost:8889/#/thanks'></input>
                <Button label='Send Message' aspect='MAIN' selected={false} type='submit' value='Send'/>
              </div>

@@ -22,7 +22,7 @@ var TextArea = React.createClass({
     return (
       <div className={`text-area--${this.state.active ? `ACTIVE` : `MAIN`}`} onClick={this.onClick}>
         <p className='text-area--label'>{this.props.label}</p>
-        <textarea type={this.props.type} name={this.props.name} ref='textArea' name={this.props.name} onBlur={() => this.onBlur()} onFocus={() => this.onFocus()} className='text-area--input-field'/>
+        <textarea type={this.props.type} maxLength={this.props.max} name={this.props.name} ref='textArea' name={this.props.name} onBlur={() => this.onBlur()} onFocus={() => this.onFocus()} className='text-area--input-field'/>
       </div>
     );
   }

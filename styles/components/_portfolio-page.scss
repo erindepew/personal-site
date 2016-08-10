@@ -7,11 +7,23 @@
 .portfolio-page--image {
   @include boxshadow;
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .portfolio-page--text {
   @include p;
+  display: inline-block;
   text-align: left;
-  width: 100%;
 }
 
+.portfolio-page--link {
+  @include p;
+  @include link-style($dark-grey, $secondary-color);
+  display: inline-block;
+  margin-left: 1rem;
+  &:before {
+    top: 0;
+  }
+
+}
