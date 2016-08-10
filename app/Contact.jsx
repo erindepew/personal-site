@@ -12,13 +12,16 @@ var Contact = React.createClass({
     return (
      <Layout navState={this.props.navState} aspect='ALTERNATE' includeNav={true}>
          <div className="layout--primary-section">
-         <div className='contact-form--MAIN'>
-           <h2 className='contact-form--header'>What's On Your Mind?</h2>
-           <InputField label='Name'/>
-           <InputField label='Email'/>
-           <TextArea label='Message'/>
-           <Button label='Send Message' aspect='MAIN' selected={false}/>
-          </div>
+           <form action="https://formspree.io/erinldepew@gmail.com" method="POST">
+             <div className='contact-form--MAIN'>
+               <h2 className='contact-form--header'>What's On Your Mind?</h2>
+               <InputField label='Name' type='text' name='name'/>
+               <InputField label='Email' type='email' name='_replyto'/>
+               <TextArea label='Message' type='text' name='message'/>
+               <input type='hidden' name='_next' value='http://localhost:8889/#/thanks'></input>
+               <Button label='Send Message' aspect='MAIN' selected={false} type='submit' value='Send'/>
+             </div>
+           </form>
        </div>
        <div className='layout--secondary-section'>
          <h2 className='contact-form--header'>Stay in Touch</h2>

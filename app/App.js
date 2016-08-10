@@ -4,6 +4,7 @@ var Resume = require('./Resume.jsx');
 var Work = require('./Work.jsx');
 var PortfolioPage = require('./PortfolioPage.jsx');
 var NotFound = require('./NotFound.jsx');
+var Success = require('./Success.jsx');
 var Contact = require('./Contact.jsx');
 var Router = require('react-router').Router;
 var Route = require('react-router').Route;
@@ -38,6 +39,7 @@ React.render((
       <Route path="/work" component={Work}/>
       <Route path="/work/:projectName" component={PortfolioPage}/>
       <Route path="/resume" component={Resume}/>
+      <Route path="/thanks" component={Success}/>
       <Route path="*" component={NotFound}/>
     </Route>
   </Router>

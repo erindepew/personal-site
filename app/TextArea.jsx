@@ -5,7 +5,7 @@ var TextArea = React.createClass({
     return (
       <div className='text-area--MAIN'>
         <p className='text-area--label'>{this.props.label}</p>
-        <textarea className='text-area--input-field'/>
+        <textarea type={this.props.type} name={this.props.name} className='text-area--input-field'/>
       </div>
     );
   }
