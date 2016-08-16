@@ -7,10 +7,10 @@ const filterOptions = ['photos', 'code', 'design', 'ux', 'all'];
 
 const projects = [{image:'logos.jpg', title: 'Logo Designs', name: 'logos', tag:['design']},
   {image:'haskell.png', title: 'Haskell Platform Redesign', name: 'haskell', tag:[ 'code', 'ux', 'design'] },
-  {image:'SSOlogin.png',title: 'Single sign-on login page', name: 'SSOLogin', tag:[ 'ux', 'design']},
-  {image:'sports_dashboard.png', title: 'NBC Sports dashboard', name: 'sports_dashboard', tag:[ 'ux', 'design']},
-  {image:'telemundo.png', title: 'Telemundo.com redesign', name: 'telemundo', tag:[ 'code']},
-  {image:'field-hockey.png', title: 'New York Field Hockey shirt design', name: 'field_hockey', tag:[ 'design']}];
+  {image:'SSOlogin.png',title: 'Single Sign-on Login Page', name: 'SSOLogin', tag:[ 'ux', 'design']},
+  {image:'sports_dashboard.png', title: 'NBC Sports Dashboard', name: 'sports_dashboard', tag:[ 'ux', 'design']},
+  {image:'telemundo.png', title: 'Telemundo.com Redesign', name: 'telemundo', tag:[ 'code']},
+  {image:'field-hockey.png', title: 'New York Field Hockey Shirt Design', name: 'field_hockey', tag:[ 'design']}];
 
 var Work = React.createClass({
   getInitialState: function() {
