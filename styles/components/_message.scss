@@ -1,0 +1,23 @@
+.message--MAIN {
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  padding: $page-margin;
+  .button--MAIN {
+    width: 30rem;
+  }
+}
+.message--image {
+  width: 40rem;
+  margin: 0 auto 3rem;
+}
+
+.message--header {
+  @include h2;
+  margin: 0;
+}
+
+.message--text {
+  @include p;
+  margin: 0 0 5rem;
+}

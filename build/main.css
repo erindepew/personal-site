@@ -993,26 +993,26 @@ html {
   top: 0;
 }
 
-/* line 1, ../styles/components/_not-found.scss */
-.not-found--MAIN {
+/* line 1, ../styles/components/_message.scss */
+.message--MAIN {
   width: 100%;
   overflow: auto;
   text-align: center;
   padding: 1.5rem;
 }
-/* line 6, ../styles/components/_not-found.scss */
-.not-found--MAIN .button--MAIN {
+/* line 6, ../styles/components/_message.scss */
+.message--MAIN .button--MAIN {
   width: 30rem;
 }
 
-/* line 10, ../styles/components/_not-found.scss */
-.not-found--image {
+/* line 10, ../styles/components/_message.scss */
+.message--image {
   width: 40rem;
   margin: 0 auto 3rem;
 }
 
-/* line 15, ../styles/components/_not-found.scss */
-.not-found--header {
+/* line 15, ../styles/components/_message.scss */
+.message--header {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   font-size: 2.13rem;
   letter-spacing: 0.75px;
@@ -1021,8 +1021,8 @@ html {
   margin: 0;
 }
 
-/* line 20, ../styles/components/_not-found.scss */
-.not-found--text {
+/* line 20, ../styles/components/_message.scss */
+.message--text {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.25px;
