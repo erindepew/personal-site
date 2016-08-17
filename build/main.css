@@ -1005,15 +1005,13 @@ html {
   width: 30rem;
 }
 
-/* line 11, ../styles/components/_not-found.scss */
+/* line 10, ../styles/components/_not-found.scss */
 .not-found--image {
-  width: 30rem;
-  height: 30rem;
-  background-color: grey;
+  width: 40rem;
   margin: 0 auto 3rem;
 }
 
-/* line 18, ../styles/components/_not-found.scss */
+/* line 15, ../styles/components/_not-found.scss */
 .not-found--header {
   font-family: "Ubuntu-regular", Helvetica, Arial, sans-serif;
   font-size: 2.13rem;
@@ -1023,7 +1021,7 @@ html {
   margin: 0;
 }
 
-/* line 23, ../styles/components/_not-found.scss */
+/* line 20, ../styles/components/_not-found.scss */
 .not-found--text {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;

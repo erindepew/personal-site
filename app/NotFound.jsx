@@ -9,7 +9,7 @@ var NotFound = React.createClass({
 	 <Layout navState={this.props.navState} aspect='MAIN' includeNav={false}>
 		 <div className='layout--primary-section'>
 			<div className='not-found--MAIN'>
-			 <div className='not-found--image'></div>
+			 <img className='not-found--image' src="images/Error404.gif"/>
 			 <h3 className='not-found--header'>
 				 Oops! That page doesn't exist.</h3>
 			 <p className='not-found--text'>Let's try this again shall we?</p>
