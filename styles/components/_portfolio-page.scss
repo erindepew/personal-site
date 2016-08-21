@@ -8,13 +8,15 @@
   @include boxshadow;
   max-width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .portfolio-page--text {
   @include p;
   display: inline-block;
   text-align: left;
+  margin: 0;
+  width: 100%;
 }
 
 .portfolio-page--link {

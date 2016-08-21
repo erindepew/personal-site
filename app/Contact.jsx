@@ -18,7 +18,7 @@ var Contact = React.createClass({
                <InputField label='Name' type='text' name='name' focus={true} max='100'/>
                <InputField label='Email' type='email' name='_replyto' focus={false} max='100'/>
                <TextArea label='Message' type='text' name='message' focus={false} max='2000'/>
-               <input type='hidden' name='_next' value='http://localhost:8889/#/thanks'></input>
+               <input type='hidden' name='_next' value='http://localhost:8889/#/thanks/message'></input>
                <Button label='Send Message' aspect='MAIN' selected={false} type='submit' value='Send'/>
              </div>
            </form>

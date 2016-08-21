@@ -922,7 +922,7 @@ html {
   -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   max-width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 /* line 14, ../styles/components/_portfolio-page.scss */
@@ -934,9 +934,11 @@ html {
   color: #3a3a3a;
   display: inline-block;
   text-align: left;
+  margin: 0;
+  width: 100%;
 }
 
-/* line 20, ../styles/components/_portfolio-page.scss */
+/* line 22, ../styles/components/_portfolio-page.scss */
 .portfolio-page--link {
   font-family: "Ubuntu-light", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -988,7 +990,7 @@ html {
   max-width: 0;
   border-bottom: 1px solid #ED9487;
 }
-/* line 25, ../styles/components/_portfolio-page.scss */
+/* line 27, ../styles/components/_portfolio-page.scss */
 .portfolio-page--link:before {
   top: 0;
 }
