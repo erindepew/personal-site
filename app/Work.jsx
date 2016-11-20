@@ -5,12 +5,12 @@ var Filter = require('./Filter.jsx');
 
 const filterOptions = ['photos', 'code', 'design', 'ux', 'all'];
 
-const projects = [{image:'logos.jpg', title: 'Logo Designs', name: 'logos', tag:['design']},
-  {image:'haskell.png', title: 'Haskell Platform Redesign', name: 'haskell', tag:[ 'code', 'ux', 'design'] },
-  {image:'SSOlogin.png',title: 'Single Sign-on Login Page', name: 'SSOLogin', tag:[ 'ux', 'design']},
-  {image:'sports_dashboard.png', title: 'NBC Sports Dashboard', name: 'sports_dashboard', tag:[ 'ux', 'design']},
-  {image:'telemundo.png', title: 'Telemundo.com Redesign', name: 'telemundo', tag:[ 'code']},
-  {image:'field-hockey.png', title: 'New York Field Hockey Shirt Design', name: 'field_hockey', tag:[ 'design']}];
+const projects = [{image:'logos.png', title: 'Logo Designs', name: 'logos', tag:['design']},
+  {image:'haskell.jpg', title: 'Haskell Platform Redesign', name: 'haskell', tag:[ 'code', 'ux', 'design'] },
+  {image:'SSOlogin.jpg',title: 'Single Sign-on Login Page', name: 'SSOLogin', tag:[ 'ux', 'design']},
+  {image:'sports_dashboard.jpg', title: 'NBC Sports Dashboard', name: 'sports_dashboard', tag:[ 'ux', 'design']},
+  {image:'telemundo.jpg', title: 'Telemundo.com Redesign', name: 'telemundo', tag:[ 'code']},
+  {image:'field-hockey.jpg', title: 'New York Field Hockey Shirt Design', name: 'field_hockey', tag:[ 'design']}];
 
 var Work = React.createClass({
   getInitialState: function() {

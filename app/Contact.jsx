@@ -12,7 +12,7 @@ var Contact = React.createClass({
     return (
      <Layout navState={this.props.navState} aspect='ALTERNATE' includeNav={true}>
          <div className="layout--primary-section">
-           <form action="https://formspree.io/erinldepew@gmail.com" method="POST">
+           <form action="https://formspree.io/erinldepew+contact@gmail.com" method="POST">
              <div className='contact-form--MAIN'>
                <h2 className='contact-form--header'>What's On Your Mind?</h2>
                <InputField label='Name' type='text' name='name' focus={true} max='100'/>
