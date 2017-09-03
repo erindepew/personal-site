@@ -5,7 +5,7 @@ var Filter = require('./Filter.jsx');
 
 const filterOptions = ['photos', 'code', 'design', 'ux', 'all'];
 
-const projects = [{image:'logos.png', title: 'Logo Designs', name: 'logos', tag:['design']},
+const projects = [{image:'logos.jpg', title: 'Logo Designs', name: 'logos', tag:['design']},
   {image:'haskell.jpg', title: 'Haskell Platform Redesign', name: 'haskell', tag:[ 'code', 'ux', 'design'] },
   {image:'SSOlogin.jpg',title: 'Single Sign-on Login Page', name: 'SSOLogin', tag:[ 'ux', 'design']},
   {image:'sports_dashboard.jpg', title: 'NBC Sports Dashboard', name: 'sports_dashboard', tag:[ 'ux', 'design']},

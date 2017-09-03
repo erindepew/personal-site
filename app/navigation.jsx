@@ -16,9 +16,6 @@ var Navigation = React.createClass({
           <li className="nav--nav-link">
             <Link to="/resume">RESUME</Link>
           </li>
-          <li className="nav--nav-link">
-            <a href="http://www.erindepew.com/blog">BLOG</a>
-          </li>
         </ul>
       </nav>
     );
