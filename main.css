@@ -14,19 +14,19 @@ html {
 
 @font-face {
   font-family: 'Ubuntu-light';
-  src: url("../../fonts/Ubuntu-Light.ttf");
+  src: url("./fonts/Ubuntu-Light.ttf");
 }
 @font-face {
   font-family: 'Ubuntu-regular';
-  src: url("../../fonts/Ubuntu-Regular.ttf");
+  src: url("./fonts/Ubuntu-Regular.ttf");
 }
 @font-face {
   font-family: 'Ubuntu-bold';
-  src: url("../../fonts/Ubuntu-Bold.ttf");
+  src: url("./fonts/Ubuntu-Bold.ttf");
 }
 @font-face {
   font-family: 'icon-font';
-  src: url("../../fonts/icons.ttf");
+  src: url("./fonts/icons.ttf");
 }
 /* line 1, ../styles/components/_navigation.scss */
 .nav--MAIN {
